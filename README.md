@@ -3,3 +3,9 @@
 ### Course : AIP444
 
 
+
+
+## Python venv activation
+```bash
+source venv/bin/activate
+```
