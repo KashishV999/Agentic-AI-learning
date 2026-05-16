@@ -51,6 +51,16 @@ def chatCompletion():
     api_key=OPENROUTER_API_KEY,
     )
 
+    verbose_instruction = ""
+
+    if is_verbose:
+        verbose_instruction = (
+            "Also include a body paragraph explaining WHY the change was made. "
+            "Format output like:\n"
+            "<type>: <description>\n\n"
+            "<body paragraph>"
+        )
+
 
     if is_creative:
         system_prompt = (
@@ -65,6 +75,7 @@ def chatCompletion():
             "- Output only the commit message. "
             "- Keep description concise and imperative. "
             "- Infer type from the diff."
+            f"{verbose_instruction}"
         )
 
     else:
@@ -80,6 +91,7 @@ def chatCompletion():
             "- Infer type from the diff. "
             "- No quotes, markdown, explanations, or extra text. "
             "- Output only the commit message."
+            f"{verbose_instruction}"
         )
 
 
@@ -110,21 +122,24 @@ def main():
     print("Generated Commit Message:")
     print(commit_message)
 
-    # asks the user if they want to use the commit message
+    # asks the user if they want to use the commit message or did the user pass the -y flag for auto yes
     if is_auto_yes:
         user_input = "y"
     else:
         user_input = input("Do you want to use this commit message? (y/n): ")
-        if user_input.lower() == "y":
+
+    # if the user says yes, stage the commit message using git commit -m "message"
+
+    if user_input.lower() == "y":
             # Stage the commit message using git commit -m "message"
-            try:
-                subprocess.run(["git", "commit", "-m", commit_message], check=True)
-                print("Commit message staged successfully!")
-            except subprocess.CalledProcessError as e:
-                print("Error staging commit message:", e)
+        try:
+            subprocess.run(["git", "commit", "-m", commit_message], check=True)
+            print("Commit message staged successfully!")
+        except subprocess.CalledProcessError as e:
+            print("Error staging commit message:", e)
             
-        else:
-            print("Commit message rejected.")
+    else:
+        print("Commit message rejected.")
 
 if __name__ == "__main__":
     main()
