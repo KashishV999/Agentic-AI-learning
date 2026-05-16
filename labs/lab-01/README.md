@@ -39,3 +39,13 @@
    ```bash
    python git_cm.py --creative
    ```  
+
+4. To automatically accept the generated commit message without confirmation, use:
+   ```bash
+   python git_cm.py -y
+   ```
+
+5. For verbose output, use:
+   ```bash
+   python git_cm.py --verbose
+   ```
