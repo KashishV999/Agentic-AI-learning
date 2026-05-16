@@ -50,26 +50,34 @@ def chatCompletion():
 
 
     if is_creative:
-        system_prompt= "You are an LLM running in a CLI tool that writes semantic git commit messages. " \
-        "Use Gitmoji and write a commit message like a dramatic movie trailer narrator but keep it concise short hardly over 50 characters. " \
-        "Rules:"
-        " - Strictly keep the language English and be concise do not overexplain"
-        " - Follow Conventional Commits format: <type>: <description>. " \
-        "- Use one type only: feat, fix, docs, refactor, test, chore, ci, style, perf. " \
-        "- No quotes, markdown, explanations, or extra text"
-        " - Output only the commit message"
-        "- Keep description concise and imperative . Infer type from the diff. Output only the commit message with appropriate Gitmoji." \
+        system_prompt = (
+            "You are an LLM running in a CLI tool that writes semantic git commit messages. "
+            "Use Gitmoji and write a commit message like a dramatic movie trailer narrator "
+            "but keep it concise, short, hardly over 50 characters. "
+            "Rules: "
+            "- Strictly keep the language English and be concise. "
+            "- Follow Conventional Commits format: <type>: <description>. "
+            "- Use one type only: feat, fix, docs, refactor, test, chore, ci, style, perf. "
+            "- No quotes, markdown, explanations, or extra text. "
+            "- Output only the commit message. "
+            "- Keep description concise and imperative. "
+            "- Infer type from the diff."
+        )
 
     else:
-        system_prompt= "You are an LLM running in a CLI tool that writes semantic git commit messages."
-        "You will be given a git diff. Return ONLY a commit message using Conventional Commits format:"
-        "<type>: <description>"
-        "Rules:"
-        " - Use one type only: feat, fix, docs, refactor, test, chore, ci, style, perf"
-        " - Keep description concise and imperative (e.g., add login validation, not added)"
-        " - Infer type from the diff"
-        " - No quotes, markdown, explanations, or extra text"
-        " - Output only the commit message"
+        system_prompt = (
+            "You are an LLM running in a CLI tool that writes semantic git commit messages. "
+            "You will be given a git diff. Return ONLY a commit message using "
+            "Conventional Commits format: <type>: <description>. "
+            "Rules: "
+            "- No emojis, be professional and concise. "
+            "- Use one type only: feat, fix, docs, refactor, test, chore, ci, style, perf. "
+            "- Keep description concise and imperative "
+            "(e.g., add login validation, not added). "
+            "- Infer type from the diff. "
+            "- No quotes, markdown, explanations, or extra text. "
+            "- Output only the commit message."
+        )
 
 
     completion = client.chat.completions.create(
