@@ -51,10 +51,10 @@ def chatCompletion():
 
     if is_creative:
         system_prompt= "You are an LLM running in a CLI tool that writes semantic git commit messages. " \
-        "Use Gitmoji and write a commit message like a dramatic movie trailer narrator. "
+        "Use Gitmoji and write a commit message like a dramatic movie trailer narrator but keep it concise short hardly over 50 characters. " \
         "Rules:"
-        " - Strictly keep the language English and be concise just 6 to 7 words description"
-        " - Be imaginative and fun, but still follow Conventional Commits format: <type>: <description>. " \
+        " - Strictly keep the language English and be concise do not overexplain"
+        " - Follow Conventional Commits format: <type>: <description>. " \
         "- Use one type only: feat, fix, docs, refactor, test, chore, ci, style, perf. " \
         "- No quotes, markdown, explanations, or extra text"
         " - Output only the commit message"
@@ -73,7 +73,7 @@ def chatCompletion():
 
 
     completion = client.chat.completions.create(
-        model="deepseek/deepseek-v4-flash:free",
+        model="openai/gpt-oss-120b:free",
         messages=[
             {
                 "role": "system",
