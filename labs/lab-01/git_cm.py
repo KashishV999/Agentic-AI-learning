@@ -2,6 +2,7 @@
 import os
 import random
 import sys
+import subprocess
 from dotenv import load_dotenv, find_dotenv
 from datetime import datetime
 
@@ -107,8 +108,18 @@ def main():
     print("Generated Commit Message:")
     print(commit_message)
 
-
-
+    # asks the user if they want to use the commit message
+    user_input = input("Do you want to use this commit message? (y/n): ")
+    if user_input.lower() == "y":
+        # Stage the commit message using git commit -m "message"
+        try:
+            subprocess.run(["git", "commit", "-m", commit_message], check=True)
+            print("Commit message staged successfully!")
+        except subprocess.CalledProcessError as e:
+            print("Error staging commit message:", e)
+        
+    else:
+        print("Commit message rejected.")
 
 if __name__ == "__main__":
     main()
