@@ -28,7 +28,7 @@ def main():
         sys.exit(1)
 
     else:
-        print("OPENROUTER_API_KEY found successfully")
+        print("OPENROUTER_API_KEY found successfully!!")
 
 
 if __name__ == "__main__":
