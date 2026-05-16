@@ -13,6 +13,8 @@ from git_diff_subprocess import get_staged_diff
 
 
 is_creative = "--creative" in sys.argv
+is_auto_yes = "-y" in sys.argv
+is_verbose = "--verbose" in sys.argv
 
 # Locate the .env file by searching up the directory tree
 load_dotenv(find_dotenv())
@@ -109,17 +111,20 @@ def main():
     print(commit_message)
 
     # asks the user if they want to use the commit message
-    user_input = input("Do you want to use this commit message? (y/n): ")
-    if user_input.lower() == "y":
-        # Stage the commit message using git commit -m "message"
-        try:
-            subprocess.run(["git", "commit", "-m", commit_message], check=True)
-            print("Commit message staged successfully!")
-        except subprocess.CalledProcessError as e:
-            print("Error staging commit message:", e)
-        
+    if is_auto_yes:
+        user_input = "y"
     else:
-        print("Commit message rejected.")
+        user_input = input("Do you want to use this commit message? (y/n): ")
+        if user_input.lower() == "y":
+            # Stage the commit message using git commit -m "message"
+            try:
+                subprocess.run(["git", "commit", "-m", commit_message], check=True)
+                print("Commit message staged successfully!")
+            except subprocess.CalledProcessError as e:
+                print("Error staging commit message:", e)
+            
+        else:
+            print("Commit message rejected.")
 
 if __name__ == "__main__":
     main()
