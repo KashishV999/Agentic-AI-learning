@@ -1,6 +1,5 @@
 
 import os
-import random
 import sys
 import subprocess
 from dotenv import load_dotenv, find_dotenv
@@ -11,27 +10,16 @@ from openai import OpenAI
 
 from git_diff_subprocess import get_staged_diff
 
-
+# Command line argument parsing
 is_creative = "--creative" in sys.argv
 is_auto_yes = "-y" in sys.argv
 is_verbose = "--verbose" in sys.argv
 
 # Locate the .env file by searching up the directory tree
 load_dotenv(find_dotenv())
-
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
-if not OPENROUTER_API_KEY:
-    print("Error: OPENROUTER_API_KEY not found")
-    sys.exit(1)
-else:
-    print("OPENROUTER_API_KEY found successfully!")
 
-
-# staged diff
-diff = get_staged_diff()
-# print("Staged Diff:")
-# print(diff)
 
 # Function to print the header information
 def printHeader():
@@ -44,7 +32,12 @@ def printHeader():
 
 
 def chatCompletion():
-    # gets API Key from environment variable OPENROUTER_API_KEY
+
+    # staged diff
+    diff = get_staged_diff()
+    # print("Staged Diff:")
+    # print(diff)
+
 
     client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
@@ -117,6 +110,14 @@ def chatCompletion():
 def main():
     # Print the header information
     printHeader()
+
+    if not OPENROUTER_API_KEY:
+        print("Error: OPENROUTER_API_KEY not found")
+        sys.exit(1)
+    else:
+        print("OPENROUTER_API_KEY found successfully!")
+
+
     # Get the commit message from the LLM
     commit_message = chatCompletion()
     print("Generated Commit Message:")
@@ -129,7 +130,6 @@ def main():
         user_input = input("Do you want to use this commit message? (y/n): ")
 
     # if the user says yes, stage the commit message using git commit -m "message"
-
     if user_input.lower() == "y":
             # Stage the commit message using git commit -m "message"
         try:
@@ -140,6 +140,9 @@ def main():
             
     else:
         print("Commit message rejected.")
+
+
+
 
 if __name__ == "__main__":
     main()

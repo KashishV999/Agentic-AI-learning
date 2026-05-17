@@ -14,3 +14,7 @@ def get_staged_diff():
     except subprocess.CalledProcessError:
         print("❌ Not a git repo.")
         sys.exit(1)
+
+
+
+
