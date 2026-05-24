@@ -1,0 +1,58 @@
+What is GitOps?
+GitOps is a set of practices for managing infrastructure and application configurations to expand upon existing processes and 
+improve the application lifecycle.
+
+GitOps uses Git repositories as a single source of truth to deliver infrastructure as code (IaC). IaC is the managing and provisioning of infrastructure through code instead of through manual processes. With IaC, configuration files are created that contain your infrastructure specification and ensure that you provision the same environment every time. It is an important part of implementing DevOps practices and continuous integration/continuous delivery (CI/CD). 
+
+GitOps requires a declarative description of the desired state of the system. By using declarative tools, all configuration files and source code can be version controlled in Git. All changes to the code are tracked, making updates easy while also providing version control should a rollback be needed.
+
+GitOps delivers:
+
+A standard workflow for application development.
+Increased security from greater visibility and auditability.
+Improved reliability with visibility and version control through Git.
+Consistency across clusters, clouds, and on-premise environments.
+Explore Red Hat OpenShift GitOps operator
+GitOps, DevOps, and platform engineering
+GitOps and DevOps share some of the same principles and goals. DevOps is about cultural change and providing a way for development teams and operations teams to work together collaboratively.
+
+GitOps gives you tools and a framework to take DevOps practices, like collaboration, CI/CD, and version control, and apply them to infrastructure automation and application deployment, as well as to platform engineering practices like internal developer platforms (IDPs).
+
+Platform engineering extends DevOps practices by providing standardized tools, services, and workflows so development teams can build software solutions more efficiently. Platform engineering is a newer term that describes a practice of organizing internal services and resources so development teams can build solutions without having to manage those underlying elements directly.
+
+Platform engineering has emerged as a critical and complementary ingredient to address the challenges of scaling DevOps across organizations. Platform engineering teams create, maintain, and continuously evolve an organization’s IDP and cater to developer teams as customers, providing common, reusable tools, services, and capabilities that deliver value. Platform engineers bridge the organization's infrastructure and the backend services needed for creating and delivering software applications with the developer teams who need frictionless access. The core principles of GitOps also support platform engineering by creating a single source of truth for infrastructure definitions and application development lifecycles, which can be incorporated into platform engineering practices and can facilitate collaboration and coordination between teams. 
+
+
+Why GitOps?
+GitOps is a process change, so it can take time for teams to adjust as they adopt. It requires a new level of collaboration and communication. Cultivating a culture of feedback is a way to mitigate those challenges, but they still may arise.
+
+Despite those challenges, GitOps takes the philosophies and approaches promised to those investing in a DevOps culture and provides a framework to start realizing the results.
+
+By using the same Git-based workflows that developers are familiar with, GitOps expands upon existing processes—from application development to deployment, application life cycle management, and infrastructure configuration. Developers can work in the code repositories they already know, while operations adopt the same tools and techniques to manage infrastructure. Every change throughout the application life cycle is traced in the Git repository and is auditable.
+
+Making changes via Git means developers can finally do what they want: code at their own pace without waiting on resources to be assigned or approved by operations teams.
+
+For operations teams, visibility to change means the ability to trace and reproduce issues quickly, improving overall security. With an up-to-date audit trail, organizations can reduce the risk of unwanted changes and correct them before they go into production.
+
+These changes in code from development to production make organizations more agile in responding to changes in the business and competitive landscape.
+What are some GitOps tools?
+There are many tools that can be used together to build a GitOps framework, like Git repositories, Kubernetes, continuous integration/continuous
+ delivery (CI/CD) tools, and configuration management tools. To choose the right set of tools, developers should identify their needs and what features will provide a solution. Here are a few tools to consider.  
+
+CI Tools
+
+Continuous integration (CI) refers to the practice of automatically and frequently integrating code changes into a shared source code repository. As updates are made, automated testing steps are triggered to ensure the reliability of merged code changes. 
+
+Tekton: A Kubernetes-native framework for building CI/CD systems. It provides platform engineers and developers with the flexibility, best practices, and standardization they need to build, test, and deploy across cloud providers and on-premise systems. 
+
+Jenkins:  is an open source automation server based on Java. It makes it easy for developers to integrate their changes by continuously testing, building, and deploying the projects easily with minimal setup required. An extension of the Jenkins ecosystem, Jenkins X helps automate CI/CD pipelines in the cloud. 
+
+CD Tools
+
+Continuous delivery and/or deployment (CD) is a 2 part process that refers to the integration, testing, and delivery of code changes. Continuous delivery automates the release of validated code to a repository following the automation of builds and unit and integration testing in CI. Continuous deployment is an extension of continuous delivery, and can refer to automating the release of a developer’s changes from the repository to production, where it is usable by customers.
+
+Argo CD: A declarative continuous delivery tool for Kubernetes. It allows development teams to deploy and manage applications without needing full knowledge about Kubernetes and full access to the Kubernetes system. By monitoring running applications, ArgoCD ensures that your applications do not fall out of sync with your desired states. 
+
+Get started with Argo CD
+
+Flux: A GitOps tool that automates deployment on Kubernetes clusters by keeping cluster states in sync with Git repositories. Built on a set of Kubernetes API extensions, Flux supports application deployment and infrastructure management.
