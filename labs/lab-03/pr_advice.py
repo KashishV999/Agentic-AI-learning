@@ -6,6 +6,7 @@ from datetime import datetime
 from urllib.parse import urljoin
 import requests
 from typing import List, Dict
+import re
 
 # LLM chat completion import
 from openai import OpenAI
@@ -25,6 +26,7 @@ def printHeader():
     print ("--------------------------------------------------------------")
 
 
+# function to validate the PR URL and extract owner, repo, and pr_number
 def isValidPrUrl(url, pr_details) -> bool:
     if not url.startswith("https://github.com/"):
         print("Error: URL must be a valid GitHub PR URL")
@@ -36,7 +38,6 @@ def isValidPrUrl(url, pr_details) -> bool:
         print("Error: URL must be in format https://github.com/OWNER/REPO/pull/PR_NUMBER")
         return False
     
-
     pr_details["owner"] = parts[0]
     pr_details["repo"] = parts[1]
     pr_details["pr_number"] = parts[3]
@@ -44,7 +45,19 @@ def isValidPrUrl(url, pr_details) -> bool:
     return True
 
 
+# function to construct the diff URL and fetch the diff content
+def constructDiffUrl(baseUrl):
+    diff_url = baseUrl+".diff"
+    response= requests.get(diff_url)
+    data= response.text
+    # if data greated that 95000 charatcer truncate it and warn the user 
+    if len(data) > 95000:
+        print("Warning: Diff is too large, truncating to 95000 characters")
+        data = data[:95000] + "... [Diff truncated]..."
+    return data
 
+
+# function to fetch comments from the PR thread using GitHub API
 def fetchComments(owner: str, repo: str, issue_num: int) -> List[Dict[str, str]]:    
     baseUrl= "https://api.github.com/repos/"
     relative = f"{owner}/{repo}/issues/{issue_num}/comments"
@@ -70,38 +83,85 @@ def fetchComments(owner: str, repo: str, issue_num: int) -> List[Dict[str, str]]
     ]
 
 
-def constructDiffUrl(baseUrl):
-    diff_url = baseUrl+".diff"
-    response= requests.get(diff_url)
-    data= response.json()
-    # if data greated that 95000 charatcer truncate it and warn the user 
-    if len(data) > 95000:
-        print("Warning: Diff is too large, truncating to 95000 characters")
-        data = data[:95000] + "... [Diff truncated]..."
-    return data
+
+# Function to read file contents with error handling
+def get_file_contents(path, description):
+    """Read a file and return its contents, or exit on error."""
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            return f.read()
+    except FileNotFoundError:
+        print(f"❌ Error: {description} not found: {path}")
+        sys.exit(1)
+    except Exception as err:
+        print(f"❌ Error reading {description}: {path}")
+        print(f"   {err}")
+        sys.exit(1)
 
 
 
-
-def chatCompletion():
+# Function to get the commit message from the LLM
+def chatCompletion(url):
     client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=OPENROUTER_API_KEY,
     )
 
+    # PR Details dictionary to store owner, repo, and pr_number
+    details: dict[str, str | None] = {
+        "owner": None,
+        "repo": None,
+        "pr_number": None
+    }
+
+    isValidUrl = isValidPrUrl(url, details)
+    if not isValidUrl:
+        print("Error: Invalid PR URL")
+        sys.exit(1)
+
+    else:
+        diff= constructDiffUrl(url)
+        comments= fetchComments(details["owner"], details["repo"], details["pr_number"])
+
+        # DEBUGGING PRINTS
+        # print("Owner: ", details["owner"])
+        # print("Repo: ", details["repo"])
+        # print("PR Number: ", details["pr_number"])
+        # print("Valid PR URL")
+        # print("---------------------------------------------------")
+
+        # for comment in comments:
+        #     print("Username: ", comment["username"])
+        #     print("Comment: ", comment["body"])
+        #     print("Date: ", comment["date"])
+        #     print("---------------------------------------------------")
+
+        # print("Diff: ", diff)
+
+    system_prompt = get_file_contents('SYSTEM_PROMPT.md', 'System prompt file')
+    user_prompt = f"""
+        <pr_diff>
+        ```diff
+        {diff}
+        ```
+        </pr_diff>
+        <thread>
+        {comments}
+        </thread>
+    """
 
 
     completion = client.chat.completions.create(
-        model="openai/gpt-oss-120b:free",
+        model="anthropic/claude-3-haiku",
         messages=[
             {
                 "role": "system",
-                "content": "be polite",
+                "content": system_prompt,
             },
 
             { 
                 "role": "user",
-                "content": "helllo how are you"
+                "content": user_prompt
             },
         ]
     )
@@ -119,43 +179,13 @@ def main():
     else:
         print("OPENROUTER_API_KEY found successfully!")
 
-
-    # Get the commit message from the LLM
-    # commit_message = chatCompletion()
-    # print("Generated Commit Message:")
-    # print(commit_message)
-
-
-    url = "https://github.com/kubernetes/website/pull/55777"
+    url = input("Please enter the PR URL: ")
+    commit_message = chatCompletion(url)
+    print("Generated Commit Message:")
+    print(commit_message)
 
 
-    details: dict[str, str | None] = {
-        "owner": None,
-        "repo": None,
-        "pr_number": None
-    }
-
-
-    if(isValidPrUrl(url, details)):
-        print("Owner: ", details["owner"])
-        print("Repo: ", details["repo"])
-        print("PR Number: ", details["pr_number"])
-        print("Valid PR URL")
-        print("---------------------------------------------------")
-
-        # def fetchComments(owner: str, repo: str, issue_num: int) -> List[Dict[str, str]]:    
-        comments= fetchComments(details["owner"], details["repo"], details["pr_number"])
-
-        for comment in comments:
-            print("Username: ", comment["username"])
-            print("Comment: ", comment["body"])
-            print("Date: ", comment["date"])
-            print("---------------------------------------------------")
-
-    else:
-        print("Invalid PR URL")
-
-
+ 
 
 
 
