@@ -45,6 +45,30 @@ def isValidPrUrl(url, pr_details) -> bool:
 
 
 
+def fetchComments(owner: str, repo: str, issue_num: int) -> List[Dict[str, str]]:    
+    baseUrl= "https://api.github.com/repos/"
+    relative = f"{owner}/{repo}/issues/{issue_num}/comments"
+    comments_url = urljoin(baseUrl, relative)
+
+    response = requests.get(comments_url, headers={
+        "User-Agent": "AIP444-Lab-03",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28"
+    })
+
+    if response.status_code !=200:
+        raise Exception(f"GitHub API Error: {response.status_code}")
+    
+    # Extract only the fields we need
+    return [
+        {
+            "username": item["user"]["login"],
+            "body": item["body"],
+            "date": item["updated_at"]
+        }
+        for item in response.json()
+    ]
+
 
 
 
