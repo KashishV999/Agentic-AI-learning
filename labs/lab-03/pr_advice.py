@@ -27,7 +27,7 @@ def printHeader():
 
 
 # function to validate the PR URL and extract owner, repo, and pr_number
-def isValidPrUrl(url, pr_details) -> bool:
+def isValidPrUrl(url: str, pr_details: dict[str, str | None]) -> bool:
     if not url.startswith("https://github.com/"):
         print("Error: URL must be a valid GitHub PR URL")
         return False
@@ -46,7 +46,7 @@ def isValidPrUrl(url, pr_details) -> bool:
 
 
 # function to construct the diff URL and fetch the diff content
-def constructDiffUrl(baseUrl) -> str:
+def constructDiffUrl(baseUrl: str) -> str:
     diff_url = baseUrl+".diff"
     response= requests.get(diff_url)
     data= response.text
@@ -85,7 +85,7 @@ def fetchComments(owner: str, repo: str, issue_num: int) -> List[Dict[str, str]]
 
 
 # Function to read file contents with error handling
-def get_file_contents(path, description) -> str:
+def get_file_contents(path: str, description: str) -> str:
     """Read a file and return its contents, or exit on error."""
     try:
         with open(path, 'r', encoding='utf-8') as f:
@@ -101,7 +101,7 @@ def get_file_contents(path, description) -> str:
 
 
 # Function to get the commit message from the LLM
-def chatCompletion(url) -> str:
+def chatCompletion(url: str) -> str:
     client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=OPENROUTER_API_KEY,
@@ -179,15 +179,10 @@ def main():
     else:
         print("OPENROUTER_API_KEY found successfully!")
 
-    url = input("Please enter the PR URL: ")
+    url : str = input("Please enter the PR URL: ")
     commit_message = chatCompletion(url)
     print("Generated Commit Message:")
     print(commit_message)
-
-
- 
-
-
 
 
 if __name__ == "__main__":
