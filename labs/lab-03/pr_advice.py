@@ -30,7 +30,29 @@ def printHeader():
 
 
 
+def chatCompletion():
+    client = OpenAI(
+    base_url="https://openrouter.ai/api/v1",
+    api_key=OPENROUTER_API_KEY,
+    )
 
+
+
+    completion = client.chat.completions.create(
+        model="openai/gpt-oss-120b:free",
+        messages=[
+            {
+                "role": "system",
+                "content": "be polite",
+            },
+
+            { 
+                "role": "user",
+                "content": "helllo how are you"
+            },
+        ]
+    )
+    return completion.choices[0].message.content
 
 
 
