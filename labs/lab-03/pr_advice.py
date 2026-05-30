@@ -25,6 +25,24 @@ def printHeader():
     print ("--------------------------------------------------------------")
 
 
+def isValidPrUrl(url, pr_details) -> bool:
+    if not url.startswith("https://github.com/"):
+        print("Error: URL must be a valid GitHub PR URL")
+        return False
+
+    parts = url[len("https://github.com/"):].split("/")
+
+    if len(parts) != 4 or parts[2] != "pull":
+        print("Error: URL must be in format https://github.com/OWNER/REPO/pull/PR_NUMBER")
+        return False
+    
+
+    pr_details["owner"] = parts[0]
+    pr_details["repo"] = parts[1]
+    pr_details["pr_number"] = parts[3]
+
+    return True
+
 
 
 
