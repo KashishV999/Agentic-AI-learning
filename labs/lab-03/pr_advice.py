@@ -46,7 +46,7 @@ def isValidPrUrl(url, pr_details) -> bool:
 
 
 # function to construct the diff URL and fetch the diff content
-def constructDiffUrl(baseUrl):
+def constructDiffUrl(baseUrl) -> str:
     diff_url = baseUrl+".diff"
     response= requests.get(diff_url)
     data= response.text
@@ -85,7 +85,7 @@ def fetchComments(owner: str, repo: str, issue_num: int) -> List[Dict[str, str]]
 
 
 # Function to read file contents with error handling
-def get_file_contents(path, description):
+def get_file_contents(path, description) -> str:
     """Read a file and return its contents, or exit on error."""
     try:
         with open(path, 'r', encoding='utf-8') as f:
@@ -101,7 +101,7 @@ def get_file_contents(path, description):
 
 
 # Function to get the commit message from the LLM
-def chatCompletion(url):
+def chatCompletion(url) -> str:
     client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=OPENROUTER_API_KEY,
