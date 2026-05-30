@@ -115,7 +115,7 @@ No significant risks were identified in this PR.
 2. What are some potential benefits of keeping the documentation concise and avoiding duplicate information?
 3. How might a junior developer identify duplicate or redundant content when reviewing documentation changes?
 
-<example_1>
+</example_1>
 
 
 
@@ -141,7 +141,7 @@ No significant risks were identified in this PR.
 2. What are some potential benefits of keeping the documentation concise and avoiding duplicate information?
 3. How might a junior developer identify duplicate or redundant content when reviewing documentation changes?
 
-<example_2>
+</example_2>
 
 </examples>
 
