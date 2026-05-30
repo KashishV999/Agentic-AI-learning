@@ -120,6 +120,44 @@ def main():
         print("OPENROUTER_API_KEY found successfully!")
 
 
+    # Get the commit message from the LLM
+    # commit_message = chatCompletion()
+    # print("Generated Commit Message:")
+    # print(commit_message)
+
+
+    url = "https://github.com/kubernetes/website/pull/55777"
+
+
+    details: dict[str, str | None] = {
+        "owner": None,
+        "repo": None,
+        "pr_number": None
+    }
+
+
+    if(isValidPrUrl(url, details)):
+        print("Owner: ", details["owner"])
+        print("Repo: ", details["repo"])
+        print("PR Number: ", details["pr_number"])
+        print("Valid PR URL")
+        print("---------------------------------------------------")
+
+        # def fetchComments(owner: str, repo: str, issue_num: int) -> List[Dict[str, str]]:    
+        comments= fetchComments(details["owner"], details["repo"], details["pr_number"])
+
+        for comment in comments:
+            print("Username: ", comment["username"])
+            print("Comment: ", comment["body"])
+            print("Date: ", comment["date"])
+            print("---------------------------------------------------")
+
+    else:
+        print("Invalid PR URL")
+
+
+
+
 
 
 if __name__ == "__main__":
