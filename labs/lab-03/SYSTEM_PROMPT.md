@@ -32,10 +32,7 @@ For each risk include:
 - explanation
 
 ## Learning
-Generate exactly 3 Socratic questions that test understanding of the PR.
-Requirements:
-- Reference actual implementation details when possible.
-- Help a junior developer reason about design choices and tradeoffs.
+Generate exactly 3 Socratic questions that test understanding of the PR. keep Question to the point and over verbose
 - Example: "Why might the author choose map instead of forEach here?"
 </output_format>
 
