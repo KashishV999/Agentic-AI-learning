@@ -70,6 +70,17 @@ def fetchComments(owner: str, repo: str, issue_num: int) -> List[Dict[str, str]]
     ]
 
 
+def constructDiffUrl(baseUrl):
+    diff_url = baseUrl+".diff"
+    response= requests.get(diff_url)
+    data= response.json()
+    # if data greated that 95000 charatcer truncate it and warn the user 
+    if len(data) > 95000:
+        print("Warning: Diff is too large, truncating to 95000 characters")
+        data = data[:95000] + "... [Diff truncated]..."
+    return data
+
+
 
 
 def chatCompletion():
