@@ -41,7 +41,7 @@ class ReadFileTool(BaseModel):
 
 class RipGrepTool(BaseModel):
     """
-    Search for a pattern in all Python files under the current directory.
+    Search for a pattern in Python files under the current directory.
     Returns up to 30 matching results as a list of dictionaries.
     The text field of each result is truncated to 1000 lines if needed.
     """
@@ -80,7 +80,7 @@ async def chatCompletion(args: ChatCompletionArgs) -> Report:
 
 
     # Variables
-    max_iterations=10
+    max_iterations=7
     iteration=0
 
     messages= [
@@ -144,7 +144,7 @@ async def chatCompletion(args: ChatCompletionArgs) -> Report:
 
                 if fn_name == "ReadFileTool":
                     debug_log(f"[{args.name}] ReadFileTool called")
-                    print("READFILE TOOL CALLL !!!!!!!!")
+                    
                     validated_args = ReadFileTool(**args_json)
 
                     result = await asyncio.to_thread(
