@@ -53,3 +53,20 @@ class Report(BaseModel):
         description="All findings from this review. Empty list if none."
     )
  
+ 
+ 
+ 
+ 
+#  findings=[
+# 	Finding(
+# 		path='vulnerable_app.py',
+# 		line=5, 
+# 		severity=<Severity.CRITICAL: 'critical'>, 
+# 		category='Hardcoded Secret', 
+# 		description="A hardcoded API key (starting with 'sk_live_') is defined directly in the source code. This can lead to credential exposure if the code is committed to a repository. Use environment variables or a secrets manager to load credentials securely."), 
+# 	Finding(
+# 		path='vulnerable_app.py', 
+# 		line=11, 
+# 		severity=<Severity.CRITICAL: 'critical'>, category='SQL Injection', 
+# 		description='User-controlled inputs \'username\' and \'password\' are directly interpolated into a SQL query string, leading to SQL injection. Use parameterized queries instead, e.g., `cursor.execute("SELECT * FROM users WHERE username=? AND password=?", (username, password))`.'), 
+# 	]
