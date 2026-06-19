@@ -9,10 +9,12 @@ from pydantic import BaseModel, Field
 from output_schema import Report # Output structured Response
 from read_file_tool import read_file
 from ripgrep_tool import ripgrep
+from debug_utils import debug_log
 
 
 # Arguments
 class ChatCompletionArgs(BaseModel):
+    name: str
     model: str
     user_prompt: str
     system_prompt: str
@@ -102,6 +104,8 @@ async def chatCompletion(args: ChatCompletionArgs) -> Report:
     while iteration < max_iterations:
         iteration+=1
 
+        debug_log(f"[{args.name}] --- Iteration {iteration} ---")
+        debug_log(f"[{args.name}] Calling LLM (model={args.model}, temperature={args.temperature})...")
         # Call LLM
         response = await client.responses.parse(
                 model=args.model,
@@ -115,6 +119,7 @@ async def chatCompletion(args: ChatCompletionArgs) -> Report:
         # If the model successfully returned a Report,
         # we're done.
         if response.output_parsed is not None:
+            debug_log(f"[{args.name}] Model returned final Report. Successfully Done.")
             return response.output_parsed
 
         # Collect function calls from the response output
@@ -124,7 +129,10 @@ async def chatCompletion(args: ChatCompletionArgs) -> Report:
             if item.type == "function_call"
         ]
 
+        debug_log(f"[{args.name}] Model returned {len(tool_calls)} tool call(s).")
+
         if not tool_calls:
+            debug_log(f"[{args.name}] ERROR: Model returned neither a Report nor a tool call.")
             raise RuntimeError(
                 "Model returned neither a Report nor a tool call."
             )
@@ -135,6 +143,7 @@ async def chatCompletion(args: ChatCompletionArgs) -> Report:
                 args_json = json.loads(tool_call.arguments)
 
                 if fn_name == "ReadFileTool":
+                    debug_log(f"[{args.name}] ReadFileTool called")
                     print("READFILE TOOL CALLL !!!!!!!!")
                     validated_args = ReadFileTool(**args_json)
 
@@ -144,31 +153,30 @@ async def chatCompletion(args: ChatCompletionArgs) -> Report:
                             validated_args.start_line,
                             validated_args.end_line,
                     )
+                    debug_log(f"[{args.name}] ReadFileTool result: {result}")
 
                 elif fn_name == "RipGrepTool":
-                    print("RIPGREP TOOL CALLL !!!!!!!!")
+                    debug_log(f"[{args.name}] RipGrepTool called")
 
                     validated_args = RipGrepTool(**args_json)
 
                     result = await asyncio.to_thread(function_map["RipGrepTool"],
                         validated_args.search_pattern
                     )
+                    debug_log(f"[{args.name}] RipGrepTool result: {result}")
 
                 else:
+                    debug_log(f"[{args.name}] Unknown tool requested: {fn_name}")
                     result = {
                         "error": f"Unknown tool: {fn_name}"
                     }
 
             except Exception as e:
+                debug_log(f"[{args.name}] Tool call raised exception: {e}")
                 result = {
                     "error": str(e)
                 }
-                
-                
-                
-            print("-------Tool Call------------") 
-            print(tool_call)
-            print("--------------------")   
+                 
             # 1. Record that the model made this call
             messages.append(tool_call.model_dump(exclude_none=True))
 
@@ -178,76 +186,9 @@ async def chatCompletion(args: ChatCompletionArgs) -> Report:
                     "call_id": tool_call.call_id,
                     "output": json.dumps(result),
             })
-                
+            
+    debug_log(f"[{args.name}] Max iterations reached.")         
     raise RuntimeError("Max iterations reached")
-
-
-
-
-
-# Note about client.chat.completions.create vs client.responses.parse
-
-# response = client.chat.completions.create
-# response.choices        # list[Choice]
-# choice = response.choices[0]
-# message = response.choices[0].message     # the actual ChatCompletionMessage
-# - message.tool_calls  -> list of tool calls
-# tool_call -> id, name, arguments  
-# -
-
-# // client.chat.completions.create
-# {
-#   "choices": [
-#     {
-#       "message": {
-#         "tool_calls": [
-#           { "id": "...", "name": "...", "arguments": "..." }
-#         ]
-#       }
-#     }
-#   ]
-# }
-
-# client.responses.parse
-
-## response.output          # list[...] 
-## response.output_parsed   # text_format
-# for item in response.output:   -> list iterate
-#     if item.type == "function_call":
-#         item.name           # e.g. "ReadFileTool"
-#         item.arguments       # JSON string — json.loads() it
-#         item.call_id          # use to match the result back
-#         item.id    
-
-        
-# // client.responses.parse
-# {
-#   "output": [
-#     {
-#       "type": "function_call",
-#       "name": "...",
-#       "arguments": "...",
-#       "call_id": "...",
-#       "id": "..."
-#     }
-#   ],
-#   "output_parsed": { }
-# }
-        
-             
-        
-        
-        
-## Asunc operation :
-# async def chatCompletion + await client.responses.parse(...) 
-# Both tool calls wrapped in await asyncio.to_thread(...)
-
-
-
-
-
-
-
 
 
 
