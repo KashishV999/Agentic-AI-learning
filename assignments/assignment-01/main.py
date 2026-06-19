@@ -17,20 +17,32 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--output', type=str, help='Output filename')
+parser.add_argument('--debug', action='store_true', help='Print detailed debug logs to stderr')
 args = parser.parse_args()
 
 
+# filename -- output
 if args.output is None:
     args.output = "review-" + datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + ".html"
 
 filename= args.output
+
+# debug flag
+is_debug= args.debug
 
 
 print("-----")
 # print(args.output)
 print(filename)
 print("-------")
+print(is_debug)
+print("-------")
 
+
+# function to only print when --debug flag is there
+def debug_log(message):
+    if is_debug:
+        print(message, file=sys.stderr)
 
 
 test_file= read_file("test_file.py")
