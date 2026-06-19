@@ -22,8 +22,6 @@ class ChatCompletionArgs(BaseModel):
     
 
 
-
-
 # Pydantic model gives the LLM (or your code) a structured schema for the tool's inputs.
 class ReadFileTool(BaseModel):
     """
@@ -63,8 +61,8 @@ tool_schema_map = {
 }
 
 
-def chatCompletion(args: ChatCompletionArgs) -> Report:
-    client = OpenAI(
+async def chatCompletion(args: ChatCompletionArgs) -> Report:
+    client = AsyncOpenAI(
         base_url="https://openrouter.ai/api/v1",
         api_key= args.openrouter_key
     )
@@ -105,7 +103,7 @@ def chatCompletion(args: ChatCompletionArgs) -> Report:
         iteration+=1
 
         # Call LLM
-        response = client.responses.parse(
+        response = await client.responses.parse(
                 model=args.model,
                 input= messages,
                 temperature=args.temperature,
@@ -137,18 +135,22 @@ def chatCompletion(args: ChatCompletionArgs) -> Report:
                 args_json = json.loads(tool_call.arguments)
 
                 if fn_name == "ReadFileTool":
+                    print("READFILE TOOL CALLL !!!!!!!!")
                     validated_args = ReadFileTool(**args_json)
 
-                    result = function_map["ReadFileTool"](
-                        validated_args.file_path,
-                        validated_args.start_line,
-                        validated_args.end_line,
+                    result = await asyncio.to_thread(
+                            function_map["ReadFileTool"],
+                            validated_args.file_path,
+                            validated_args.start_line,
+                            validated_args.end_line,
                     )
 
                 elif fn_name == "RipGrepTool":
+                    print("RIPGREP TOOL CALLL !!!!!!!!")
+
                     validated_args = RipGrepTool(**args_json)
 
-                    result = function_map["RipGrepTool"](
+                    result = await asyncio.to_thread(function_map["RipGrepTool"],
                         validated_args.search_pattern
                     )
 
@@ -161,14 +163,22 @@ def chatCompletion(args: ChatCompletionArgs) -> Report:
                 result = {
                     "error": str(e)
                 }
+                
+                
+                
+            print("-------Tool Call------------") 
+            print(tool_call)
+            print("--------------------")   
+            # 1. Record that the model made this call
+            messages.append(tool_call.model_dump(exclude_none=True))
 
-            # Feed tool output back into the Responses API
+                # 2. Record the result of executing it
             messages.append({
-                "type": "function_call_output",
-                "call_id": tool_call.call_id,
-                "output": json.dumps(result),
+                    "type": "function_call_output",
+                    "call_id": tool_call.call_id,
+                    "output": json.dumps(result),
             })
-
+                
     raise RuntimeError("Max iterations reached")
 
 
@@ -228,7 +238,9 @@ def chatCompletion(args: ChatCompletionArgs) -> Report:
         
         
         
-
+## Asunc operation :
+# async def chatCompletion + await client.responses.parse(...) 
+# Both tool calls wrapped in await asyncio.to_thread(...)
 
 
 
