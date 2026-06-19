@@ -7,14 +7,14 @@ from ripgrepy import Ripgrepy
 
 def ripgrep(search_pattern : str) -> list[dict]:
     
-    max_results=20
+    max_results=30
     truncated_value=1000
 
     # Each line is a JSON string
     rg = Ripgrepy(search_pattern, ".")   # 
 
     # results is a list of dicts, eg:  [{"path": "src/main.py","line_number": 23,"text": "def read_file():"}, {...}]
-    results = rg.t("py").as_dict()[:max_results]    # slicing to max_results
+    results = rg.as_dict()[:max_results]    # slicing to max_results
 
     for result in results:
         lines= result["text"].splitlines()
