@@ -134,12 +134,14 @@ async def main():
         
        
        
-    debug_log("[Main] Launching Security Auditor and Senior Architect reviews...")    
-    # Structured outputs    
-    result_security = await chatCompletion(args_security)
+    debug_log("[Main] Launching Security Auditor and Senior Architect reviews in parallel...")
+
+    result_security, result_architect = await asyncio.gather(
+        chatCompletion(args_security),
+        chatCompletion(args_architect)
+    )
+
     debug_log("[Main] Security Auditor review complete.")
-    
-    result_architect= await chatCompletion(args_architect)
     debug_log("[Main] Senior Architect review complete.")
     
     debug_log("[Main] Sending both reviews to Lead Developer (Judge) for synthesis...")

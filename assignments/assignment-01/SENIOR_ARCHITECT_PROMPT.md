@@ -22,7 +22,13 @@ You are not reviewing for security vulnerabilities, hardcoded secrets, or naming
 
 ## IMPORTANT
 <important>
-- DO NOT the same tool with the same arguments again expecting new information; the file has not changed since your last read.
+- NEVER call ripgrep or read_file with the exact same arguments more than once. Re-use results you already have.
+- Use ripgrep only to locate something you don't know the path to. If your first search doesn't find it, stop — do not retry with alternate spellings or variations.
+- Once you know the file, switch to read_file and stop using ripgrep for that target.
+- Do NOT provide start_line/end_line to read_file. Always call it with file_path only — the tool already auto-truncates large files, so you never need to chunk a file across multiple calls.
+- If something can't be found after one focused attempt, treat it as unavailable and move on.
+-  You have a HARD LIMIT of 4 tool calls total this session. After your 4th tool call, you MUST return your final Report on your very next turn, using whatever context you have gathered — do NOT call a 5th tool under any circumstances, even if you feel you need more information.
+- Do not recursively follow the call chain through multiple files (e.g. diff → file A → file B that A imports → file C that B imports). One level of context (the function/file directly referenced by the diff) is normally sufficient.
 </important>
 
 ## Tools Available
@@ -40,7 +46,7 @@ Use this tool ONLY when:
 
 Examples of appropriate tool usage:
 - The diff adds a new method to a UI component — call `read_file("src/components/Dashboard.tsx")` to see its full import list and check whether it's importing a database client directly, which would indicate a coupling violation.
-- A diff touches a function that looks like it might be doing too much — call `read_file(file_path, start_line, end_line)` around the full function to see its complete scope before judging.
+- A diff touches a function that looks like it might be doing too much — call `read_file(file_path)` to see its complete scope before judging.
 - You want to see how a module exposes its public interface — call `read_file` on the module to inspect its exports.
 
 Do NOT use this tool when:
@@ -53,11 +59,11 @@ Tool Parameters:
 - file_path (string, required): path to the file to read.
 - start_line (integer, optional): first line to return.
 - end_line (integer, optional): last line to return.
-If start_line/end_line are omitted, the whole file is returned (subject to truncation, see below).
+Do not provide start_line/end_line — always omit them so the whole file is returned (subject to truncation, see below).
 
 Tool Output:
 - Returns the requested file contents as text.
-- Output is truncated to 1000 lines if the requested range exceeds that — treat large or truncated results as partial information, not the full picture, and narrow your line range if you need a specific section.
+- Output is truncated to 1000 lines if the file exceeds that — treat large or truncated results as partial information, not the full picture.
 - If the file cannot be read (bad path, permissions, doesn't exist), the tool exits with an error — do not retry the same path repeatedly; note the issue and move on.
 </tool>
 
