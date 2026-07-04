@@ -1,9 +1,15 @@
-# API : https://dummyjson.com/products
 # This script will fetch the product data, embed it, and save it to disk in three file formats:
+    # API : https://dummyjson.com/products
 
-# products.json: The full "Database" (ID, Title, Description).
-# vectors.tsv: The "Index" (Row 1 corresponds to Product 1).
-# metadata.tsv: A helper file for the Visualization tool.
+    # products.json: The full "Database" (ID, Title, Description).
+    # vectors.tsv: The "Index" (Row 1 corresponds to Product 1).
+    # metadata.tsv: A helper file for the Visualization tool.
+
+# Functions defined:
+# - fetch_products : Fetches product data from the API and saves it to products.json.
+# - create_embedding : Creates embeddings for an array of serialized product strings using the OpenAI API.
+
+
 
 import os
 import json
@@ -12,7 +18,6 @@ import sys
 import requests
 from dotenv import load_dotenv, find_dotenv
 from openai import OpenAI
-from utils import serialize_product
 
 
 # Locate the .env file by searching up the directory tree
@@ -59,6 +64,7 @@ def main():
     products_array = fetch_products()
     
     # array of serialized products strings
+    from utils import serialize_product
     serialized_products = [] 
     for product in products_array:
         serialized_product = serialize_product(product)
@@ -96,8 +102,6 @@ if __name__ == "__main__":
      
      
      
-
-
 
 ## Note: 
 # Display results. The response's `data` property will look like this:
