@@ -105,7 +105,7 @@ def get_file_contents(path: str, description: str) -> str:
 
 
 
-
+# defines the schema for a tool the LLM can call:
 class ReadGithubFiles(BaseModel):
     """Read files from GitHub repositories. Each file is specified by owner, repo, path, and ref (branch or commit). If the file is too long, it will be truncated to the first 1000 lines.
     Return the contents of the files as a list of strings, where each string is the content of one file, wrapped in <file name='filename'> tags."""
@@ -141,17 +141,17 @@ def run_conversation(url: str) -> str:
         comments= fetchComments(details["owner"], details["repo"], details["pr_number"])
 
         # DEBUGGING PRINTS
-        print("Owner: ", details["owner"])
-        print("Repo: ", details["repo"])
-        print("PR Number: ", details["pr_number"])
-        print("Valid PR URL")
-        print("---------------------------------------------------")
+        # print("Owner: ", details["owner"])
+        # print("Repo: ", details["repo"])
+        # print("PR Number: ", details["pr_number"])
+        # print("Valid PR URL")
+        # print("---------------------------------------------------")
 
-        for comment in comments:
-            print("Username: ", comment["username"])
-            print("Comment: ", comment["body"])
-            print("Date: ", comment["date"])
-            print("---------------------------------------------------")
+        # for comment in comments:
+        #     print("Username: ", comment["username"])
+        #     print("Comment: ", comment["body"])
+        #     print("Date: ", comment["date"])
+        #     print("---------------------------------------------------")
 
         # print("Diff: ", diff)
 
@@ -202,6 +202,7 @@ def run_conversation(url: str) -> str:
         message = response.choices[0].message
         
         if not message.tool_calls:
+            print("No tool called")
             # No more tools needed, return final answer
             return message.content
 
@@ -218,11 +219,13 @@ def run_conversation(url: str) -> str:
                 args_json = json.loads(tool_call.function.arguments)
                 if fn_name == "ReadGithubFiles":
                     validated_args = ReadGithubFiles(**args_json)
-                    print("Type of validated args")
-                    print(type(validated_args.files[0]))
-                    print("---------")
+                    # print("Type of validated args")
+                    # print(type(validated_args.files[0]))
+                    # print("---------")
 
                     # we are uing githib file obejct to pass the arguments to the function
+
+                    # result = function_map[fn_name](validated_args.files)
                     result = read_github_files(validated_args.files)
                 else:
                     result = {"error": "Unknown tool"}

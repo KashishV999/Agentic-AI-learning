@@ -15,7 +15,7 @@ def main():
         
         results = search_products(user_input , products_with_embeddings, min_score=0.2)
         if  len(results) == 0:
-            print(f"No results found for '{user_input }'. Please try a different query.")
+            print(f"I'm sorry, we don't have anything like that in stock.")
             continue
         
         else:

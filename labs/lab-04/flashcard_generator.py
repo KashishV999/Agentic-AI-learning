@@ -37,7 +37,7 @@ async def generate_flashcards(notes: str, cards: int) -> FlashcardResponse:
     Returns:
         The validated Pydantic object containing the flashcards
     """
-    
+
     system_prompt = get_file_contents('SYSTEM_PROMPT.md', 'System prompt file')
 
     client = OpenAI(
@@ -46,7 +46,7 @@ async def generate_flashcards(notes: str, cards: int) -> FlashcardResponse:
     )
 
     completion = client.responses.parse(
-        model="gpt-4o-2024-08-06",
+        model="google/gemini-3-flash-preview",
         input=[
                 {
                     "role": "system",

@@ -66,6 +66,7 @@ Additional Rules:
 
 
 
+
 # Strict Output format
 <output_format language="markdown">
 Return the response in valid MARKDOWN using the exact structure below.

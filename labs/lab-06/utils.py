@@ -132,7 +132,7 @@ def rerank_results(
 def search_products(
     query: str,
     products: List[Dict[str, Any]],
-    min_score: float = 0.2  
+    min_score: float = 0.2
 ) -> List[Dict[str, Any]]:
     # 1. Embed the query
     query_embedding= create_embedding([query])
@@ -148,11 +148,17 @@ def search_products(
     # 3. Sort by score (descending)
     products_with_embeddings.sort(key=lambda x: x['similarity_score'], reverse=True)
     
-    # Take the wide net 
-    top_20_candidates = products_with_embeddings[:20]
+    
+    # # Take the wide net 
+    # top_20_candidates = products_with_embeddings[:20]
 
-    #  Filter out anything below minScore
-    top_20_candidates = [p for p in top_20_candidates if p['similarity_score'] >= min_score]
+    # #  Filter out anything below minScore
+    # top_20_candidates = [p for p in top_20_candidates if p['similarity_score'] >= min_score]
+    
+    # 4. Filter out anything below minScore
+    filtered_products = [product for product in products_with_embeddings if product['similarity_score'] >= min_score]
+    # 5. Return top 20 results
+    top_20_candidates = filtered_products[:20]
 
     if not top_20_candidates:
         return []
