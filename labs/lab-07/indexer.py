@@ -56,7 +56,9 @@ def main():
         # Add to collection (embeds automatically via embedding_function)
         # NOTE: you can also use `.upsert()` instead of `.add()` so that
         # it is safe to add the same item more than once.
-        collection.add(
+        # .add()    → "insert this, but fail if it's already there"
+        # .upsert() → "insert this, or update it if it's already there — never fail"
+        collection.upsert(
             ids=ids,
             documents=documents,
             metadatas=metadatas,
