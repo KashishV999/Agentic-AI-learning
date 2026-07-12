@@ -113,3 +113,38 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+    
+    
+    
+    
+# NOTE:
+
+# Why to use [0] ?
+
+#     # dict_keys(['ids', 'embeddings', 'documents', 'uris', 'included', 'data', 'metadatas', 'distances'])
+#     print(top_25_results.keys())
+#     candidates = [
+#         {
+#             'content': doc,
+#             'metadata': meta,
+#             'distance': dist,
+#         }
+#         for doc, meta, dist in zip(
+#             top_25_results['documents'][0],
+#             top_25_results['metadatas'][0],
+#             top_25_results['distances'][0],
+#         )
+#     ]
+    
+    
+# Because Chroma always wraps .query() results in one extra outer list,
+# since it supports sending multiple queries at once in a single call
+
+# If you'd queried with two strings at once instead:
+# collection.query(query_embeddings=[embedding1, embedding2], n_results=25)
+# top_25_results['documents'] = [
+#     ["doc1", "doc2", ..., "doc25"],   # 25 results for query #1
+#     ["doc1", "doc2", ..., "doc25"],   # 25 results for query #2
+# ] 
+# --    
