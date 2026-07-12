@@ -105,10 +105,11 @@ def main():
 
     print("\nTop Reranked Results:")
     for i, r in enumerate(results):
-        print(f"\n{i+1}. Metadata: {r['metadata']}")
-        print(f"   Chroma distance: {r['distance']:.4f}") #  In Chroma, a smaller distance number means more similar.
-        print(f"   Rerank relevance score: {r['rerank_score']:.4f}")
-        print(f"   Content: {r['content']}...")
+        print(f"\n{i+1}. Metadata: {r['metadata']}\n")
+        print(f"   Chroma distance: {r['distance']:.4f}\n") #  In Chroma, a smaller distance number means more similar.
+        print(f"   Rerank relevance score: {r['rerank_score']:.4f}\n")
+        # print only few lines of content to avoid cluttering the output
+        print(f"   Content: {r['content'][:100]}...")
 
 
 if __name__ == "__main__":
