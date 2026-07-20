@@ -13,7 +13,7 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 IMAGES_DIR = "images"
 
-
+# defines the schema for a tool the LLM can call:
 class LookupError(BaseModel):
     """Searches the web for technical documentation, coding errors, and other details to help with debugging the error"""
     query: str = Field(..., description="The search query to use based on the screenshot")
@@ -119,7 +119,7 @@ def main():
     image_path = os.path.join(IMAGES_DIR, filename)
 
     if not os.path.isfile(image_path):
-        print(f"❌ '{filename}' was not found in '{IMAGES_DIR}/'. Exiting.")
+        print(f"'{filename}' was not found in '{IMAGES_DIR}/'. Exiting.")
         sys.exit(1)
 
     b64 = process_image(image_path)
