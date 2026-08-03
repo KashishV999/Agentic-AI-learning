@@ -13,7 +13,7 @@ from agents import (
     OpenAIChatCompletionsModel,
     RunConfig,
     Runner,
-    set_tracing_disabled,
+    set_tracing_export_api_key, 
     enable_verbose_stdout_logging,  
 )
 
@@ -41,8 +41,11 @@ if not API_KEY:
 we disable tracing under the assumption that you don't have an API key from platform.openai.com. 
 """
 client = AsyncOpenAI(base_url=BASE_URL, api_key=API_KEY) #reusable connection object
-# set_tracing_disabled(disabled=True)
 
+# Tracing is a separate system from inference — it uploads run logs to
+# platform.openai.com, so it needs a real OpenAI key here even though
+# model calls themselves are routed through OpenRouter, not OpenAI.
+set_tracing_export_api_key(os.getenv("OPENAI_TRACING_KEY"))  
 enable_verbose_stdout_logging() 
 
 
@@ -68,8 +71,12 @@ def get_file_contents(path: str, description: str) -> str:
         print(f"   {err}")
         sys.exit(1)
         
-        
 system_prompt = get_file_contents('SYSTEM_PROMPT.md', 'System prompt file')
+
+
+
+
+# MAIN ENTRY POINT
 
 async def main():
     agent = Agent(name="Assistant", instructions=system_prompt, tools=[web_search, read_url, assess_credibility, save_report])
@@ -77,7 +84,7 @@ async def main():
     # This will use the custom model provider
     result = await Runner.run(
         agent,
-        "Evaluate the credibility of this source: https://www.hilarispublisher.com/open-access/nurses-advance-pharmacological-management-critical-roles-and-outcomes-117816.html",
+        "Evaluate the credibility of this source: https://www.kashishverma.com/blog/whiskerBot/firstBlog",
         max_turns=10,
         run_config=RunConfig(model_provider=CUSTOM_MODEL_PROVIDER),
     )
