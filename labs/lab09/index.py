@@ -77,7 +77,7 @@ async def main():
     # This will use the custom model provider
     result = await Runner.run(
         agent,
-        "Evaluate the credibility of this source: https://www.bbc.com/news/uk-62821117",
+        "Evaluate the credibility of this source: https://www.hilarispublisher.com/open-access/nurses-advance-pharmacological-management-critical-roles-and-outcomes-117816.html",
         max_turns=10,
         run_config=RunConfig(model_provider=CUSTOM_MODEL_PROVIDER),
     )
