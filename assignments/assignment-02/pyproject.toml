@@ -1,0 +1,17 @@
+[project]
+name = "assignment02"
+version = "0.1.0"
+dependencies = [
+    "openai-agents",
+    "openai",
+    "tavily-python",
+    "dotenv",
+    "requests"
+]
+
+# Tells setuptools to auto-discover packages (folders with __init__.py) inside src/,
+# so this project can be installed with `pip install -e .` and imported from anywhere.
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
