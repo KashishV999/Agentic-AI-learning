@@ -153,8 +153,8 @@ async def run_market_analysis_phase(agent: Agent) -> None:
     combined_jobs_text = load_all_job_postings()
 
 
-    output_path_json = ANALYSIS_FOLDER / f"market_analysis.json"
-    output_path_md = REPORTS_FOLDER / f"market_analysis.md"
+    output_path_json = ANALYSIS_FOLDER / f"market-analysis.json"
+    output_path_md = REPORTS_FOLDER / f"market-analysis.md"
 
     ctx = PathContext(output_path_json=output_path_json, output_path_md=output_path_md)
 

@@ -141,8 +141,8 @@ async def run_gap_analysis_phase(agent: Agent, resume_file: Path, market_analysi
     market_text = market_analysis_file.read_text(encoding="utf-8")
     user_prompt = f"<resume>\n{resume_text}\n</resume>\n\n<market_analysis>\n{market_text}\n</market_analysis>"
         
-    output_path_json= ANALYSIS_FOLDER / "gap_analysis.json"
-    output_path_md= REPORTS_FOLDER / "gap_analysis.md"
+    output_path_json= ANALYSIS_FOLDER / "gap-analysis.json"
+    output_path_md= REPORTS_FOLDER / "gap-analysis.md"
 
     ctx = PathContext(output_path_json=output_path_json, output_path_md=output_path_md)
 
