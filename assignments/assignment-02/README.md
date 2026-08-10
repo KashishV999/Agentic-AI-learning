@@ -121,7 +121,7 @@ Phase 2 depends on Phase 1 outputs. Phase 3 depends on both Phase 1 and Phase 2 
 
 ### Phase-1
 
-[Architecture-Diagrams](diagrams/Phase-1.png)
+![Architecture-Diagrams](diagrams/Phase-1.png)
 
 
 
