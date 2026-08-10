@@ -34,10 +34,10 @@ from agents import (
     RunConfig,
     Runner,
     set_tracing_export_api_key,
-    enable_verbose_stdout_logging,
 )
 
 from helper import get_file_contents, pdf_extraction
+from helper.debug_logging import debug_agent_end, debug_agent_start, debug_log
 from config import PROMPTS_FOLDER, RAW_RESUME_FOLDER, RESUME_JSON_FOLDER, ANALYSIS_FOLDER,  REPORTS_FOLDER
 from tools import web_search_tool, assess_resume_tool , save_disk_tool, assess_gap_analysis_tool
 
@@ -59,7 +59,6 @@ if not API_KEY:
 # calls themselves are routed through OpenRouter, not OpenAI.
 client = AsyncOpenAI(base_url=BASE_URL, api_key=API_KEY)
 set_tracing_export_api_key(os.getenv("OPENAI_TRACING_KEY"))
-enable_verbose_stdout_logging()
 
 
 class CustomModelProvider(ModelProvider):
@@ -110,11 +109,13 @@ async def extract_resume(pdf_path: Path, agent: Agent) -> None:
     output_path_json = RESUME_JSON_FOLDER / f"{pdf_path.stem}.json"
 
     if output_path_json.exists():
+        debug_log(f'Skip resume extraction: "{pdf_path}" already processed -> "{output_path_json}"')
         print(f"Skipping {pdf_path.name} — already processed")
         return
 
     resume_text = pdf_extraction(str(pdf_path))
     ctx = PathContext(output_path_json=output_path_json)
+    debug_agent_start(agent.name, max_turns=10, output_path=str(output_path_json))
 
     await Runner.run(
         agent,
@@ -123,6 +124,7 @@ async def extract_resume(pdf_path: Path, agent: Agent) -> None:
         context=ctx,
         run_config=RunConfig(model_provider=CUSTOM_MODEL_PROVIDER),
     )
+    debug_agent_end(agent.name, status="completed")
 
     print(f"{pdf_path.name} -> {output_path_json.name}")
 
@@ -145,6 +147,10 @@ async def run_gap_analysis_phase(agent: Agent, resume_file: Path, market_analysi
     output_path_md= REPORTS_FOLDER / "gap-analysis.md"
 
     ctx = PathContext(output_path_json=output_path_json, output_path_md=output_path_md)
+    debug_log(
+        f'Gap analysis input files: resume="{resume_file}", market="{market_analysis_file}"'
+    )
+    debug_agent_start(agent.name, max_turns=10, output_path=str(output_path_json))
 
     result = await Runner.run(
         agent,
@@ -153,18 +159,21 @@ async def run_gap_analysis_phase(agent: Agent, resume_file: Path, market_analysi
         context=ctx,
         run_config=RunConfig(model_provider=CUSTOM_MODEL_PROVIDER),
     )
+    debug_agent_end(agent.name, status="completed")
 
     print(f"Gap analysis saved. Report: {output_path_md.name}")
     print(result.final_output)
 
 
 async def main():
+    debug_log("Phase 2 start")
     agent_resume = Agent(
-        name="Assistant", instructions=system_prompt_resume, tools=[web_search_tool, assess_resume_tool]
+        name="Assistant", instructions=system_prompt_resume, tools=[assess_resume_tool]
     )
 
     resume_path= RAW_RESUME_FOLDER/ "resume.pdf"
     if not resume_path.exists():
+        debug_log(f'Resume PDF missing: "{resume_path}"')
         print("No file found!")
         return
     await extract_resume(resume_path, agent_resume)
@@ -176,17 +185,20 @@ async def main():
         name="Assistant", instructions=system_prompt_gap_analysis, tools=[web_search_tool, assess_gap_analysis_tool, save_disk_tool]
     )
         
-    market_analysis_file= ANALYSIS_FOLDER / "market_analysis.json"
+    market_analysis_file= ANALYSIS_FOLDER / "market-analysis.json"
     resume_analysis_file= RESUME_JSON_FOLDER/ "resume.json"
     
     if not market_analysis_file.exists():
+        debug_log(f'Required market analysis missing: "{market_analysis_file}"')
         print(f"No market analysis found at {market_analysis_file} — run phase_1 first.")
         return
     if not resume_analysis_file.exists():
+        debug_log(f'Required resume analysis missing: "{resume_analysis_file}"')
         print(f"No resume analysis found at {resume_analysis_file}")
         return
     
     await run_gap_analysis_phase(agent_analysis, resume_file=resume_analysis_file, market_analysis_file=market_analysis_file)
+    debug_log("Phase 2 complete")
 
 
 if __name__ == "__main__":

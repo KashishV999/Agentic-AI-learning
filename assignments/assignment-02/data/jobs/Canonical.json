@@ -1,0 +1,28 @@
+{
+  "job_title": "Software Engineer - Python/Golang - Kubernetes",
+  "company_info": {
+    "company_name": "Canonical",
+    "size": "1,946 employees as of March 2026",
+    "industry_info": "Open source software and operating systems. Canonical is the publisher of Ubuntu, a leading open source platform used in cloud computing, data science, AI, IoT, and enterprise initiatives. The company provides enterprise solutions built on Ubuntu.",
+    "recent_news": "May 28, 2026: Canonical announced general availability of optimized Ubuntu images for Google Cloud TPU virtual machines. June 2026: Canonical declared 2026 as the year of Ubuntu Linux on RISC-V, pushing for mainstream adoption across desktop, server, and edge computing. The company continues to expand its AI and infrastructure optimization initiatives.",
+    "company_culture": "Remote-first company since 2004 with a distributed workforce across 70+ countries. Teams meet 2-4 times yearly in person at strategic locations. Founder-led and profitable. Culture rating of 4.3/5 on Comparably and 3.3/5 on Glassdoor (444 reviews) with 53% of employees recommending it to friends. Emphasis on work-life balance, learning, and collaboration with talented engineers globally. Company values diversity, equal opportunity, and work-from-home flexibility.",
+    "any_related_information": "Canonical is expanding its technical capabilities in AI infrastructure and hardware partnerships (RISC-V). The company focuses on enterprise and technology markets with major customers including leading public cloud and silicon providers. Team sprints held twice yearly provide in-person alignment opportunities. Personal learning and development budget of USD 2,000 per year is offered. This role aligns with Canonical's strategic focus on Kubernetes operators and cloud-native technologies."
+  },
+  "location": "Remote - available in EMEA and the Americas",
+  "posting_age": "Unknown - no posting date provided in the document",
+  "required_skills_technologies": [
+    "Go (Golang)",
+    "Python",
+    "Strong written and verbal communication skills"
+  ],
+  "nice_to_have_skills": [
+    "Kubernetes experience",
+    "Linux experience",
+    "Open source software development",
+    "Experience in both Go and Python"
+  ],
+  "experience_level": "Not explicitly specified - appears to be Mid to Senior level based on role expectations and Kubernetes focus",
+  "education": "Bachelor's degree or equivalent in Computer Science, STEM or similar field",
+  "key_responsibilities": "Build Kubernetes operators and addons offering complete lifecycle management of mission-critical components; write high-quality code to create new features; debug issues and interact with community; collaborate proactively with distributed team; incorporate latest Kubernetes features and open-source solutions; work with industry peers and partners to deliver solutions to customers",
+  "salary_range": "Unknown - not disclosed in posting. Canonical states they consider geographical location, experience, and performance in shaping compensation, with annual compensation reviews and performance-driven bonuses offered."
+}

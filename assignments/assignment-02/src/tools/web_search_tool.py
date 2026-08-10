@@ -2,10 +2,10 @@
 # define the functionality of this tool : Use the Tavily SDK to do a search and fetch results 
 
 import os
-import sys
 from tavily import TavilyClient
 from dotenv import load_dotenv, find_dotenv
 from agents import function_tool
+from helper.debug_logging import debug_tool_call, debug_tool_result, debug_log
 
 
 
@@ -17,11 +17,10 @@ TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
 @function_tool
 def web_search_tool(query: str):
     """Search the web using Tavily and return the top 3 relevant results."""
+    debug_tool_call("web_search_tool", query=query)
     if not TAVILY_API_KEY:
-        print("Error: TAVILY_API_KEY not found")
-        sys.exit(1)
-    else:
-        print("TAVILY__API_KEY found successfully!")
+        debug_log("web_search_tool failed: TAVILY_API_KEY not found")
+        raise RuntimeError("TAVILY_API_KEY not found")
         
     tavily_client = TavilyClient(TAVILY_API_KEY)
     
@@ -31,9 +30,9 @@ def web_search_tool(query: str):
     max_results=3
     )
 
-    return [
+    results = [
     {"title": r["title"], "url": r["url"], "content": r["content"]}
     for r in response["results"]
     ]
-
-
+    debug_tool_result("web_search_tool", result_count=len(results))
+    return results

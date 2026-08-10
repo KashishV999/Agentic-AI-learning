@@ -1,16 +1,21 @@
 import requests
 
+from helper.debug_logging import debug_log
+
 # https://github.com/jina-ai/reader/blob/main/cookbooks.md#pdf-ms-office-and-raw-html-uploads
 def pdf_extraction(file_path: str) -> str:
     url = "https://r.jina.ai/"
+    debug_log(f'PDF extraction start: "{file_path}"')
     with open(file_path, "rb") as f:
         files = {"file": f}
         response = requests.post(url, files=files)
         
     # 4. return the text
     if response.status_code == 200:
+        debug_log(f'PDF extraction success: "{file_path}", status={response.status_code}, chars={len(response.text)}')
         return response.text
     else:
+        debug_log(f'PDF extraction failed: "{file_path}", status={response.status_code}')
         return "Unable to parse the pdf"
 
 

@@ -1,0 +1,133 @@
+{
+  "total_postings_analyzed": 9,
+  "most_common_skills": [
+    {
+      "skill": "Python",
+      "posting_count": 7
+    },
+    {
+      "skill": "SQL / Databases",
+      "posting_count": 5
+    },
+    {
+      "skill": "JavaScript / TypeScript",
+      "posting_count": 5
+    },
+    {
+      "skill": "Docker / Kubernetes",
+      "posting_count": 5
+    },
+    {
+      "skill": "AWS",
+      "posting_count": 4
+    },
+    {
+      "skill": "Git",
+      "posting_count": 4
+    },
+    {
+      "skill": "REST APIs",
+      "posting_count": 4
+    },
+    {
+      "skill": "Java",
+      "posting_count": 3
+    },
+    {
+      "skill": "Microservices",
+      "posting_count": 3
+    },
+    {
+      "skill": "React",
+      "posting_count": 3
+    },
+    {
+      "skill": "Go / Golang",
+      "posting_count": 3
+    },
+    {
+      "skill": "CI/CD Pipelines",
+      "posting_count": 3
+    },
+    {
+      "skill": "AI / ML Technologies (LLMs, PyTorch, RAG, LangChain, Prompt Engineering)",
+      "posting_count": 5
+    },
+    {
+      "skill": "Azure",
+      "posting_count": 2
+    },
+    {
+      "skill": "Testing / TDD",
+      "posting_count": 3
+    }
+  ],
+  "experience_and_education": {
+    "typical_experience_level": "Highly varied. 5 postings target entry-level or new grad roles (0-2 years or fresh graduates); 2 postings target interns; 1 posting mid-level (4-6 years); 2 postings mid-to-senior. No single dominant pattern.",
+    "typical_education_requirement": "Bachelor's degree in Computer Science or related field is common but not universal. 6 postings explicitly require or strongly expect a bachelor's degree. 3 postings are flexible or do not specify (accepting equivalent experience). Post-secondary credentials or equivalent experience is the baseline where specified."
+  },
+  "salary_insights": {
+    "typical_range": "$106,400 - $139,000 CAD / $97,600 - $139,000 USD (based on 5 of 9 postings that disclosed salary). Entry-level new grad roles cluster toward $97,600-$139,000 USD and $106,400-$142,000 CAD. Mid-to-senior roles range $111,000-$172,000 CAD/USD.",
+    "observations": [
+      "Salary transparency is incomplete: 5 of 9 postings (55%) disclose salary; 4 do not (RBC, both Cohere roles, Scotiabank).",
+      "New grad roles in tech-forward companies (Stripe, Quora) offer higher compensation ($106K-$160K CAD / $97K-$139K USD) than mid-level roles at traditional banks (BMO $61K-$113K CAD range broader).",
+      "US-based compensation is consistently higher than CAD equivalents in absolute terms, reflecting currency and market dynamics.",
+      "Significant spread within entry-level: Stripe new grad ($106K-$160K CAD) versus Autodesk new grad ($72K-$106K CAD) suggests variance by company size and industry (payment processing vs. software/design).",
+      "Senior/mid-to-senior roles command $111K-$172K CAD/USD range.",
+      "Intern and entry-level roles without disclosed salary (RBC, Cohere, Dayforce, Scotiabank) may indicate competitive but non-standard compensation or flexibility in offer structure."
+    ]
+  },
+  "role_patterns": {
+    "common_responsibilities": [
+      "Design, develop, and ship features end-to-end from technical specification through testing, launch, and iteration.",
+      "Participate in code reviews and design discussions promoting best practices.",
+      "Troubleshoot, debug, and resolve production issues and defects.",
+      "Collaborate across functional teams (engineering, product, design, infrastructure, ML/data).",
+      "Build and maintain backend services, APIs, and microservices.",
+      "Write unit tests, integration tests, and documentation.",
+      "Work with cloud platforms (AWS, Azure) and containerization (Docker, Kubernetes) for deployment and scalability.",
+      "Participate in agile ceremonies (stand-ups, sprint planning, retrospectives).",
+      "Learn and apply software engineering best practices and secure development principles.",
+      "Contribute to infrastructure, tooling, and platform initiatives."
+    ],
+    "role_pattern_notes": [
+      "Full-stack capability expected in mid-level and above roles: backend, frontend, infrastructure, and increasingly AI/ML systems literacy required.",
+      "AI/ML is pervasive across role levels: entry-level roles now often include LLM, prompt engineering, or RAG experience; mid-to-senior roles expect native AI integration.",
+      "Production ownership and on-call responsibility common in mid-level+ roles; junior/new grad roles mostly mentored contributions with graduated responsibility.",
+      "Cross-functional collaboration is nearly universal; siloed backend-only or frontend-only roles are absent from this set.",
+      "DevOps and platform engineering skills bleeding into backend roles: containerization, CI/CD, observability (logging, monitoring) expected across postings.",
+      "New grad programs emphasize mentorship, guided learning, and graduated responsibility; internships focus on shipping features with senior oversight."
+    ]
+  },
+  "industry_and_culture": {
+    "common_industries": [
+      "Banking and Financial Services (3 companies: BMO, RBC, Scotiabank)",
+      "Enterprise AI and LLMs (2 companies: Cohere)",
+      "Software and Cloud Computing (2 companies: Autodesk, 1Password)",
+      "FinTech and Payment Processing (1 company: Stripe)",
+      "Human Capital Management (HCM) and Enterprise SaaS (1 company: Dayforce)",
+      "Media and Technology (1 company: Quora)"
+    ],
+    "culture_expectations": [
+      "Remote-friendly or remote-first is increasingly expected: 4 of 9 postings explicitly offer remote or remote-first arrangements.",
+      "Diversity and inclusion is a stated priority across tech and financial sectors.",
+      "Collaborative and inclusive culture is near-universal; supportive team environments emphasized.",
+      "Fast-paced, agile teams with expectation of self-direction and high agency at mid-level+.",
+      "AI and emerging technology adoption is embedded in company strategy and culture; continuous learning expected.",
+      "Work-life balance emphasized in some (Cohere, Dayforce) but questioned in others (Stripe work intensity concerns noted in Glassdoor).",
+      "Recent restructuring and layoffs at several large employers (BMO, Autodesk, Scotiabank) despite active hiring suggests portfolio optimization and shift toward tech/AI roles."
+    ]
+  },
+  "notable_trends": [
+    "AI/ML integration is now standard across job categories: 5 of 9 postings (56%) explicitly require or center on AI/ML technologies (LLMs, PyTorch, RAG, LangChain, agentic frameworks, prompt engineering).",
+    "Python has become the lingua franca: most common skill across entry-level to senior roles (7 of 9 postings), reflecting both ML adoption and backend standardization.",
+    "Cloud infrastructure skills (AWS, Docker, Kubernetes) are now baseline for mid-level roles: appearing in 5+ postings and expected as table-stakes knowledge.",
+    "Full-stack and cross-functional expectations have widened significantly: mid-level+ roles increasingly expect comfort across backend, frontend, infrastructure, and AI/ML systems.",
+    "New grad hiring programs are robust and active: 4 dedicated new grad / early-career roles across diverse companies (Autodesk, Quora, Stripe, Scotiabank) with explicit mentorship and structured career acceleration.",
+    "Paradox of layoffs and hiring: Several large employers (BMO 670+ layoffs, Autodesk 1,000+ layoffs, Scotiabank 3,000 layoffs in 2025-2026) are simultaneously conducting active hiring in tech and AI roles, suggesting portfolio rotation toward strategic areas.",
+    "Salary transparency remains inconsistent: 55% of postings disclose salary, 45% do not. Undisclosed roles tend to be at established enterprises (banks) or early-stage AI companies (Cohere), suggesting different compensation philosophy or flexibility.",
+    "Internship focus shifted toward AI/automation: both intern roles (Cohere, Dayforce) center on building AI-driven workflows, test automation with LLMs, and agentic frameworks rather than traditional feature work.",
+    "Remote work expectations vary: pure remote-first (Cohere, 1Password, Quora) vs. hybrid or in-office requirements (Stripe 50% in-office, Scotiabank Toronto in-office, Dayforce hybrid)."
+  ],
+  "summary": "The software developer job market (as of mid-2026) is heavily shaped by AI and cloud infrastructure adoption. Python, SQL, and cloud platforms (AWS, Docker, Kubernetes) are now near-universal requirements across entry-level to senior roles, while AI/ML technologies (LLMs, RAG, agentic frameworks) are becoming standard, not specialized. New grad hiring remains active with structured mentorship, though entry-level roles now expect broader full-stack and AI literacy than in previous years. Salary ranges for entry-level tech roles span $72K–$160K CAD/$97K–$139K USD depending on company and sector, with FinTech and AI-native companies offering higher compensation than traditional finance. Major enterprises (banks, large software firms) are undergoing significant restructuring yet actively hiring in tech roles, suggesting strategic portfolio shifts rather than net workforce reduction. Remote and hybrid arrangements are increasingly normalized, particularly at tech-native and AI-first organizations, while traditional finance and enterprise software still lean toward in-office or hybrid models."
+}

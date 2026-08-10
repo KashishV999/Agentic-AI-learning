@@ -1,0 +1,113 @@
+{
+  "company_name": "Canonical",
+  "official_domain": "canonical.com",
+  "overall_verdict": "green",
+  "confidence_score": 95,
+  "summary": "This job posting for a Software Engineer - Python/Golang - Kubernetes role at Canonical is highly legitimate. Canonical is a well-established, profitable, publicly visible company founded in 2004 with a strong web presence, active careers page, and verifiable hiring infrastructure. The specific job posting (Requisition ID: 628) is confirmed on Canonical's official careers website at https://canonical.com/careers/2928962. The company explicitly addresses recruitment fraud concerns on their careers page and hiring process documentation. The posting details align with verified market data: the role focuses on Kubernetes operators in an open-source context, matches the company's known technology focus, and the location (remote EMEA/Americas) is consistent with Canonical's distributed workforce model. The company's reported culture (remote-first since 2004, 70+ countries, twice-yearly in-person sprints) is well-documented across multiple employee review platforms. The domain canonical.com is registered since 1996 with legitimate corporate registration through MarkMonitor. No compensation is disclosed in the posting, which is consistent with Canonical's stated approach of considering geography, experience, and performance; available salary data from PayScale and Levels.fyi shows Software Engineers at Canonical earning $66K–$159K USD/$41K–£76K GBP depending on level and region, placing this role in a reasonable market range.",
+  "recommendation": "This posting is trustworthy. It comes from a legitimate, established organization with verifiable infrastructure and transparent hiring practices. You can safely apply and proceed through their standard recruitment process without concern about fraud. No upfront payments, equipment purchases, or sensitive personal information (SSN, banking details, government ID) should ever be requested during Canonical's recruitment process—if such requests appear, they are fraudulent and not from Canonical. You may verify the legitimacy of any communications by checking the sender's email domain (must be @canonical.com) and confirming the job posting on https://canonical.com/careers. Consider asking about compensation and benefits during the interview process, as this is not disclosed upfront but salary is competitively determined based on role level, location, and experience.",
+  "whois_summary": {
+    "domain": "canonical.com",
+    "registrant_organization": "Canonical, Ltd.",
+    "registration_date": "1996-07-05",
+    "expiration_date": "2027-07-04",
+    "registrar": "MarkMonitor, Inc.",
+    "country": "GB",
+    "notes": "Domain has been registered for 30 years (since 1996), demonstrating long-term organizational stability. Registrant is confirmed as Canonical Ltd., registered in United Kingdom. Expiration date is July 2027, indicating active maintenance. MarkMonitor is a legitimate, professional domain registrar used by major enterprises."
+  },
+  "signals": [
+    {
+      "signal_type": "green_flag",
+      "title": "Job posting verified on official careers page",
+      "evidence": "The exact role 'Software Engineer - Python/Golang - Kubernetes' (Requisition ID: 628) is listed on Canonical's official careers website at https://canonical.com/careers/2928962 with matching details (location: EMEA and Americas, remote position, Kubernetes focus, Go/Python skills required).",
+      "why_it_matters": "Confirmed presence on the company's official recruitment channel is the strongest indicator of legitimacy. Fraudulent postings are typically cross-posted to third-party job boards but never appear on the company's own careers page.",
+      "source_urls": [
+        "https://canonical.com/careers/2928962",
+        "https://canonical.com/careers"
+      ]
+    },
+    {
+      "signal_type": "green_flag",
+      "title": "Well-established company with 30-year domain history",
+      "evidence": "Canonical.com registered July 5, 1996 (30 years old), registered with legitimate enterprise registrar MarkMonitor, Inc., and expiration date set for July 2027. Company registered as Canonical Ltd. in United Kingdom.",
+      "why_it_matters": "Long domain tenure and professional registration infrastructure indicate a stable, legitimate organization with substantial investment in maintaining its identity and web presence. Fraudulent or shell companies typically register domains recently (months to a few years old).",
+      "source_urls": []
+    },
+    {
+      "signal_type": "green_flag",
+      "title": "Strong verifiable web presence and active communications",
+      "evidence": "Canonical operates official website (canonical.com), active LinkedIn company page (766K followers), multiple job boards (job-boards.greenhouse.io/canonical), and publicly engaged media presence including CES 2026 booth presence, recent announcements (Ubuntu 26.04 release, Google Cloud TPU partnerships, RISC-V focus). Company maintains documented public stance on recruitment fraud prevention.",
+      "why_it_matters": "Legitimate, established companies maintain consistent, professional web presence across multiple channels. Fraudsters typically limit presence to job boards and generic email domains without supporting infrastructure or public engagement.",
+      "source_urls": [
+        "https://canonical.com",
+        "https://www.linkedin.com/company/canonical",
+        "https://job-boards.greenhouse.io/canonical"
+      ]
+    },
+    {
+      "signal_type": "green_flag",
+      "title": "Active recruitment with hiring infrastructure",
+      "evidence": "Canonical operates a formal recruitment process documented on https://canonical.com/careers/hiring-process with defined stages, timelines (average 3 months), application dashboard, and explicit fraud prevention guidance. 162 engineering roles currently open across their careers portal. Company uses professional recruitment software (Greenhouse) and maintains FAQ addressing recruitment fraud.",
+      "why_it_matters": "Legitimate companies invest in formal, documented recruitment infrastructure. Fraudsters use ad-hoc communications and avoid formal processes. Canonical's explicit fraud prevention guidance demonstrates institutional concern for applicant safety.",
+      "source_urls": [
+        "https://canonical.com/careers/hiring-process",
+        "https://canonical.com/careers"
+      ]
+    },
+    {
+      "signal_type": "green_flag",
+      "title": "Role details align with company mission and technology focus",
+      "evidence": "The role focuses on building Kubernetes operators and addons, which directly aligns with Canonical's documented portfolio expansion in cloud-native infrastructure, AI systems, and open-source solutions. Company's 2026 roadmap explicitly emphasizes 'year of Ubuntu Linux on RISC-V' and AI infrastructure optimization, matching the technical depth described in the posting.",
+      "why_it_matters": "Legitimate job postings reflect real business needs and company strategy. Fraudulent postings often use generic descriptions or technologies that don't match the company's actual business focus.",
+      "source_urls": [
+        "https://canonical.com/careers/2928962"
+      ]
+    },
+    {
+      "signal_type": "green_flag",
+      "title": "Remote-first model and location transparency consistent with company culture",
+      "evidence": "Posting specifies remote position available in EMEA and Americas. Structured job posting data indicates company is remote-first since 2004 with distributed workforce across 70+ countries, twice-yearly in-person sprints, and USD 2,000 annual learning budget. LinkedIn and Glassdoor confirm distributed model (1,001–5,000 employees across London, UK headquarter and global locations).",
+      "why_it_matters": "Consistency between posted location/model and verified company culture demonstrates attention to accuracy. Fraudulent postings often misrepresent location flexibility or culture to attract broader applicant pools.",
+      "source_urls": [
+        "https://www.linkedin.com/company/canonical",
+        "https://www.glassdoor.com/Reviews/Canonical-Reviews-E230560.htm"
+      ]
+    },
+    {
+      "signal_type": "green_flag",
+      "title": "Compensation approach aligns with market data and company policy",
+      "evidence": "Posting discloses no salary but states that compensation considers geography, experience, and performance, with annual reviews and performance bonuses. PayScale data shows Canonical Software Engineers earn $66K–$159K USD (average $99.6K), and Levels.fyi reports £41K–£76K+ GBP (Associate to Software Engineer I). This range is consistent with market analysis for mid-to-senior engineering roles ($111K–$172K CAD/USD) and does not show dramatic inflation or suppression.",
+      "why_it_matters": "Legitimate companies set compensation transparently based on market data and role level. Fraudulent postings often advertise unrealistically high salaries to attract desperate applicants. Canonical's disclosed methodology matches documented compensation ranges.",
+      "source_urls": [
+        "https://www.payscale.com/research/US/Employer=Canonical/Salary",
+        "https://www.levels.fyi/companies/canonical/salaries/software-engineer"
+      ]
+    },
+    {
+      "signal_type": "green_flag",
+      "title": "Verified employee reviews and company reputation across multiple platforms",
+      "evidence": "Glassdoor: 444 reviews, 3.3/5 rating, 53% recommend to friends. Indeed reviews available. Built In profile confirms remote-first model and describes recognized pain points (stack-ranking reviews, founder-led decision-making) which reflect authentic insider knowledge rather than generic praise. PayScale shows diverse salary data by level and location (suggesting real employee reporting).",
+      "why_it_matters": "Legitimate companies accumulate detailed, mixed employee reviews across independent platforms over years of operation. Fraudulent entities have little or no review presence. Presence of both positive and critical feedback is a sign of authenticity.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Canonical-Reviews-E230560.htm",
+        "https://builtin.com/company/canonical/faq/workplace-perception"
+      ]
+    },
+    {
+      "signal_type": "green_flag",
+      "title": "No sensitive PII or upfront payment requests in posting",
+      "evidence": "Job posting and Canonical's published hiring process describe standard application workflow: submit application via careers portal, answer assessment questions, participate in interviews, receive offer via Hiring Lead. No mention of SSN, banking details, government ID, upfront training fees, or equipment purchase requirements.",
+      "why_it_matters": "Legitimate recruitment processes never request sensitive PII or payment upfront. This is an immediate red flag for fraud. Canonical's documented process explicitly avoids these practices.",
+      "source_urls": [
+        "https://canonical.com/careers/hiring-process"
+      ]
+    }
+  ],
+  "user_safety_actions": [
+    "Apply directly through Canonical's official careers page (https://canonical.com/careers) or the specific job link (https://canonical.com/careers/2928962). Do not apply through third-party job board links unless you verify the URL is correct.",
+    "Verify all communications from Canonical recruitment come from @canonical.com email addresses. Do not respond to emails from Gmail, Yahoo, Outlook, or other generic domains claiming to represent Canonical. If you receive recruiter contact from a non-canonical.com address, verify independently through careers.canonical.com before responding.",
+    "During the recruitment process, never provide SSN, banking information, government ID, passport details, or copies of documents unless explicitly requested by Canonical in writing as part of standard background check procedures—and only after a formal offer is made.",
+    "If anyone asks you to pay for training, equipment, or onboarding, or offers to send you a check for reimbursement before your start date, they are running a scam. Legitimate employers do not ask for payment upfront.",
+    "Ask about compensation and benefits during the interview process. Canonical's posted approach is to determine salary based on role level, geography, and experience. Request a formal written offer before accepting any role.",
+    "If you have any doubts about communications, call Canonical's main office or check their official website to verify the recruiter's identity and the job posting's authenticity."
+  ]
+}

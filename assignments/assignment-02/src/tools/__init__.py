@@ -7,4 +7,6 @@ from .assess_job_tool import assess_job_tool
 from .assess_market_tool import assess_market_tool
 from .assess_resume_tool import assess_resume_tool
 from .assess_gap_analysis_tool import assess_gap_analysis_tool
-
+from .assess_legitimacy_tool import assess_legitimacy_tool
+from .assess_application_tool import assess_application_tool
+from .whois_lookup_tool import whois_lookup_tool

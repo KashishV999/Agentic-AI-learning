@@ -1,0 +1,33 @@
+{
+  "job_title": "Software Engineer, Agents & Automations",
+  "company_info": {
+    "company_name": "Cohere",
+    "size": "450-800+ employees (approximately 450 as of 2025; expanded to 800+ by early 2026)",
+    "industry_info": "Enterprise AI and Large Language Models. Cohere specializes in foundation AI models and end-to-end products for enterprises, with particular focus on regulated industries (finance, healthcare, manufacturing, energy) and the public sector. Their key product is the North platform, a secure AI workspace for creating and deploying AI agents and automations.",
+    "recent_news": "April 2026: Acquired German AI firm Aleph Alpha. May 2026: Launched Command A+ model. June 2026: Partnered with S&P Global to embed financial data into North platform. February 2026: Reached $240M annual recurring revenue milestone. Company anticipated for 2026 IPO. Recent partnerships with major enterprises including RBC, Saab AB, and Hanwha Ocean.",
+    "company_culture": "Per Teamblind (49 verified reviews, August 2026): Overall rating 3.6/5. Strengths: Compensation/benefits rated 3.9/5; employees highlight great colleagues, work-life balance, interesting work, and growth opportunities; free food and perks. Challenges: Management communication rated 2.8/5 (lowest category); some reports of unclear direction and fragmented cross-organizational collaboration. Overall sentiment: talented team environment with areas for improvement in leadership communication.",
+    "any_related_information": "Cohere was founded in 2019 by Aidan Gomez (CEO), Nick Frosst, and Ivan Zhang—all former Google Brain researchers who contributed to the transformer architecture. Headquartered in Toronto with global offices in London, NYC, San Francisco, Montreal, Paris, Berlin, and Seoul. Has raised $1.54B+ in total funding from investors including NVIDIA, AMD, Oracle, Salesforce, PSP Investments, and Radical Ventures. The role focuses on North, Cohere's flagship product launched in August 2025 (early access January 2025), which is gaining significant enterprise traction. The Agents & Automations team is core to North's platform strategy."
+  },
+  "location": "Remote-friendly; headquarters in Toronto with offices in London, New York City, San Francisco, Montreal, Paris, Berlin, and Seoul. Employees near offices receive daily lunch program and community events; remote employees get co-working benefit. All employees receive $500 home office stipend.",
+  "posting_age": "Unknown - no explicit date provided in posting, but references to North platform (launched August 2025) and current product strategy suggest posting is from 2026",
+  "required_skills_technologies": [
+    "Python",
+    "TypeScript",
+    "React",
+    "Postgres",
+    "Kubernetes"
+  ],
+  "nice_to_have_skills": [
+    "Experience building and shipping production software",
+    "Cross-functional collaboration across backend, frontend, product, data, infrastructure",
+    "Strong product judgment and UX attention to detail",
+    "High agency and ability to drive change independently",
+    "Asynchronous communication and documentation skills",
+    "Experience with AI systems and AI-powered products",
+    "Experience with enterprise or regulated industry software"
+  ],
+  "experience_level": "Mid to Senior. Requires: production software experience with real users/customers; comfort working across backend, frontend, product, data, and infrastructure boundaries; strong product judgment; high agency; ability to move quickly while maintaining quality standards.",
+  "education": "Unknown - not explicitly stated in job posting. No minimum education requirement specified.",
+  "key_responsibilities": "Design, build, ship, and maintain core capabilities for North's Agents & Automations platform; Build product and platform features that help users create, run, debug, evaluate, and improve agents and automations; Own features end-to-end from technical design through implementation, testing, launch, and iteration; Work across full stack (frontend, backend, AI systems) based on product needs; Make technical decisions balancing speed, quality, depth, and user impact; Collaborate with product, design, modeling, customer-facing teams, and other engineers; Use AI actively in work while maintaining accountability for quality and reliability; Work on problems such as turning natural-language intent into working automations, adding analytics for deployed agents, creating debugging tools, and designing workflow primitives for enterprise automation",
+  "salary_range": "Unknown - not disclosed in job posting"
+}

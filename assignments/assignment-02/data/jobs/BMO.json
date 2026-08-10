@@ -1,0 +1,40 @@
+{
+  "job_title": "Senior Software Developer",
+  "company_info": {
+    "company_name": "BMO Financial Group",
+    "size": "Approximately 53,000 employees",
+    "industry_info": "Banking and Financial Services. BMO Financial Group is one of the largest diversified financial services providers in North America with C$1.5 trillion in total assets and the 8th largest bank in North America by assets.",
+    "recent_news": "BMO has reduced its workforce by more than 670 jobs since Q3 2025, with a $202-million pre-tax severance charge in Q1 2026. The bank is closing its Air Miles division and implementing AI-related restructuring initiatives. CEO Darryl White emphasized the focus on managing expenses and operational efficiency while investing in technology and talent.",
+    "company_culture": "Based on Glassdoor reviews (3.8 out of 5 stars with 9,061 reviews), BMO fosters a supportive and collaborative culture with strong emphasis on diversity and inclusion. However, some reviews indicate disconnect between management and employees. The company was recognized as one of Canada's Best Employers for Company Culture 2026 by Forbes for supporting work-life balance, collaboration, and growth.",
+    "any_related_information": "BMO is headquartered in Montreal, Quebec, and was founded in 1817. The company is publicly traded (NYSE, TSX: BMO). Recent restructuring efforts focus on operational efficiency and strategic investments in technology talent, suggesting this role may be part of their technology modernization initiative. Candidates should be aware of recent layoffs and restructuring activities, though the company is actively hiring in technology roles."
+  },
+  "location": "Not specified in posting; however, based on company description, likely Canada or North America (roles may be in various locations including Montreal HQ)",
+  "posting_age": "Unknown - no date information provided in the posting",
+  "required_skills_technologies": [
+    "Programming",
+    "Applications Integration",
+    "Test Driven Development",
+    "System Development Lifecycle",
+    "Troubleshooting",
+    "System and Technology Integration",
+    "Cloud computing",
+    "Microservices"
+  ],
+  "nice_to_have_skills": [
+    "Creative thinking",
+    "Building and managing relationships",
+    "Emotional agility",
+    "Quality Assurance and Testing",
+    "Technology Business Requirements Definition, Analysis and Mapping",
+    "Adaptability",
+    "Learning Agility",
+    "Verbal & written communication skills",
+    "Collaboration & team skills",
+    "Analytical and problem solving skills",
+    "Data driven decision making"
+  ],
+  "experience_level": "Mid-level; typically 4-6 years of relevant experience required",
+  "education": "Post-secondary degree in related field of study or equivalent combination of education and experience",
+  "key_responsibilities": "Drives overall software development lifecycle including working across functional teams to transform requirements into features; manages development teams and processes; conducts software testing and maintenance; translates user requirements into technical specifications; writes code and manages design specifications; supports system design; provides advice on security requirements; debugs business systems and service applications; develops high quality technology applications and services; ensures code/configurations adhere to security, logging, error handling, and performance standards; evaluates new technologies for fit with program/system/ecosystem; follows release management processes and version controls; assists in interpreting and documentation of client requirements; performs preventative and corrective maintenance and troubleshooting; exercises judgment to identify, diagnose, and solve problems; applies Risk Management Framework in decision-making",
+  "salary_range": "$61,600.00 - $113,900.00 CAD (Salaried). Salaries vary based on location, skills, experience, education, and qualifications. May include performance-based incentives, discretionary bonuses, and other perks. Benefits include health insurance, tuition reimbursement, accident and life insurance, and retirement savings plans."
+}
