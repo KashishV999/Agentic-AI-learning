@@ -68,7 +68,7 @@ Input folders:
 
 ## Run
 
-Phase 1, job market analysis:
+### Phase 1, job market analysis:
 
 ```bash
 python3 src/phases/phase_1.py
@@ -80,7 +80,7 @@ Outputs:
 - `data/analysis/market-analysis.json`
 - `reports/market-analysis.md`
 
-Phase 2, resume gap analysis:
+### Phase 2, resume gap analysis:
 
 ```bash
 python3 src/phases/phase_2.py
@@ -92,7 +92,7 @@ Outputs:
 - `data/analysis/gap-analysis.json`
 - `reports/gap-analysis.md`
 
-Phase 3, application advisor:
+### Phase 3, application advisor:
 
 ```bash
 python3 src/phases/phase_3.py path/to/new-job-posting.pdf
@@ -123,7 +123,11 @@ Phase 2 depends on Phase 1 outputs. Phase 3 depends on both Phase 1 and Phase 2 
 
 ![Architecture-Diagrams](diagrams/Phase-1.png)
 
+### Phase-2
+![Architecture-Diagrams](diagrams/Phase-2.png)
 
+### Phase-3
+![Architecture-Diagrams](diagrams/Phase-3.png)
 
 See the detailed phase docs:
 
