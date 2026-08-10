@@ -6,11 +6,7 @@ This project is a 3-phase agent pipeline for:
 - Phase 2: extracting a resume and generating a resume gap analysis
 - Phase 3: analyzing a new target posting and generating an application advisor report
 
-See the detailed phase docs:
 
-- [Phase 1](/Users/kashish/Desktop/Seneca/sem6/AIP/aip444/assignments/assignment-02/docs/phase-1.md)
-- [Phase 2](/Users/kashish/Desktop/Seneca/sem6/AIP/aip444/assignments/assignment-02/docs/phase-2.md)
-- [Phase 3](/Users/kashish/Desktop/Seneca/sem6/AIP/aip444/assignments/assignment-02/docs/phase-3.md)
 
 ## Project Structure
 
@@ -118,3 +114,19 @@ Run phases in this order:
 3. `phase_3.py <job-pdf>`
 
 Phase 2 depends on Phase 1 outputs. Phase 3 depends on both Phase 1 and Phase 2 outputs.
+
+
+
+## Architecture Diagrams:
+
+### Phase-1
+
+[Architecture-Diagrams](diagrams/Phase-1.png)
+
+
+
+See the detailed phase docs:
+
+- [Phase 1](docs/phase-1.md)
+- [Phase 2](docs/phase-2.md)
+- [Phase 3](phase-3.md)
