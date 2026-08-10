@@ -27,10 +27,10 @@ from agents import (
     RunConfig,
     Runner,
     set_tracing_export_api_key,
-    enable_verbose_stdout_logging,
 )
 
 from helper import get_file_contents, pdf_extraction
+from helper.debug_logging import debug_agent_end, debug_agent_start, debug_log
 from config import PROMPTS_FOLDER, RAW_PDF_JOB_FOLDER, JOBS_JSON_FOLDER, ANALYSIS_FOLDER, REPORTS_FOLDER
 from tools import web_search_tool, assess_job_tool, assess_market_tool, save_disk_tool
 
@@ -52,7 +52,6 @@ if not API_KEY:
 # calls themselves are routed through OpenRouter, not OpenAI.
 client = AsyncOpenAI(base_url=BASE_URL, api_key=API_KEY)
 set_tracing_export_api_key(os.getenv("OPENAI_TRACING_KEY"))
-enable_verbose_stdout_logging()
 
 
 class CustomModelProvider(ModelProvider):
@@ -98,11 +97,13 @@ async def extract_job_posting(pdf_path: Path, agent: Agent) -> None:
     output_path_json = JOBS_JSON_FOLDER / f"{pdf_path.stem}.json"
 
     if output_path_json.exists():
+        debug_log(f'Skip extraction: "{pdf_path}" already processed -> "{output_path_json}"')
         print(f"Skipping {pdf_path.name} — already processed")
         return
 
     job_text = pdf_extraction(str(pdf_path))
     ctx = PathContext(output_path_json=output_path_json)
+    debug_agent_start(agent.name, max_turns=10, output_path=str(output_path_json))
 
     await Runner.run(
         agent,
@@ -111,6 +112,7 @@ async def extract_job_posting(pdf_path: Path, agent: Agent) -> None:
         context=ctx,
         run_config=RunConfig(model_provider=CUSTOM_MODEL_PROVIDER),
     )
+    debug_agent_end(agent.name, status="completed")
 
     print(f"{pdf_path.name} -> {output_path_json.name}")
 
@@ -121,11 +123,14 @@ async def run_extraction_phase(agent: Agent) -> None:
     """
     pdf_files = sorted(RAW_PDF_JOB_FOLDER.glob("*.pdf"))
     if not pdf_files:
+        debug_log(f'No PDFs found for extraction in "{RAW_PDF_JOB_FOLDER}"')
         print(f"No PDFs found in {RAW_PDF_JOB_FOLDER}")
         return
+    debug_log(f'Phase 1 extraction start: pdf_count={len(pdf_files)}')
 
     # Launch all extractions at once; they run concurrently instead of one-by-one
     await asyncio.gather(*(extract_job_posting(pdf_path, agent) for pdf_path in pdf_files))
+    debug_log("Phase 1 extraction complete")
 
 
 
@@ -147,6 +152,7 @@ async def run_market_analysis_phase(agent: Agent) -> None:
     """
     json_job_files = sorted(JOBS_JSON_FOLDER.glob("*.json"))
     if not json_job_files:
+        debug_log(f'No extracted job JSONs found in "{JOBS_JSON_FOLDER}"')
         print(f"No JSONs found in {JOBS_JSON_FOLDER}")
         return
 
@@ -157,6 +163,7 @@ async def run_market_analysis_phase(agent: Agent) -> None:
     output_path_md = REPORTS_FOLDER / f"market-analysis.md"
 
     ctx = PathContext(output_path_json=output_path_json, output_path_md=output_path_md)
+    debug_agent_start(agent.name, max_turns=10, output_path=str(output_path_json))
 
     result = await Runner.run(
         agent,
@@ -165,12 +172,14 @@ async def run_market_analysis_phase(agent: Agent) -> None:
         context=ctx,
         run_config=RunConfig(model_provider=CUSTOM_MODEL_PROVIDER),
     )
+    debug_agent_end(agent.name, status="completed")
 
     print(f"Market analysis saved. Report: {output_path_md.name}")
     print(result.final_output)
 
 
 async def main():
+    debug_log("Phase 1 start")
     agent_job = Agent(
         name="Assistant", instructions=system_prompt_job, tools=[web_search_tool, assess_job_tool]
     )
@@ -182,6 +191,7 @@ async def main():
 
     print("Starting Market Analysis")
     await run_market_analysis_phase(agent_analysis)
+    debug_log("Phase 1 complete")
 
 
 if __name__ == "__main__":

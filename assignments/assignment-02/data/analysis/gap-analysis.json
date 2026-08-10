@@ -1,0 +1,185 @@
+{
+  "strengths": [
+    {
+      "skill_or_qualification": "Python",
+      "evidence": "Listed in hard_skills_technologies; used extensively in both internships (CGI and Architech roles), RAG chatbot development, and all major projects (BERT classifier, AI adoption platform)"
+    },
+    {
+      "skill_or_qualification": "Docker / Kubernetes",
+      "evidence": "Explicitly listed in hard_skills_technologies; demonstrated in CGI internship (deployed microservices on AKS with Helm charts) and Architech internship (automated deployment with Docker and GitHub Actions)"
+    },
+    {
+      "skill_or_qualification": "SQL / Databases",
+      "evidence": "Multiple database technologies listed (PostgreSQL, Oracle SQL, MongoDB, MongoDB Atlas); demonstrated in AI adoption platform with MongoDB Atlas for semantic vector search"
+    },
+    {
+      "skill_or_qualification": "Git",
+      "evidence": "Explicitly listed in hard_skills_technologies; foundational tool used across both internships in CI/CD and version control contexts"
+    },
+    {
+      "skill_or_qualification": "CI/CD Pipelines",
+      "evidence": "Explicitly listed; demonstrated in both internships (3-stage security-scanned pipeline at CGI, automated deployment pipeline at Architech with GitHub Actions)"
+    },
+    {
+      "skill_or_qualification": "AI / ML Technologies (LLMs, RAG, Transformers)",
+      "evidence": "Comprehensive AI/ML stack listed (Transformers, LangGraph, RAG Pipelines, BERT, HuggingFace, Azure OpenAI); central to Architech role (RAG chatbot) and AI adoption platform project; keywords include GenAI workflows, NLP, transformer models"
+    },
+    {
+      "skill_or_qualification": "Microservices",
+      "evidence": "Demonstrated in CGI internship achievements: 'Modernized a 30+ year monolithic COBOL tax-reporting system into cloud-native microservices'; listed in keywords_and_domain_expertise"
+    },
+    {
+      "skill_or_qualification": "Testing / TDD",
+      "evidence": "Pytest explicitly listed in hard_skills_technologies, though not prominently featured in work experience descriptions"
+    }
+  ],
+  "gaps": [
+    {
+      "skill_or_qualification": "AWS",
+      "severity": "Missing entirely"
+    },
+    {
+      "skill_or_qualification": "Java",
+      "severity": "Missing entirely"
+    },
+    {
+      "skill_or_qualification": "Go / Golang",
+      "severity": "Missing entirely"
+    },
+    {
+      "skill_or_qualification": "React / Frontend Frameworks",
+      "severity": "Missing entirely"
+    },
+    {
+      "skill_or_qualification": "TypeScript",
+      "severity": "Missing entirely"
+    },
+    {
+      "skill_or_qualification": "REST APIs",
+      "severity": "Underrepresented"
+    },
+    {
+      "skill_or_qualification": "Bachelor's Degree in Computer Science",
+      "severity": "Missing entirely"
+    }
+  ],
+  "unique_value": [
+    {
+      "skill_or_qualification": "Legacy code modernization with AI-assisted analysis (COBOL to microservices)",
+      "why_it_differentiates": "Very few junior candidates have hands-on experience modernizing 30+ year monolithic systems; this demonstrates ability to handle real-world, high-stakes technical debt and legacy systems — a critical skill as enterprises modernize aging infrastructure"
+    },
+    {
+      "skill_or_qualification": "Comprehensive GitOps and infrastructure automation (FluxCD, Helm, Azure DevOps)",
+      "why_it_differentiates": "Most entry-level roles focus on feature development; your hands-on GitOps and infrastructure-as-code experience positions you well for DevOps or platform engineering tracks, which are in high demand and often underrepresented in junior hiring pipelines"
+    },
+    {
+      "skill_or_qualification": "Multi-stage security scanning in CI/CD (Spectral, SonarQube, GitHub Advanced Security)",
+      "why_it_differentiates": "Security-first development is increasingly critical; embedding security scanning into the deployment pipeline is a best practice many teams aspire to but struggle to implement. This shows security awareness beyond typical junior roles"
+    },
+    {
+      "skill_or_qualification": "Full-stack RAG pipeline implementation (semantic search, embeddings, vector databases, intent classification)",
+      "why_it_differentiates": "While RAG is increasingly common, few candidates demonstrate end-to-end pipeline design and implementation (intent classification → NLP parsing → semantic search). This depth signals systems thinking beyond single-layer AI tasks"
+    }
+  ],
+  "action_plan": {
+    "quick_wins": [
+      {
+        "title": "Explicitly highlight REST API expertise in FastAPI work",
+        "description": "Your Architech RAG chatbot role involved building APIs with FastAPI, but the resume doesn't explicitly mention 'REST APIs' as a skill. Add a bullet point in the Architech role achievements or update hard_skills_technologies to include 'REST APIs' alongside FastAPI. FastAPI is a modern REST API framework, and this is a straightforward terminology alignment — no new learning needed.",
+        "related_gap_or_skill": "REST APIs",
+        "estimated_effort": "~15 minutes to update resume",
+        "sources": []
+      },
+      {
+        "title": "Emphasize testing practices in project achievements",
+        "description": "Pytest is listed in your skills but underrepresented in achievements. Add a sentence to project descriptions or work experience noting test coverage or testing approach — e.g., 'Wrote unit tests using Pytest to ensure 90%+ code coverage for the RAG pipeline components' or similar. This highlights a skill you already have without adding any new work.",
+        "related_gap_or_skill": "Testing / TDD",
+        "estimated_effort": "~20 minutes to update resume",
+        "sources": []
+      },
+      {
+        "title": "Surface security-first development practices explicitly",
+        "description": "Your CGI role includes security scanning (Spectral, SonarQube, GitHub Advanced Security), but this could be more prominent. In the resume summary or a 'Key Skills' section, call out 'secure development practices' or 'DevSecOps' as keywords. This aligns with the broader industry shift toward embedding security in CI/CD pipelines and differentiates you without new learning.",
+        "related_gap_or_skill": "Testing / TDD",
+        "estimated_effort": "~15 minutes",
+        "sources": []
+      }
+    ],
+    "short_term": [
+      {
+        "title": "Get AWS Cloud Practitioner Certification",
+        "description": "AWS is the market leader (4 of 9 postings require it) and you currently have only Azure. The AWS Cloud Practitioner is the foundational cert; it costs $100 USD and typically requires 20–30 hours of study. Study materials are free via freeCodeCamp (YouTube) or Tutorialsdojo practice exams. Exam is 65 questions in 90 minutes. Schedule the exam within 4–5 weeks. This immediately closes a major gap and signals cloud versatility.",
+        "related_gap_or_skill": "AWS",
+        "estimated_effort": "~25–30 hours study + exam fee ($100 USD)",
+        "sources": [
+          "https://aws.amazon.com/certification/certified-cloud-practitioner",
+          "https://flashgenius.net/blog-article/ultimate-guide-to-aws-certified-cloud-practitioner-certification"
+        ]
+      },
+      {
+        "title": "Complete TypeScript fundamentals tutorial",
+        "description": "TypeScript is increasingly required alongside JavaScript (5 postings mention JS/TS). Complete the free 'Beginners TypeScript Tutorial' from Total TypeScript (https://www.totaltypescript.com/learn-typescript) or Scrimba's 'Learn TypeScript' free course (4.2 hours, certificate included). This gives you baseline TypeScript literacy to pair with your JavaScript foundation, making you more competitive for full-stack roles.",
+        "related_gap_or_skill": "TypeScript",
+        "estimated_effort": "~5–8 hours",
+        "sources": [
+          "https://www.totaltypescript.com/learn-typescript",
+          "https://scrimba.com/articles/best-free-typescript-courses"
+        ]
+      },
+      {
+        "title": "Build a small REST API project in TypeScript or Go",
+        "description": "Create a simple portfolio project that demonstrates REST API design with proper HTTP verbs, resource naming, and endpoints. Use either: (a) TypeScript/Node.js with Express or Fastify (leverages your Python/FastAPI knowledge to a new stack), or (b) Go (hits both the Go gap and REST API gap simultaneously). ~2–3 weeks part-time effort. This becomes a portfolio piece you can show employers and simultaneously closes two gaps.",
+        "related_gap_or_skill": "REST APIs",
+        "estimated_effort": "~2–3 weeks (10–15 hours)",
+        "sources": [
+          "https://arjancodes.com/blog/building-rest-apis-with-python-and-fastapi-tutorial",
+          "https://auth0.com/blog/fastapi-best-practices",
+          "https://go.dev/doc/tutorial/getting-started"
+        ]
+      }
+    ],
+    "medium_term": [
+      {
+        "title": "Learn Go fundamentals and build a production-like project",
+        "description": "Go appears in 3 of 9 postings and is a gap. Use free resources: Codecademy's 'Learn Go' (free course, 2–4 hours intro), then build a microservice or CLI tool that demonstrates: structs, interfaces, concurrency basics, and proper error handling. Aim for a GitHub-hosted, well-documented project. ~4–6 weeks part-time. This directly addresses Go gap and positions you for backend/DevOps roles where Go is increasingly used (cloud tooling, microservices).",
+        "related_gap_or_skill": "Go / Golang",
+        "estimated_effort": "~4–6 weeks (20–30 hours)",
+        "sources": [
+          "https://www.codecademy.com/learn/learn-go",
+          "https://go.dev/doc/tutorial/getting-started"
+        ]
+      },
+      {
+        "title": "Learn React fundamentals with a small portfolio project",
+        "description": "React appears in 3 postings as a frontend skill. You have JavaScript but no React. Start with Egghead.io's 'Beginners Guide to ReactJS' (free) or Scrimba's 'Learn React for free' (48 video tutorials, hands-on), then build a small project (e.g., a todo app, weather dashboard, or portfolio site) using React. ~3–4 weeks part-time (15–20 hours). Deploy it to Vercel or GitHub Pages. This makes you more competitive for full-stack roles and closes a visible gap.",
+        "related_gap_or_skill": "React / Frontend Frameworks",
+        "estimated_effort": "~3–4 weeks (15–20 hours)",
+        "sources": [
+          "https://legacy.reactjs.org/community/courses.html",
+          "https://mimo.org/blog/top-free-courses-resources-to-learn-react"
+        ]
+      },
+      {
+        "title": "Complete Java fundamentals course and build a practice project",
+        "description": "Java appears in 3 postings. Using free resources (MyGreatLearning's 'Java Programming' free course or Bro Code's YouTube 'Java Full Course for Beginners'), learn Java fundamentals (15–20 hours), then build a small project (e.g., a command-line app, simple data structure implementation, or REST API in Spring Boot). ~4–5 weeks part-time. This signals backend versatility and closes the Java gap.",
+        "related_gap_or_skill": "Java",
+        "estimated_effort": "~4–5 weeks (20–25 hours)",
+        "sources": [
+          "https://www.mygreatlearning.com/academy/learn-for-free/courses/java-programming",
+          "https://www.youtube.com/watch?v=xTtL8E4LzTQ",
+          "https://www.coursera.org/courses?query=java"
+        ]
+      }
+    ],
+    "long_term": [
+      {
+        "title": "Pursue a Bachelor's Degree in Computer Science or equivalent",
+        "description": "6 of 9 postings explicitly require or expect a Bachelor's degree in CS or related field. You have an Advanced Diploma in Computer Programming & Analysis, which demonstrates technical competency but may be flagged by some recruiters or ATS systems. Consider: (1) a part-time/online BS in CS (e.g., University of Waterloo's Online BASc, University of Toronto's iSchool, or Athabasca University), (2) a formal bootcamp with recognized credentials, or (3) building a strong portfolio of real-world projects and contributions (open source, published papers, deployed systems) that compensate for the credential gap. This is a long-term consideration; prioritize short/medium-term skill gaps first, then revisit this as your career progresses. Estimated duration: 2–4 years part-time for a degree, or 1–2 years via bootcamp + portfolio building.",
+        "related_gap_or_skill": "Bachelor's Degree in Computer Science",
+        "estimated_effort": "2–4 years (degree) or 1–2 years (bootcamp + portfolio)",
+        "sources": []
+      }
+    ]
+  },
+  "summary": "You're well-positioned as an early-career developer with standout AI/ML and DevOps experience. Your hands-on work with RAG pipelines, microservices modernization, and infrastructure automation directly align with current market demand, and your technical depth (GitOps, security-first CI/CD, vector databases) is rare for entry-level candidates. However, you face two strategic gaps: (1) breadth across the modern full-stack ecosystem — AWS is a major gap (you're Azure-focused), and Go, React, and TypeScript are increasingly expected; (2) a formal Bachelor's degree, which 67% of postings explicitly require or prefer. Your Diploma is strong technical credentials, but some recruiters may filter based on the degree requirement. Immediate wins: add REST API terminology to your resume, pursue AWS Cloud Practitioner cert (4–5 weeks), and learn TypeScript fundamentals (1 week). Medium-term: build Go and React projects to round out full-stack skills. Long-term: consider a part-time online Bachelor's degree to remove the credential barrier. With these additions, you'll be highly competitive for mid-level and senior IC roles within 6–12 months."
+}

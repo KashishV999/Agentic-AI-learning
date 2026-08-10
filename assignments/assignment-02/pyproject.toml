@@ -6,12 +6,12 @@ dependencies = [
     "openai",
     "tavily-python",
     "dotenv",
-    "requests"
+    "requests",
+    "pydantic",
+    "python-whois"
 ]
 
 # Tells setuptools to auto-discover packages (folders with __init__.py) inside src/,
 # so this project can be installed with `pip install -e .` and imported from anywhere.
 [tool.setuptools.packages.find]
 where = ["src"]
-
-

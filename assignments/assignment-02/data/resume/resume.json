@@ -1,0 +1,134 @@
+{
+  "hard_skills_technologies": [
+    "Git",
+    "Docker",
+    "Kubernetes",
+    "Helm",
+    "FluxCD",
+    "GitOps",
+    "Azure DevOps",
+    "CI/CD Pipelines",
+    "Transformers",
+    "NumPy",
+    "Pandas",
+    "LangGraph",
+    "RAG Pipelines",
+    "Pytest",
+    "MongoDB",
+    "PostgreSQL",
+    "Oracle SQL",
+    "Python",
+    "JavaScript",
+    "C++",
+    "C#",
+    ".NET",
+    "Microsoft Azure",
+    "AKS",
+    "Azure Blob Storage",
+    "Azure Key Vault",
+    "Spectral",
+    "SonarQube",
+    "GitHub Advanced Security",
+    "FastAPI",
+    "GitHub Actions",
+    "BERT",
+    "HuggingFace",
+    "Kaggle",
+    "JWT",
+    "OAuth",
+    "RBAC",
+    "pgvector",
+    "text-embedding-3-small",
+    "MongoDB Atlas",
+    "Azure OpenAI",
+    "COBOL"
+  ],
+  "soft_skills": [],
+  "work_experience": [
+    {
+      "role": "AI Developer / DevOps Intern",
+      "company": "CGI",
+      "duration": "Sept 2025 - Present",
+      "key_responsibilities": [
+        "Modernize monolithic COBOL tax-reporting system into cloud-native microservices",
+        "Analyze legacy code using AI-assisted tools",
+        "Implement CI/CD pipelines with security scanning",
+        "Deploy cloud-native microservices on Azure Kubernetes Service",
+        "Implement GitOps automation"
+      ],
+      "achievements": [
+        "Modernized a 30+ year monolithic COBOL tax-reporting system into cloud-native microservices, improving scalability and maintainability for Foresters Financial client using AI-assisted legacy code analysis",
+        "Implemented a CI/CD pipeline with 3-stage security scans using Spectral, SonarQube, and GitHub Advanced Security, strengthening end-to-end delivery security",
+        "Deployed cloud-native microservices on Azure Kubernetes Service using Helm charts and implemented GitOps automation with FluxCD, enabling consistent, version-controlled, and fully automated deployments"
+      ]
+    },
+    {
+      "role": "Software Engineer Intern",
+      "company": "Architech",
+      "duration": "Jan 2025 - May 2025",
+      "key_responsibilities": [
+        "Build RAG-powered AI customer support chatbot",
+        "Integrate semantic search with embeddings",
+        "Implement automated deployment using CI/CD"
+      ],
+      "achievements": [
+        "Built a RAG-powered AI customer support chatbot using LangGraph, FastAPI, and Azure OpenAI, integrating pgvector semantic search with OpenAI embeddings to deliver more accurate, context-aware responses",
+        "Implemented fully automated deployment using CI/CD with Docker and GitHub Actions, significantly reducing deployment time and ensuring fast, reliable, and reproducible platform releases"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree_name": "Advanced Diploma in Computer Programming & Analysis",
+      "institution": "Seneca College",
+      "relevant_coursework": []
+    }
+  ],
+  "certifications_and_training": [],
+  "keywords_and_domain_expertise": [
+    "Cloud-native development",
+    "GenAI workflows",
+    "DevOps automation",
+    "Microservices",
+    "Legacy code modernization",
+    "Machine Learning",
+    "Natural Language Processing",
+    "Transformer models",
+    "Retrieval-Augmented Generation",
+    "Cloud security",
+    "Infrastructure automation",
+    "Semantic search",
+    "Email classification",
+    "NLP",
+    "Binary classification"
+  ],
+  "projects": [
+    {
+      "name": "Bert-Based Email Classifier",
+      "technology_used": [
+        "BERT",
+        "Python",
+        "HuggingFace",
+        "Kaggle"
+      ],
+      "achievement": "Fine-tuned a pre-trained BERT model to classify spam/phishing emails with 92% accuracy, completing end-to-end steps including data cleaning and tokenization",
+      "awards": "Unknown"
+    },
+    {
+      "name": "AI Powered Adoption Platform",
+      "technology_used": [
+        "JWT",
+        "OAuth",
+        "RBAC",
+        "RAG pipeline",
+        "text-embedding-3-small",
+        "MongoDB Atlas"
+      ],
+      "achievement": "Developed a secure full-stack platform with JWT/OAuth authentication and RBAC, and built a multilingual AI-powered pet-matching system using a multi-stage RAG pipeline that performs intent classification, natural-language query parsing, and semantic vector search in MongoDB Atlas to generate personalized adoption recommendations",
+      "awards": "Unknown"
+    }
+  ],
+  "accomplishments": [
+    "Two times on the President's Honor List for outstanding academic achievement"
+  ]
+}

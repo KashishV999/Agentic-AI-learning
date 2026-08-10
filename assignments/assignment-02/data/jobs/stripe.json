@@ -1,0 +1,34 @@
+{
+  "job_title": "Software Engineer, New Grad, Developer & End User Experience Platform",
+  "company_info": {
+    "company_name": "Stripe",
+    "size": "Approximately 9,073 employees worldwide as of March 2026",
+    "industry_info": "Financial infrastructure and payment processing technology. Stripe is a platform that enables millions of companies to accept payments, grow revenue, and scale their business. The company operates in the FinTech/Payment Processing sector and holds 22.3% of the payment processing software market share.",
+    "recent_news": "In April 2026, Stripe announced 288 launches including expansion of economic infrastructure for AI, new partnership with Google for AI Mode integration, launch of wallets for agents powered by Link, and major expansion to Stripe Treasury including instant free money transfers. In February 2026, Stripe achieved its highest-ever valuation of $159 billion through a tender offer. Stripe's Revenue and Finance Automation Suite is on track to hit $1 billion annual run rate in 2026, up from $500 million in early 2025.",
+    "company_culture": "Based on Glassdoor reviews (3.7/5 stars from 1,351+ reviews), Stripe has a good working environment with 63% of employees recommending it to friends. However, work-life balance ratings are 3.2/5, indicating some concerns about work intensity. Employees rate the business outlook positively at 74%. The company emphasizes end-to-end ownership, early prototyping, community contribution, and open-source software. Stripe upholds a commitment to craft and beauty in its products. The company values collaborative, cross-functional work and mentorship for new grads.",
+    "any_related_information": "Stripe is one of the most valuable private companies in the world. The company is actively hiring with 2,061 active job postings in 2026 (65.3% increase from 2025). Engineering comprises 44% of the workforce (3,977 employees). The Developer & End-user Experience Platform (DEeP) team is described as a force multiplier for the company and offers unparalleled career acceleration for new grads. New grad roles specifically target candidates starting before October 1, 2026, with a maximum of 18 months professional experience. The company operates with 50% in-office expectations at most locations (with some exceptions like Mexico City, Bengaluru, and Dublin at 100% in-office)."
+  },
+  "location": "Primary location: Canada (salary listed in CA$). Office-assigned with expectation of at least 50% in-office time at most locations, though some roles and locations (Mexico City, Bengaluru, Dublin) require 100% in-office work.",
+  "posting_age": "Unknown - no explicit posting date provided in the document",
+  "required_skills_technologies": [
+    "Java",
+    "Ruby",
+    "JavaScript",
+    "Scala",
+    "Go"
+  ],
+  "nice_to_have_skills": [
+    "Specialized knowledge in frontend technologies",
+    "Understanding of how services handle HTTP requests",
+    "Experience with code review practices",
+    "Understanding of safe production system updates",
+    "Familiarity with large codebases",
+    "Knowledge of identity and access management",
+    "Experience with APIs and API development",
+    "AI/ML experience"
+  ],
+  "experience_level": "New Grad - no more than 18 months of professional experience (excluding internship experience); must have Bachelor's or Master's degree in Computer Science or related field by summer 2026",
+  "education": "Bachelor's or Master's degree in Computer Science or directly related field, obtained by summer 2026, or equivalent work experience",
+  "key_responsibilities": "Work on cross-functional projects directly collaborating with other engineers; give meaningful feedback on code reviews and technical designs; ensure systems operate well and scale to meet user needs; build skills to own projects end-to-end while learning project management and technical leadership skills",
+  "salary_range": "CA $106,400 - CA $159,600 annually for primary location (Canada). Range may vary by location and will be narrowed during interview process based on candidate experience, qualifications, and location."
+}

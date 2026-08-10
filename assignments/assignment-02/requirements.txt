@@ -3,3 +3,5 @@ openai
 tavily-python
 dotenv
 requests
+pydantic
+python-whois

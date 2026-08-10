@@ -1,0 +1,40 @@
+{
+  "job_title": "Software Developer (New Grad)",
+  "company_info": {
+    "company_name": "Autodesk",
+    "size": "14,300 employees (as of 2026)",
+    "industry_info": "Software and cloud computing. Autodesk is a leader in design and engineering software, building cloud platforms used globally. The company serves the Architecture, Engineering, Construction & Operations (AECO) sectors, as well as media and entertainment industries.",
+    "recent_news": "In January 2026, Autodesk underwent restructuring with approximately 7% of its global workforce (about 1,000 jobs) reduced. This followed a 2025 layoff of 1,350 employees (9% of workforce). The company is focused on AI and cloud computing expansion. Recent fiscal 2026 results showed strong international growth with EMEA revenues up 25% YoY and APAC up 16%. In June 2026, Autodesk committed $350 million over three years for AI skills training and workforce development.",
+    "company_culture": "Autodesk is recognized for its inclusive and supportive workplace culture. According to Glassdoor (4,647 reviews), the company has a 4.0/5 employee rating with 80% of employees recommending it to a friend. Employees rate work-life balance at 4.2/5. The culture is described as warm, collaborative, and inclusive. The company emphasizes meaningful work that helps build a better world and has a focus on diversity and belonging.",
+    "any_related_information": "Autodesk is headquartered in San Francisco, California (moved from San Rafael in 2022). The company has a strong focus on next-generation cloud platforms and is actively investing in AI-powered technologies. The role is part of their Consumption platform initiative. As a publicly traded company (ADSK), Autodesk reported $6.78 billion in revenue and $1.12 billion in net income for fiscal 2026. The company invests heavily in R&D ($1.64 billion in 2026) and is positioning itself as a leader in agentic AI for design and manufacturing."
+  },
+  "location": "Not specified in posting; salary range indicates Canada-based roles available ($72,000-$105,600 CAD), but location not explicitly stated for this position",
+  "posting_age": "Unknown - no date provided in posting",
+  "required_skills_technologies": [
+    "Bachelor's degree in Computer Science, Engineering, or related field",
+    "Data structures and algorithms",
+    "Networking fundamentals",
+    "Basic distributed systems concepts",
+    "At least one programming language (Java, Python, or Go)",
+    "Git version control",
+    "Testing basics",
+    "RESTful or event-driven service patterns"
+  ],
+  "nice_to_have_skills": [
+    "Internship or research experience in backend development",
+    "Project experience in cloud services",
+    "AWS or similar cloud platform exposure (Lambda, Fargate, SQS, DynamoDB, Aurora)",
+    "Microservices coursework or experience",
+    "Streaming/real-time processing experience",
+    "Docker containerization",
+    "CI/CD pipeline experience",
+    "Basic observability (metrics/logging)",
+    "Security best practices for services",
+    "Cost-aware design and performance optimization",
+    "Reliability engineering experience"
+  ],
+  "experience_level": "Entry-level / New Graduate - explicitly targeted at early-career developers with mentorship and guidance provided",
+  "education": "Bachelor's degree in Computer Science, Engineering, or related field (or equivalent training/experience)",
+  "key_responsibilities": "Implement features and fixes in backend services under mentorship with secure, reliable, and maintainable code; learn to build and optimize microservices and event-driven components; participate in code reviews (giving and receiving feedback); follow Agile practices including estimation, stand-ups, sprint planning, and retrospectives; troubleshoot and resolve routine code issues; assist with production deployments and basic operational tasks; use AI-assisted programming tools responsibly; contribute to team knowledge via documentation and tests",
+  "salary_range": "For Canada-based roles: starting base salary between $72,000 and $105,600 CAD. Offers based on candidate experience and geographic location and may exceed this range. Additional compensation may include annual bonuses, stock grants, and comprehensive benefits package."
+}
