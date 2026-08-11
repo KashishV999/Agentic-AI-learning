@@ -1,319 +1,357 @@
 {
   "fit_assessment": {
-    "fit_score": 68,
+    "fit_score": 78,
     "recommendation_band": "Good fit",
-    "recommendation_text": "You are a strong candidate for this role. Your hands-on Kubernetes experience, production-grade Python development, and microservices expertise directly align with Canonical's needs. Your current role modernizing legacy systems into cloud-native architecture on AKS mirrors the real-world problem-solving Kubernetes operators solve. The primary gap—Go/Golang—is learnable and expected for operators, and your polyglot background (C++, C#, JavaScript) demonstrates you learn languages quickly. Your remote-first, distributed-team experience is a natural fit for Canonical's 70+ country workforce. Apply confidently, and position your Kubernetes depth and learning agility as your foundation for mastering Go in this role.",
-    "overall_narrative": "This is a good near-term target. You have demonstrated mastery of two of the three core technical pillars (Python, Kubernetes) and deep familiarity with the cloud-native ecosystem Canonical operates in. Your microservices and CI/CD automation work is directly applicable to building and maintaining Kubernetes operators. The Go gap is real but surmountable—you are not being asked to architect in Go, but to learn it as part of the role, and your track record of rapid skill acquisition supports this. Canonical's remote-first culture, learning budget ($2,000/year), and distributed team structure align perfectly with your working style. This role represents a logical next step from cloud-native DevOps into infrastructure-as-code and Kubernetes ecosystem work.",
+    "recommendation_text": "You are a strong candidate for this entry-level role. Your hands-on experience with cloud-native development, CI/CD pipelines, and AI/ML fundamentals exceeds typical entry-level expectations and directly aligns with RBC's AI Group priorities. While you lack Golang and Java, your deep Azure expertise, proven ability to work with modern deployment tools (Kubernetes, Docker, Helm, FluxCD), and demonstrated RAG/LangGraph experience position you as an exceptional fit for the AI services component of this role. RBC's mentorship-driven culture and focus on learning align perfectly with your internship trajectory and growth mindset. Apply confidently and emphasize your rapid skill acquisition and hands-on production work.",
+    "overall_narrative": "This is a well-matched entry-level opportunity at a tier-1 financial institution with clear AI strategic ambitions. You exceed the typical entry-level bar in cloud architecture and AI/ML depth, putting you in a competitive position despite minor language gaps (Golang, Java). RBC's AI Group is actively scaling ($1B AI value ambition by 2027, Vector Institute partnership through 2032, hiring 3,600 new graduates in fiscal 2026) and is actively seeking talent with exactly your profile: cloud-native, AI-enabled, security-conscious, and enthusiastic about learning. The main trade-offs are on-site location (Toronto), potential corporate bureaucracy versus startup pace, and exposure to legacy systems—but these are growth opportunities, not red flags. This role offers clear learning, stability, and a strong foundation in enterprise AI systems.",
     "requirement_breakdown": [
       {
-        "requirement": "Python (Required)",
+        "requirement": "Python programming",
         "status": "Met",
-        "evidence": "Python is listed in hard skills and demonstrated across work experience: FastAPI backend for RAG chatbot, Python microservices in current role modernizing COBOL legacy system, BERT email classifier, production CI/CD integration. Current role at CGI explicitly uses Python for cloud-native microservices deployment and containerization.",
-        "positioning_advice": "Lead with Python in cover letter and interview as a production-level skill, not academic. Emphasize deployment and systems-level Python (not just data science): CI/CD automation, FastAPI backends, microservices orchestration. This signals you can write the operator lifecycle-management code Canonical needs."
+        "evidence": "Demonstrated across both internships (FastAPI backend, RAG chatbot, legacy modernization), BERT classifier project, and AI adoption platform. Python is clearly your primary language for production work.",
+        "positioning_advice": "Lead with Python as your primary language and emphasize production experience. Highlight the FastAPI backend for the RAG chatbot and Python usage in legacy COBOL system modernization to show versatility from scripting to backend services."
       },
       {
-        "requirement": "Go/Golang (Required)",
+        "requirement": "Golang",
         "status": "Gap",
-        "evidence": "Go is not listed in hard skills or work experience. Resume focuses on Python, C++, C#, JavaScript. This is the single largest gap between candidate and posting requirements.",
-        "positioning_advice": "Acknowledge the gap directly and position as a fast learner. In cover letter: 'While I am not currently Go-fluent, my polyglot experience (C++, C#, Python, JavaScript) demonstrates I learn languages quickly. I am eager to deepen into Go for Kubernetes operator development, where it is the natural choice for this domain.' In interview, express genuine enthusiasm for Go and cloud-native languages. Offer to show learning plan if asked. Do not oversell non-existent Go experience—transparency builds credibility."
+        "evidence": "Golang is not listed in your resume or projects. The job posting lists it as a required skill.",
+        "positioning_advice": "In interviews, frame this as a learning opportunity and emphasize your track record of rapid language acquisition (Python, JavaScript, C++, C#, .NET across internships and projects). Reference Go's role in cloud-native systems and express genuine interest in learning it. Many entry-level candidates come in without Go; this is not disqualifying. Do not overstate Go experience you don't have."
       },
       {
-        "requirement": "Kubernetes experience (Listed as nice-to-have, but core to role)",
-        "status": "Met",
-        "evidence": "Deployed cloud-native microservices on Azure Kubernetes Service (AKS) using Helm charts in current role. Implemented GitOps automation with FluxCD for consistent, version-controlled deployments. These are production-level Kubernetes operations, not just tutorial knowledge. Current role explicitly involves 'Deploy cloud-native microservices on Azure Kubernetes Service.'",
-        "positioning_advice": "This is a strength. Emphasize in cover letter: 'I have hands-on Kubernetes deployment experience with Helm and GitOps (FluxCD), demonstrating understanding of declarative lifecycle management and operator patterns.' In interview, be ready to discuss: How did you structure Helm charts? Why GitOps? How would you extend this to custom operators? This shows you are thinking at the right abstraction level for operator development."
-      },
-      {
-        "requirement": "Linux experience (Listed as nice-to-have)",
-        "status": "Partially Met",
-        "evidence": "Resume does not list explicit Linux system administration, kernel, or distribution work. However, cloud-native stack (Docker, Kubernetes, Azure) runs natively on Linux. CI/CD pipelines and container orchestration imply daily Linux exposure.",
-        "positioning_advice": "Position cloud-native experience as Linux-adjacent but acknowledge Linux sysadmin depth is a growth area. In interview: 'My Kubernetes and containerization work runs on Linux daily, and I am comfortable in Linux environments. If the role involves deeper Linux kernel or distribution optimization, I would welcome that as a learning opportunity, especially given Canonical's focus on Ubuntu.' Do not overstate Linux expertise, but do not understate it either."
-      },
-      {
-        "requirement": "Open-source software development (Listed as nice-to-have)",
+        "requirement": "Java",
         "status": "Gap",
-        "evidence": "No GitHub projects, open-source contributions, or community involvement listed in resume. Work experience is employment-focused (CGI, Architech internships), not community-driven.",
-        "positioning_advice": "This is a gap but not disqualifying for an internship-to-junior-engineer. In cover letter: 'While my professional experience has focused on commercial projects, I am drawn to Canonical's open-source ethos and the Ubuntu ecosystem. I am committed to contributing to Canonical's Kubernetes operators and community as part of this role.' In interview, express genuine interest in open-source philosophy (not just career advancement). Ask about Canonical's open-source contribution expectations and mentorship model. Show you are not just learning a job, but joining a community."
+        "evidence": "Java is not listed in your resume or projects. The job posting lists it as a required skill.",
+        "positioning_advice": "Similar to Golang—acknowledge it as a gap, but emphasize your comfort with statically-typed languages (C#, C++ experience). Highlight your ability to learn new languages quickly. Java is a common requirement but many entry-level roles train on it. In interviews, ask about the specific use case for Java in their services to show strategic interest."
       },
       {
-        "requirement": "Strong written and verbal communication skills (Required)",
-        "status": "Partially Met",
-        "evidence": "Resume does not include explicit evidence of communication: no speaking engagements, technical writing samples, or documentation leadership. However, work descriptions imply collaboration: 'collaborate proactively with distributed team,' 'debug issues and interact with community.' Internship progression suggests communication competence.",
-        "positioning_advice": "Demonstrate communication through cover letter tone and interview clarity. In cover letter: Write clearly and concisely, showing you can explain technical complexity in plain language. In interview: Practice explaining your Kubernetes and microservices work in 2–3 minutes to a non-technical person, then to a Kubernetes expert. Canonical values 'strong written and verbal communication' because operators need clear documentation and community engagement. Show you can do both."
-      },
-      {
-        "requirement": "Bachelor's degree or equivalent in Computer Science, STEM, or similar field (Education)",
-        "status": "Partially Met",
-        "evidence": "Resume lists 'Advanced Diploma in Computer Programming & Analysis' from Seneca College. This is a 2–3 year post-secondary credential, not a 4-year bachelor's degree. However, two internships (Architech, CGI) plus current full-time role demonstrate equivalent practical experience and rapid skill acquisition.",
-        "positioning_advice": "Position education strategically but honestly. In cover letter: 'I hold an Advanced Diploma in Computer Programming & Analysis from Seneca College and have rapidly progressed through two internships and into a full-time AI Developer / DevOps role, demonstrating equivalent depth through hands-on production experience.' In interview, focus on what you have shipped and learned, not the credential gap. Canonical is founder-led and values talent over pedigree, but be ready to discuss why you chose Seneca and what you gained. Frame diploma + internships + current role as a compressed learning trajectory."
-      },
-      {
-        "requirement": "Build Kubernetes operators and addons offering complete lifecycle management (Core responsibility)",
-        "status": "Partially Met",
-        "evidence": "Helm charts and FluxCD demonstrate declarative, automated lifecycle thinking. However, resume does not show explicit Kubernetes operator development (custom resource definitions, operator SDK, Go-based controllers). This is operator-adjacent knowledge, not operator expertise.",
-        "positioning_advice": "In cover letter: 'My Helm and GitOps experience has given me a deep understanding of declarative infrastructure-as-code and automated lifecycle management. I am ready to deepen this into custom Kubernetes operators using Go and the operator SDK, bringing the same philosophy to mission-critical component management.' In interview, ask about operator patterns, codebase structure, and learning support. Show you understand the conceptual leap from Helm to operators and are excited by it. This is where Go becomes essential—position yourself as learning it for this purpose."
-      },
-      {
-        "requirement": "Write high-quality code to create new features (Core responsibility)",
+        "requirement": "REST APIs",
         "status": "Met",
-        "evidence": "Resume demonstrates code quality through: CI/CD security scanning pipeline (Spectral, SonarQube, GitHub Advanced Security), BERT classifier (92% accuracy, end-to-end data pipeline), RAG chatbot (multi-stage pipeline, semantic search integration), FastAPI backend. These require careful code design and testing.",
-        "positioning_advice": "Emphasize testing and code quality practices in interview. Be ready to discuss: How do you ensure code quality in production? What testing strategy do you use? Reference pytest (listed in hard skills), SonarQube, security scanning. This shows you take code seriously—essential for infrastructure and operators."
+        "evidence": "You built a FastAPI backend for the RAG customer support chatbot at Architech. FastAPI is a modern REST framework, and this demonstrates full understanding of API design, request/response handling, and service integration.",
+        "positioning_advice": "Highlight the FastAPI application as evidence of REST API expertise. Describe how you handled requests from the frontend, integrated with Azure OpenAI, and managed the pgvector semantic search backend. This shows production-quality REST service design."
       },
       {
-        "requirement": "Debug issues and interact with community (Core responsibility)",
-        "status": "Partially Met",
-        "evidence": "Resume does not list community engagement or open-source debugging. 'Interact with community' is inferred from distributed team collaboration and CI/CD integration work, but not explicitly demonstrated.",
-        "positioning_advice": "In interview, discuss how you would approach debugging in an open-source operator context: How would you log? How would you handle community issue reports? This is about empathy and communication, not just technical skill. Highlight your distributed team experience—same muscles."
-      },
-      {
-        "requirement": "Collaborate proactively with distributed team (Core responsibility)",
+        "requirement": "Git / Version Control",
         "status": "Met",
-        "evidence": "Current role at CGI and previous role at Architech are distributed-team environments. Resume explicitly states 'Deployed cloud-native microservices...enabling consistent, version-controlled, and fully automated deployments,' implying cross-team coordination. Canonical's remote-first, 70+ country model is similar to current experience.",
-        "positioning_advice": "In cover letter: 'I have worked effectively in distributed teams across multiple time zones and cultures, a skill that aligns perfectly with Canonical's 70+ country remote-first model.' In interview, give concrete examples of async communication, sprint participation, and self-directed execution."
+        "evidence": "Git is explicitly listed in your skills. Both internships involved Git-based workflows, CI/CD pipelines with GitHub Actions, and GitOps automation (FluxCD, GitOps patterns).",
+        "positioning_advice": "Reference your GitHub Actions implementation and GitOps work with FluxCD. Describe your experience with branching strategies, pull requests, and code reviews within CI/CD pipelines to show mature version control practices."
       },
       {
-        "requirement": "Incorporate latest Kubernetes features and open-source solutions (Responsibility)",
+        "requirement": "Docker",
+        "status": "Met",
+        "evidence": "Explicitly listed in skills and demonstrated in both internships. You containerized the RAG chatbot at Architech and deployed cloud-native microservices at CGI using Docker.",
+        "positioning_advice": "Discuss multi-stage Docker builds, optimization for Azure deployment, and integration with Kubernetes. Mention any Dockerfile best practices you've applied (layer caching, security scanning in the build pipeline)."
+      },
+      {
+        "requirement": "Kubernetes",
+        "status": "Met",
+        "evidence": "Explicitly listed with production deployment experience. You deployed cloud-native microservices on Azure Kubernetes Service (AKS) using Helm charts and FluxCD GitOps automation at CGI.",
+        "positioning_advice": "This is a major strength. Lead with your AKS experience, Helm chart development, and GitOps implementation. Describe how you managed deployments, versioning, and automated rollouts. This level of Kubernetes maturity is exceptional for entry-level and directly matches RBC's infrastructure needs."
+      },
+      {
+        "requirement": "AWS or Azure",
+        "status": "Met",
+        "evidence": "You have deep Microsoft Azure experience: AKS, Azure DevOps, Blob Storage, Key Vault, Azure OpenAI integration. This is your primary cloud platform across both internships.",
+        "positioning_advice": "Position Azure expertise as a direct strength. If RBC uses AWS (common for some teams), acknowledge this and frame your Azure knowledge as transferable—both are cloud-native, container-focused, with similar security and networking patterns. Demonstrate understanding of cloud-native design principles that apply across platforms."
+      },
+      {
+        "requirement": "CI/CD Pipelines",
+        "status": "Met",
+        "evidence": "You implemented a 3-stage CI/CD pipeline at CGI with automated security scans (Spectral, SonarQube, GitHub Advanced Security) and fully automated deployment using GitHub Actions at Architech.",
+        "positioning_advice": "This is an exceptional strength for entry-level. Describe the entire pipeline: code commit → security scanning → container build → deployment. Emphasize security-first thinking in CI/CD, which aligns with RBC's compliance requirements. Mention observability and monitoring integration if applicable."
+      },
+      {
+        "requirement": "SQL Databases",
+        "status": "Met",
+        "evidence": "Your skills list includes PostgreSQL, MongoDB, and Oracle SQL. You've used MongoDB Atlas with pgvector for semantic search in the AI adoption platform project.",
+        "positioning_advice": "Emphasize your understanding of relational (PostgreSQL, Oracle) and NoSQL (MongoDB) patterns. Highlight the pgvector work with embeddings and semantic search—this bridges SQL and ML, which is directly relevant to RBC's AI services. Demonstrate understanding of query optimization and schema design."
+      },
+      {
+        "requirement": "AI/Machine Learning experience (nice-to-have)",
+        "status": "Met",
+        "evidence": "This is a major strength. You have: BERT fine-tuning project (92% accuracy email classifier), LangGraph and RAG pipeline implementation, semantic search with OpenAI embeddings, multi-stage NLP workflows, Transformers, HuggingFace, and knowledge of ML model serving through FastAPI.",
+        "positioning_advice": "Position your AI/ML depth as a key differentiator. Highlight end-to-end ML work: data preparation (BERT tokenization), model fine-tuning, evaluation, and production serving. Describe the RAG pipeline architecture (intent classification → query parsing → semantic search) to show sophisticated multi-stage ML thinking. This directly aligns with RBC AI Group's RAG and agentic AI focus."
+      },
+      {
+        "requirement": "Model serving knowledge (nice-to-have)",
+        "status": "Met",
+        "evidence": "You built a FastAPI application serving the RAG chatbot, which includes serving embeddings, semantic search queries, and LLM responses. This demonstrates practical model serving experience.",
+        "positioning_advice": "Describe the FastAPI service architecture: how models are loaded, cached, and served with low latency. Mention containerization and deployment of the model-serving backend on Azure. Reference any performance considerations for model inference you've optimized."
+      },
+      {
+        "requirement": "Data platforms experience (nice-to-have)",
+        "status": "Met",
+        "evidence": "You have MongoDB Atlas, pgvector, Azure Blob Storage, and OpenAI embeddings experience. Your AI adoption platform demonstrates end-to-end data pipeline thinking.",
+        "positioning_advice": "Highlight your experience with data storage choices: NoSQL for flexible schema (MongoDB), relational for transactions (PostgreSQL), blob storage for unstructured data (Azure). Describe the data flow in your RAG pipeline and how data is organized for semantic search."
+      },
+      {
+        "requirement": "Secure coding practices (nice-to-have)",
+        "status": "Met",
+        "evidence": "You implemented security scans in CI/CD (Spectral, SonarQube, GitHub Advanced Security) and built secure authentication (JWT, OAuth, RBAC) in the AI adoption platform.",
+        "positioning_advice": "Lead with your security-first CI/CD implementation—this is high-value for a bank. Describe how you integrated linting, static analysis, and dependency checking into automated pipelines. Highlight JWT/OAuth implementation and RBAC design in your platform project. Frame security as integral to service reliability, not just compliance."
+      },
+      {
+        "requirement": "Testing strategies (nice-to-have)",
         "status": "Partially Met",
-        "evidence": "FluxCD and GitOps adoption show engagement with modern Kubernetes ecosystem. However, no explicit evidence of tracking Kubernetes release cycles, contributing to Kubernetes projects, or deep SIG involvement.",
-        "positioning_advice": "In interview: 'I stay current on Kubernetes developments through…[name specific channels: CNCF, Kubernetes blogs, Slack communities]. What emerging features or open-source projects is Canonical focusing on for this role?' Show genuine curiosity about the roadmap and how you would contribute."
+        "evidence": "Pytest is listed in your skills. Your achievements mention testing indirectly (RAG pipeline accuracy, BERT model evaluation), but explicit testing practices (unit tests, integration tests, coverage) are not detailed on your resume.",
+        "positioning_advice": "Emphasize Pytest and unit testing in your FastAPI backend. In interviews, discuss your approach to testing: unit tests for API endpoints, integration tests for the RAG pipeline, and model evaluation metrics (e.g., BERT classifier accuracy). Ask during interviews about their testing expectations and frameworks. This is a growth area; frame it as something you're actively developing."
+      },
+      {
+        "requirement": "Production support and observability (nice-to-have)",
+        "status": "Partially Met",
+        "evidence": "Your work involved deploying to production (AKS, Helm, FluxCD) and CI/CD with automated rollouts, suggesting awareness of production concerns. However, explicit experience with logging, monitoring, alerting, or on-call rotation is not detailed.",
+        "positioning_advice": "Highlight your production deployment experience and GitOps automation—these are foundational to observability. In interviews, express genuine interest in observability practices and ask how RBC instruments their AI services for monitoring. Mention your awareness of logging and alerting as important, even if not yet hands-on. This is a near-term learning opportunity you can grow into."
+      },
+      {
+        "requirement": "Entry-level experience (0–2 years)",
+        "status": "Met",
+        "evidence": "You are currently in your first year as an intern (Sept 2025–Present at CGI; Jan–May 2025 at Architech before). Your timeline perfectly matches entry-level expectations.",
+        "positioning_advice": "Frame your rapid progression across two internships as evidence of strong learning velocity. Highlight how you moved from internship to internship with increasing responsibility and technical depth. This trajectory shows you're ready for a structured entry-level role with mentorship."
+      },
+      {
+        "requirement": "Mentorship and learning-oriented mindset",
+        "status": "Met",
+        "evidence": "Your resume shows rapid skill growth across internships (legacy modernization, security, AI/ML, DevOps). Your achievements highlight learning complex tools (Helm, FluxCD, LangGraph, semantic search) in real-world contexts. Two President's Honor List mentions show academic dedication.",
+        "positioning_advice": "Emphasize your growth narrative: you came in with foundational skills, quickly mastered cloud-native and AI/ML concepts, and are now ready to deepen that expertise at an enterprise level. Express enthusiasm for mentorship and learning from senior engineers at RBC. Highlight your self-directed learning (Kaggle, HuggingFace, projects)."
+      },
+      {
+        "requirement": "Code reviews, design discussions, collaboration",
+        "status": "Partially Met",
+        "evidence": "Your work involved CI/CD pipelines, GitHub integration, and team-based projects, implying code review participation. However, explicit examples of design discussions or collaborative architecture work are not detailed in your resume.",
+        "positioning_advice": "In interviews, describe your experience participating in code reviews during both internships. Ask about the design process for your RAG pipeline and microservices—how you collaborated with teammates. Frame your interest in design discussions as a key learning opportunity at RBC. Emphasize your openness to feedback and iteration."
       }
     ]
   },
   "resume_adaptation": [
     {
-      "target_section": "Summary / Professional Overview (if it exists, or top of Experience)",
+      "target_section": "Experience",
       "priority": "High",
-      "current_signal": "Resume jumps directly into work experience with no summary. The job titles 'AI Developer / DevOps Intern' and 'Software Engineer Intern' don't immediately signal Kubernetes and operator readiness.",
-      "suggested_change": "Add a 2-3 line professional summary above work experience: 'Cloud-native engineer with hands-on Kubernetes (AKS, Helm, GitOps) and production Python experience. Focused on infrastructure automation, microservices, and cloud security. Learning Go for Kubernetes ecosystem development.' This immediately signals fit on the three required skills.",
-      "reason": "Canonical's hiring manager will scan the resume in 15 seconds. Without a summary, they may not immediately connect 'AI Developer' to Kubernetes operator work. A summary pulls Kubernetes to the top and shows self-awareness about Go as a gap and growth area."
+      "current_signal": "Your CGI role lists Kubernetes and GitOps but doesn't explicitly highlight the security-first CI/CD pipeline or the scale of the legacy modernization. The Architech role describes the RAG chatbot but doesn't emphasize the FastAPI backend and deployment details.",
+      "suggested_change": "For CGI: Add a second achievement bullet that reads: 'Designed and deployed a secure, fully-automated CI/CD pipeline with 3-stage security scanning (static analysis, dependency checks, container scanning), reducing deployment risk and enabling rapid, reliable production releases.' For Architech: Expand the deployment achievement to: 'Built and deployed a containerized FastAPI backend serving the RAG chatbot, scaling the application across Azure Container Registry and GitHub Actions for continuous, reproducible deployments with sub-minute deployment times.'",
+      "reason": "RBC's AI Group and the role explicitly value secure development practices and production reliability. These additions directly address the 'secure coding' and 'production support' nice-to-haves and show enterprise-level thinking at entry-level."
     },
     {
-      "target_section": "Work Experience - Current Role (CGI, AI Developer / DevOps Intern)",
+      "target_section": "Skills",
       "priority": "High",
-      "current_signal": "Achievements are strong but use internship framing ('Modernized', 'Implemented', 'Deployed') without emphasizing technical depth or operator/infrastructure thinking. 'AI Developer' title may obscure DevOps work.",
-      "suggested_change": "Reorder achievements to lead with Kubernetes/infrastructure, not AI: (1) 'Deployed and managed cloud-native microservices on Azure Kubernetes Service using Helm charts, establishing infrastructure-as-code patterns for consistent, version-controlled deployments.' (2) 'Implemented GitOps automation with FluxCD, enabling declarative, fully automated lifecycle management across the cluster—paralleling Kubernetes operator philosophy.' (3) Then add: 'Built end-to-end CI/CD pipeline with 3-stage security scanning (Spectral, SonarQube, GitHub Advanced Security) to enforce security controls in cloud-native environment.' (4) 'Modernized 30+ year monolithic COBOL system into Python-based microservices, demonstrating ability to architect complex system transformations.' Keep AI/code-analysis tool mention but don't lead with it.",
-      "reason": "Canonical is hiring a Kubernetes engineer, not an AI developer. This reordering puts Kubernetes and infrastructure-as-code first, showing the hiring manager you are thinking about their problem. It also subtly shows you understand operator patterns (declarative, automated lifecycle) before you know Go."
+      "current_signal": "Your skills list is comprehensive but alphabetical and lacks prioritization. RBC's posting requires Python, REST APIs, Git, Docker, Kubernetes, Azure, and CI/CD—but this isn't visually prominent in your skills section.",
+      "suggested_change": "Reorganize your skills section into 3 categories: (1) **Core Stack** (Python, Git, Docker, Kubernetes, Azure, CI/CD Pipelines, FastAPI, PostgreSQL, MongoDB), (2) **AI/ML & Data** (Transformers, LangGraph, RAG Pipelines, BERT, HuggingFace, OpenAI embeddings, pgvector, Pandas, NumPy), (3) **Infrastructure & Security** (Helm, FluxCD, Azure DevOps, Spectral, SonarQube, GitHub Advanced Security, JWT, OAuth, RBAC). Or reorder to front-load the most relevant technologies in a single list.",
+      "reason": "RBC reviewers will scan for keyword matches first. Reorganizing makes it easier to see you have the core stack + AI specialization. This increases resume pass-through in ATS systems and human reviews."
     },
     {
-      "target_section": "Hard Skills section (top of technical skills list)",
-      "priority": "High",
-      "current_signal": "Git, Docker, Kubernetes listed 2nd–3rd, but then ML/AI dominate (Transformers, NumPy, Pandas, LangGraph, RAG). For a Kubernetes operator role, the skill order signals priorities, and ML is over-represented.",
-      "suggested_change": "Reorder to: Python, Go (learning), Kubernetes, Helm, FluxCD, Docker, GitOps, CI/CD Pipelines, Git, [Cloud] Azure/AKS, [then] MongoDB, PostgreSQL, SQL, [then] FastAPI, GitHub Actions, [then compress or minimize] Transformers, NumPy, Pandas, LangGraph, RAG, BERT, etc. This makes the first 10 skills read as 'cloud-native Python engineer learning Go' rather than 'ML engineer who happens to know Kubernetes.'",
-      "reason": "ATS (applicant tracking systems) and hiring managers weight skills by proximity to the top. Moving Kubernetes ecosystem and Python to the top immediately signals fit. Adding 'Go (learning)' is honest and shows proactive learning. Minimizing ML signals shows you understand this is not an ML role, even though you have ML skills."
-    },
-    {
-      "target_section": "Work Experience - Previous Role (Architech, Software Engineer Intern)",
+      "target_section": "Experience",
       "priority": "Medium",
-      "current_signal": "Focus on RAG chatbot and FastAPI backend. 'Implemented fully automated deployment using CI/CD' is good but brief.",
-      "suggested_change": "Expand CI/CD achievement: 'Implemented fully automated deployment pipeline using Docker and GitHub Actions, reducing deployment time by [X%] and enabling reproducible, reliable platform releases. Designed Dockerfile and GitHub Actions workflows for Python FastAPI backend with semantic search integration.' This shows technical ownership of the deployment layer, not just feature work.",
-      "reason": "Canonical needs engineers who own infrastructure. While this role didn't focus on operators, demonstrating ownership of containerization and CI/CD automation shows you think about deployment as a first-class concern."
+      "current_signal": "Your internship roles don't explicitly mention code reviews, design discussions, or collaboration with cross-functional teams (infrastructure, platform, ML teams).",
+      "suggested_change": "Add to your CGI role: 'Collaborated with infrastructure and platform teams to design microservice deployment strategy and GitOps workflow, participating in architecture reviews and design decisions.' Or to both roles, add: 'Participated in peer code reviews and design discussions, learning best practices from senior engineers and contributing to architectural decisions.'",
+      "reason": "The posting explicitly values participation in code reviews and design discussions. These are likely interview topics. Adding this signal helps frame you as collaborative and ready for team environments."
     },
     {
-      "target_section": "Keywords / Domain Expertise section (near bottom of resume)",
+      "target_section": "Summary or Objective",
       "priority": "Medium",
-      "current_signal": "Keywords list includes: 'Cloud-native development, GenAI workflows, DevOps automation, Microservices, Legacy code modernization, Machine Learning, NLP, Transformers, Retrieval-Augmented Generation, Cloud security, Infrastructure automation, Semantic search'—heavy on ML, light on operators.",
-      "suggested_change": "Reorder and add: 'Kubernetes operators (learning), Infrastructure-as-code (Helm, GitOps), Cloud-native architecture, Microservices, DevOps automation, CI/CD security, Distributed systems, Cloud platforms (Azure/AKS), Python production development, Go learning path, Open-source ecosystem, Infrastructure automation, Cloud security, Legacy system modernization.' Remove or deprioritize 'Transformers, NLP, GenAI workflows' to secondary position. Add 'Distributed systems' (implicit in Kubernetes/GitOps but not called out).",
-      "reason": "Keywords help ATS matching and signal to the hiring manager what you see as your core identity. Shifting from ML to infrastructure signals genuine interest in the role, not a lateral move from ML."
+      "current_signal": "Your resume lacks a summary or objective statement. Without context, reviewers see skills and experience but not your strategic fit for entry-level AI services roles.",
+      "suggested_change": "Add a 2–3 line professional summary: 'Entry-level Software Developer with hands-on experience in cloud-native development, AI/ML services, and DevOps automation. Demonstrated expertise in modernizing legacy systems into microservices, building secure CI/CD pipelines, and developing RAG-powered AI applications on Azure. Passionate about learning enterprise-scale software engineering practices and contributing to AI-driven innovation.'",
+      "reason": "A targeted summary will help RBC quickly understand your fit and make it clear you're actively seeking entry-level roles at scale. It also helps with ATS parsing and human review consistency."
     },
     {
-      "target_section": "Education section",
+      "target_section": "Skills",
       "priority": "Low",
-      "current_signal": "Lists 'Advanced Diploma in Computer Programming & Analysis' from Seneca College with no context or relevance to the role.",
-      "suggested_change": "Keep as-is, but if you have additional certifications, training, or coursework, add them. E.g., if you have completed any Kubernetes fundamentals courses, Docker courses, or Linux courses (even Udemy), add 'Relevant Coursework: Cloud-native development, Kubernetes fundamentals, CI/CD automation, Linux system administration (self-directed).' This signals investment in closing gaps.",
-      "reason": "The education gap (Advanced Diploma vs. Bachelor's) is borderline. Adding self-directed learning and certifications shows you are intentional about growth. If you have not done so, consider a short Kubernetes or Go course before interviewing."
-    },
-    {
-      "target_section": "Projects section",
-      "priority": "Low",
-      "current_signal": "Two projects listed: BERT email classifier and AI Powered Adoption Platform. Both are ML/application-focused, not infrastructure-focused.",
-      "suggested_change": "Consider adding a 3rd project (optional, only if you have time before applying) focused on infrastructure: e.g., 'Kubernetes Deployment Automation Project: Built Helm charts and GitOps pipeline for multi-environment microservices deployment, demonstrating declarative infrastructure-as-code principles.' Or just leave projects as-is if they feel complete—they show depth and are not actively harmful.",
-      "reason": "If you have time, a small infrastructure/Kubernetes project would strengthen the portfolio. If not, the current projects demonstrate end-to-end software development and are acceptable. Do not over-engineer; cover letter will do more work here."
+      "current_signal": "You list Golang and Java are not on your resume, but the posting requires them.",
+      "suggested_change": "Do NOT add Golang or Java to your skills if you haven't used them. Instead, ensure your resume mentions your experience with statically-typed languages (C++, C#, .NET) and your demonstrated ability to learn new languages quickly.",
+      "reason": "Dishonesty on skills is disqualifying. Better to address the gap in interviews with honesty about your learning velocity and interest in these languages than to misrepresent yourself."
     }
   ],
   "cover_letter_guidance": [
     {
-      "theme": "Kubernetes depth + Go learning path",
-      "talking_point": "I have built and deployed production Kubernetes infrastructure on Azure using Helm and GitOps (FluxCD), enabling declarative, automated lifecycle management. This experience has given me deep intuition for infrastructure-as-code principles—the same philosophy that powers Kubernetes operators. While I am not yet Go-fluent, I have shipped production Python, JavaScript, and C++, and I am eager to learn Go for operator development, where it is the natural choice for this domain. I see this role as the ideal place to deepen that skill alongside experienced team members.",
-      "reason": "Canonical needs someone who can ship Kubernetes operators in Go. This addresses the elephant in the room (Go gap) while positioning your Kubernetes expertise as a strong foundation and demonstrating maturity (not overselling, being honest about Go, showing learning agility). It also shows you understand why Go matters for operators, not just that you lack the skill."
+      "theme": "RBC AI Group's Strategic Vision & Your Fit",
+      "talking_point": "Reference RBC's recent announcement of its AI Group (February 2026) and bold $1 billion AI value ambition by 2027. Mention that you're excited to contribute to RBC's scaling of high-impact AI services under senior guidance. Frame yourself as aligned with this mission and eager to apply your RAG, microservices, and cloud-native expertise to real-world banking use cases.",
+      "reason": "RBC is actively investing in AI infrastructure and hiring aggressively. Showing awareness of their strategic ambitions (not just the job posting) signals genuine interest, not just a generic application. This differentiates you and shows strategic thinking."
     },
     {
-      "theme": "Remote-first, distributed culture fit",
-      "talking_point": "I have worked effectively in distributed teams across multiple time zones and technical contexts—most recently modernizing a legacy 30+ year COBOL system into cloud-native microservices at CGI. I thrive in async, self-directed environments where clear communication and proactive collaboration are essential. Canonical's remote-first model across 70+ countries aligns perfectly with how I work best: autonomous, collaborative, and always learning from global peers.",
-      "reason": "Canonical emphasizes remote-first and distributed teams as core to culture. This signals you are not just technically qualified, but culturally aligned. It also shows you can work across complex socio-technical systems (legacy + modern), a key trait for operators."
+      "theme": "Cloud-Native & Secure Development Expertise Exceeds Entry-Level Baseline",
+      "talking_point": "Highlight your hands-on experience deploying cloud-native microservices on Azure Kubernetes Service, implementing 3-stage secure CI/CD pipelines, and building production-ready services. Emphasize that you're not starting from theory—you've already modernized legacy systems and shipped secure, scalable applications in real-world internships.",
+      "reason": "Most entry-level candidates lack this depth. This positions you as immediately productive and needing less ramp-up time. For a financial institution undergoing digital transformation, this is high-value."
     },
     {
-      "theme": "Open-source and community commitment (addressing the gap)",
-      "talking_point": "My professional experience has focused on commercial projects, but I am genuinely drawn to Canonical's open-source mission and the Ubuntu ecosystem. I am committed to contributing to Canonical's Kubernetes operators and community not as an outsider, but as a team member learning to give back. I believe the best infrastructure comes from communities that collaborate openly and welcome learning from mistakes—and I want to build that way.",
-      "reason": "The resume has no open-source contributions, which is a gap for a Kubernetes operator role at Canonical. This talking point acknowledges the gap while showing authentic interest in open-source philosophy and community, not just parroting buzzwords. It positions you as a learner joining a community, which is more credible than claiming deep open-source experience you don't have."
+      "theme": "AI/ML Specialization & RAG/Semantic Search Expertise",
+      "talking_point": "Describe your hands-on work building RAG-powered applications with LangGraph, semantic search, and embeddings. Mention your BERT fine-tuning project and your understanding of multi-stage ML pipelines (intent classification, query parsing, vector search). Connect this to RBC's focus on agentic AI and RAG technologies mentioned in their Vector Institute partnership announcement.",
+      "reason": "RBC's AI Group explicitly focuses on RAG, agentic AI, and responsible AI. Your hands-on RAG and semantic search experience is rare at entry-level and directly aligned with their near-term roadmap. This is a key differentiator."
     },
     {
-      "theme": "Cloud-native infrastructure architecture",
-      "talking_point": "I have designed and deployed microservices architectures that prioritize declarative infrastructure, automated lifecycle management, and security-by-default. From containerizing legacy systems to implementing GitOps with FluxCD, I think about infrastructure as code first—reducing manual toil, enabling reproducibility, and scaling trust. This philosophy is at the heart of Kubernetes operators, and I am excited to apply it to mission-critical component lifecycle management.",
-      "reason": "Canonical's job description emphasizes 'complete lifecycle management of mission-critical components.' This talking point shows you understand the mindset required—declarative, automated, trustworthy—and have applied it in practice. It connects your infrastructure experience to the operator role without overselling operator experience you don't have."
+      "theme": "Security-First Mindset in Development Practices",
+      "talking_point": "Emphasize your proactive approach to security: automated code scanning (Spectral, SonarQube, GitHub Advanced Security) integrated into CI/CD, secure authentication patterns (JWT, OAuth, RBAC), and understanding of secure coding principles. Frame security not as a compliance checkbox but as a core engineering concern.",
+      "reason": "Financial services are heavily regulated and security-conscious. Demonstrating that you think about security from day one—especially in CI/CD automation—signals cultural alignment with RBC's risk management mindset. This is particularly valuable at entry-level, where many candidates treat security as afterthought."
     },
     {
-      "theme": "Communication and collaboration at scale",
-      "talking_point": "I value clear technical communication—whether explaining complex architectures to non-technical stakeholders, writing security-focused CI/CD pipelines that others can understand and maintain, or collaborating across distributed teams on feature design. For Kubernetes operators, this means writing operator code that is clear and maintainable, documentation that meets users where they are, and community engagement that helps others adopt and extend Canonical's solutions.",
-      "reason": "The posting requires 'strong written and verbal communication skills,' and this is hard to prove on a resume. In the cover letter, show through your word choice and clarity that you can communicate—and connect it to operator work (code as documentation, community interaction)."
+      "theme": "Learning Velocity & Readiness for Mentorship",
+      "talking_point": "Highlight your rapid progression across two strategic internships (legacy modernization to AI services), mastery of complex tools (Helm, FluxCD, LangGraph) in real-world contexts, and your President's Honor List recognition. Express genuine enthusiasm for learning from senior engineers at RBC and contributing to team knowledge.",
+      "reason": "The posting emphasizes 'learning,' mentorship, and participation in team ceremonies. Showing you're a self-directed learner who thrives in structured feedback environments signals you're ready for RBC's onboarding and growth culture."
+    },
+    {
+      "theme": "Toronto Location Commitment & RBC Culture Alignment",
+      "talking_point": "If you're local to Toronto or willing to relocate, state this clearly. Mention RBC's reputation for mentorship, supportive culture, and Top Employer recognition—and express alignment with these values. Note your excitement about contributing to a tier-1 Canadian financial institution's AI transformation.",
+      "reason": "The role is on-site in Toronto. Demonstrating genuine interest in the location and RBC's culture (not just the job) increases perceived commitment. RBC takes pride in its people-first culture; acknowledging this shows you've done your homework."
     }
   ],
   "interview_prep": {
     "likely_questions": [
       {
-        "question": "Tell me about your Kubernetes experience. What have you built, and what did you learn?",
-        "why_this_is_likely": "Kubernetes is listed as a nice-to-have but is clearly core to the role. The hiring manager wants to understand your hands-on depth, not just credential.",
-        "prep_guidance": "Walk through your AKS deployment with Helm and FluxCD in detail: (1) What problem were you solving? (2) Why Helm over raw YAML? (3) What challenges did you hit? (4) How did you solve them? (5) What would you do differently next time? Be specific about chart structure, values files, secret management, and GitOps pull vs. push. Then ask: 'What Kubernetes versions and features are Canonical's operators targeting? This shows you are thinking about API stability and deprecation—a core operator concern."
+        "question": "Tell me about your experience with Kubernetes and container orchestration. Have you deployed production workloads? What challenges did you face?",
+        "why_this_is_likely": "Kubernetes is a core requirement and a differentiator. RBC's AI services likely run on Kubernetes or similar orchestration. Your AKS experience makes this a natural deep-dive question.",
+        "prep_guidance": "Walk through your AKS deployment: Helm chart structure, multi-environment deployments, GitOps automation with FluxCD. Discuss challenges you solved (e.g., secret management with Key Vault, scaling considerations, monitoring). Mention one mistake you made and how you resolved it to show learning. Be prepared to discuss how Kubernetes concepts (pods, services, ingress, ConfigMaps) solve real operational problems."
       },
       {
-        "question": "You don't have Go experience. Why should we hire you, and how will you learn?",
-        "why_this_is_likely": "Go is a required skill. The hiring manager wants to know you are not intimidated, have a learning plan, and understand why Go matters.",
-        "prep_guidance": "Be direct and honest. (1) Acknowledge: 'I am not Go-fluent today, but I have shipped production Python, JavaScript, and C++, and I learn languages quickly. Operator development in Go is the right choice for this domain, and I am committed to becoming proficient.' (2) Discuss your learning plan: 'Before starting, I would work through Go fundamentals and the Operator SDK tutorial. At Canonical, I would pair with senior engineers on early PRs, learn through code review, and contribute incrementally. Within 3–6 months, I expect to ship features independently.' (3) Ask: 'How does Canonical support learning new languages on the team? What is the onboarding process for Go?'"
+        "question": "You mention implementing a 3-stage security scan pipeline. Walk me through the architecture. Why did you choose those specific tools (Spectral, SonarQube, GitHub Advanced Security)?",
+        "why_this_is_likely": "Security is a top concern for financial services. This is an opportunity to showcase proactive security thinking and decision-making. Your CI/CD pipeline is a strong achievement; they'll want to understand your thinking.",
+        "prep_guidance": "Describe the three stages: YAML linting (Spectral), code quality & security scanning (SonarQube), dependency and container scanning (GitHub Advanced Security). Explain why each is needed (different threat models). Discuss outcomes: reduced vulnerabilities caught early, faster fixes. Be honest about tool trade-offs (e.g., false positives, tuning effort). Show you understand the security scanning landscape."
       },
       {
-        "question": "Describe a time you debugged a production issue. What was your process?",
-        "why_this_is_likely": "The posting lists 'debug issues' as a core responsibility. The hiring manager wants to know your problem-solving discipline, not just your toolkit.",
-        "prep_guidance": "Pick a real example from your CI/CD work or microservices deployment. Walk through: (1) The symptom or error. (2) Your hypothesis and initial investigation (logs, metrics, etc.). (3) What you checked first, second, third. (4) How you narrowed the scope. (5) The root cause. (6) Your fix and how you verified it. (7) What you changed to prevent recurrence. For Kubernetes, if you have a real example, mention it. If not, discuss how you would debug a FluxCD deployment that failed silently, or a Helm chart that deployed the wrong version. Show logical, methodical thinking."
+        "question": "Tell me about the RAG pipeline you built. How does it work end-to-end? How would you test it?",
+        "why_this_is_likely": "RAG is explicitly mentioned as a nice-to-have and aligns with RBC's Vector Institute focus on RAG technologies. This is a core differentiator in your background.",
+        "prep_guidance": "Walk through the architecture: FastAPI backend → LLM call (Azure OpenAI) → pgvector semantic search → retrieval-augmented generation → response to user. Describe the embedding pipeline (OpenAI text-embedding-3-small). Discuss accuracy considerations: how do you ensure retrieved documents are relevant? How do you evaluate the quality of generated responses? Mention LangGraph orchestration and multi-stage workflows. Be prepared for follow-ups on latency, cost, and production considerations."
       },
       {
-        "question": "Tell me about a time you collaborated with a distributed team. How did you stay aligned?",
-        "why_this_is_likely": "Canonical is remote-first across 70+ countries. This is not a nice-to-have—it is a core value. The hiring manager wants to know you are not just technically strong but interpersonally mature.",
-        "prep_guidance": "Give a concrete example from CGI or Architech. Mention: (1) The team structure (time zones, roles). (2) Communication cadence (async updates, stand-ups, etc.). (3) A specific challenge or misalignment that happened. (4) How you resolved it (escalation, documentation, etc.). (5) The outcome. E.g., 'We had an AKS deployment fail on a Friday for a team in a different time zone. I documented the error, root cause, and resolution in Slack and a wiki so the other team could pick it up Monday without re-diagnosing. Next sprint, we added automated testing to catch that class of error.' This shows you think about async-first workflows."
+        "question": "What experience do you have with testing and test automation? How would you test an AI service?",
+        "why_this_is_likely": "Testing is listed as a nice-to-have and is important in financial services (reliability, compliance). This probes your depth in a growth area.",
+        "prep_guidance": "Discuss unit testing (Pytest for your FastAPI backend), integration tests (testing API contracts), and ML-specific testing (model evaluation metrics, data validation). For AI services, discuss testing challenges: non-deterministic model outputs, latency, cost. Describe how you'd test your RAG pipeline (retrieval quality, generation coherence). Be honest about areas you're still developing. Express enthusiasm for learning more sophisticated testing strategies at RBC."
       },
       {
-        "question": "What do you know about Canonical and Ubuntu, and why do you want to work here?",
-        "why_this_is_likely": "This is a standard 'why us' question. For Canonical, it tests whether you understand the company mission (open-source, Ubuntu, cloud infrastructure) and whether you are genuinely interested.",
-        "prep_guidance": "Do your research. Mention: (1) Ubuntu's role in cloud computing and data centers. (2) Canonical's recent focus on AI infrastructure, RISC-V, and Google Cloud TPU optimization (from the posting context). (3) The remote-first culture and global team. (4) Your personal alignment: 'I am drawn to Canonical because I believe open-source infrastructure is foundational to the cloud ecosystem. I want to build tools that help millions of engineers deploy and manage critical systems. Ubuntu's ubiquity and Canonical's commitment to open-source align with my values.' Be sincere—do not fake interest in open-source if you don't have it, but if you do, say it."
+        "question": "We use both Python and Go at RBC. You have strong Python experience but no Go background. How would you approach learning Go?",
+        "why_this_is_likely": "Go is a required skill you lack. This is a fair question to probe your learning mindset and technical reasoning. They want to know if you're coachable.",
+        "prep_guidance": "Express genuine interest in Go and explain your learning approach: read documentation, study open-source projects, pair with experienced engineers, build small projects first. Reference your track record learning complex tools (Helm, FluxCD, LangGraph) in real-world contexts. Mention that Go's focus on simplicity and concurrency aligns with cloud-native development (where you have strength). Ask about how Go is used in their services to show strategic interest. Frame this as a near-term priority, not a red flag."
       },
       {
-        "question": "Walk me through how you would design a Kubernetes operator for a mission-critical service. What would you consider?",
-        "why_this_is_likely": "This is the core of the role. The hiring manager wants to understand your architecture thinking and whether you can grow into operator work.",
-        "prep_guidance": "You don't need to be an expert, but show structured thinking. Discuss: (1) The service's lifecycle (installation, upgrade, scaling, backup, monitoring). (2) Why an operator over a Helm chart (custom logic, state management, reconciliation). (3) Key considerations: idempotence, error handling, observability, community feedback. (4) How you would test it. (5) Documentation and examples for users. Tie it to your Kubernetes experience: 'I have seen Helm charts reach the limit of declarative templating when services need custom reconciliation logic. Operators solve this by running a controller inside the cluster. For Go and the Operator SDK, I would...' Ask: 'Are there existing operators in Canonical's portfolio I should study?'"
+        "question": "Describe a production issue you've debugged or supported. How did you approach it? What did you learn?",
+        "why_this_is_likely": "Production support and observability are nice-to-haves. This probes your problem-solving under pressure and your understanding of production systems.",
+        "prep_guidance": "Be honest if you haven't had deep production troubleshooting yet. Instead, pivot to: (1) your deployment automation reducing production risk, (2) how you'd approach debugging if an issue arose (logs, monitoring, metrics), (3) your experience with observability concepts (you mention GitOps automation, which implies understanding deployment state and system health). If you have a real example, describe it: what broke, how you diagnosed it, what you changed, how you verified the fix."
       },
       {
-        "question": "What is your approach to code quality and testing?",
-        "why_this_is_likely": "Kubernetes operators run in production and affect many systems. Code quality is non-negotiable. The hiring manager wants to know your standards.",
-        "prep_guidance": "Reference your CI/CD security scanning pipeline: 'I use automated security scanning (Spectral, SonarQube, GitHub Advanced Security) to catch issues early. I write unit tests and integration tests for critical paths, and I review code as though I would page on call to support it.' Mention pytest and any testing practices from your projects. For operators specifically: 'Operator reconciliation logic must be idempotent and well-tested, since it runs continuously and affects production systems. I would prioritize comprehensive unit testing, integration testing against real Kubernetes clusters, and clear error handling with observability hooks.' Ask: 'What is the testing infrastructure Canonical uses for operators? Are there integration test environments I can develop against?'"
+        "question": "RBC is a large, regulated financial institution. How do you think that's different from working at a startup or smaller company? Are you interested in that environment?",
+        "why_this_is_likely": "This probes cultural fit. RBC wants to know you understand the trade-offs (bureaucracy, compliance, risk management) and are genuinely interested, not settling.",
+        "prep_guidance": "Be honest and balanced. Acknowledge that large enterprises have more structure, longer decision-making, and regulatory compliance—but frame this as an opportunity to learn enterprise-scale practices, security discipline, and large-system design. Reference your experience modernizing a 30+ year legacy COBOL system (that's enterprise-scale thinking). Express interest in learning how responsible AI is implemented at scale. Show you understand that at RBC, you're not shipping fast—you're shipping reliably and securely. Mention RBC's Glassdoor reputation for mentorship and supportive culture as a draw."
       },
       {
-        "question": "How do you stay current with Kubernetes and open-source developments?",
-        "why_this_is_likely": "Kubernetes and the CNCF ecosystem move fast. The posting mentions 'incorporate latest Kubernetes features.' The hiring manager wants to know you are a lifelong learner.",
-        "prep_guidance": "Be honest about what you currently do, and list what you plan to do: 'Today, I follow Kubernetes release notes and CNCF projects through Slack communities and GitHub. At Canonical, I would attend regular office hours, join relevant SIGs, and contribute to roadmap discussions so I understand where the ecosystem is headed. I also believe in learning through code review and contributing to open-source projects—both of which accelerate growth.' Ask: 'Does Canonical have a culture of attending conferences or contributing to Kubernetes SIGs? I am interested in staying at the cutting edge.'"
-      },
-      {
-        "question": "Tell me about the most recent project you shipped. What was your role, and what would you do differently?",
-        "why_this_is_likely": "This is a culture and learning question. The hiring manager wants to know whether you reflect, iterate, and take ownership.",
-        "prep_guidance": "Use your current role at CGI (microservices migration) or your RAG chatbot at Architech. Describe your specific contribution, a challenge you faced, and what you learned. Then say: 'If I were to redo this project, I would…[add a testing strategy, improve docs, refactor X, etc.]. One thing I didn't anticipate was…[a scaling issue, a communication gap], and next time I would handle it by…' This shows growth mindset and self-awareness."
+        "question": "What are you looking for in your first full-time role? Where do you want to grow?",
+        "why_this_is_likely": "This is a standard career conversation question. They want to know if you're aligned with entry-level expectations and genuinely interested in growing within their organization.",
+        "prep_guidance": "Be specific: you want to deepen your cloud-native and AI/ML expertise, learn enterprise-scale software engineering practices, work on meaningful systems that impact real clients, and grow under strong mentorship. Reference RBC's AI Group ambition and your excitement to contribute. Avoid generic answers ('I want to grow'). Show you've thought about what entry-level means: you're not expecting senior responsibility, but you want to own features end-to-end with support. Express interest in learning production support, observability, and secure coding at scale."
       }
     ],
     "skills_to_review": [
       {
-        "skill": "Go fundamentals and syntax",
-        "why_it_matters": "Go is a required skill for the role. You will be writing operator controllers, custom resource definitions, and core infrastructure logic in Go. Without at least Go basics, you will struggle in your first weeks.",
-        "review_plan": "Before the interview, spend 5–8 hours on Go fundamentals: (1) Read 'A Tour of Go' (golang.org/tour)—interactive, takes 2–3 hours. (2) Review Go concurrency patterns (goroutines, channels)—key to Kubernetes operators. (3) Skim the Operator SDK tutorial and look at an existing simple operator (e.g., from Canonical's GitHub or CNCF examples). You don't need to be fluent, but be able to read and discuss Go code. In the interview, admit 'I am still ramping on Go,' but show you have done the work to learn basics."
+        "skill": "Go/Golang fundamentals",
+        "why_it_matters": "Go is a required skill in the job posting and appears in 45% of the software developer market jobs analyzed. You lack hands-on Go experience, but RBC likely uses it for microservices and systems work.",
+        "review_plan": "Spend 2–3 hours on 'A Tour of Go' (golang.org/tour). Build a small CLI tool or HTTP server in Go to get feel for the language. Focus on goroutines, interfaces, and package structure—these are distinctly Go. Don't aim for fluency; aim for credible learning and understanding Go's philosophy. In interviews, discuss how Go differs from Python (statically typed, compiled, concurrency primitives) and why it's valuable for RBC's infrastructure."
       },
       {
-        "skill": "Kubernetes Custom Resource Definitions (CRDs) and operator patterns",
-        "why_it_matters": "The role is building Kubernetes operators. CRDs and the controller pattern are foundational. You need to understand how operators extend Kubernetes.",
-        "review_plan": "Spend 3–4 hours: (1) Read the official Kubernetes CRD docs and watch a 30-minute video on CRDs. (2) Study the Operator pattern: controller loop, reconciliation, idempotence. (3) Look at one simple open-source operator (e.g., cert-manager, external-dns) on GitHub and skim the main controller code. Understand: What is the operator watching for? What changes does it make? How does it retry? You should be able to explain the pattern in plain language."
+        "skill": "Java fundamentals (optional but valuable)",
+        "why_it_matters": "Java is a required skill in the posting and appears in 45% of market jobs. Many enterprise financial systems are built in Java. You lack hands-on experience.",
+        "review_plan": "If time permits, review Java basics: classes, interfaces, polymorphism, Spring Boot fundamentals. RBC likely uses Java for services; knowing how Java differs from Python (OOP discipline, bytecode/JVM, packaging) will help in conversations. Focus on understanding Spring Boot patterns if RBC mentions it. Be honest in interviews: you haven't used Java in production but understand OOP principles from C# and are ready to learn."
       },
       {
-        "skill": "Helm and GitOps deep dive",
-        "why_it_matters": "You already have hands-on Helm and FluxCD experience. Use the interview to show depth and thinking. Interviewers will test whether you understand trade-offs and can articulate design decisions.",
-        "review_plan": "Spend 2–3 hours reviewing your own work and Helm best practices: (1) Reread your Helm chart structure from the CGI project. Be ready to discuss: How did you structure values? How do you manage secrets? How do you handle multiple environments? (2) Write down 3 limitations you hit with Helm and how you worked around them. (3) Study one Helm chart from a CNCF project and compare it to yours. What patterns did they use that you didn't? In the interview, you can say: 'Helm is excellent for templating, but when I needed custom reconciliation logic, that's where I saw the need for operators.'"
+        "skill": "Observability best practices (logging, monitoring, alerting)",
+        "why_it_matters": "Observability is listed as a nice-to-have and is critical in production systems and financial services. You deployed to production but observability is not explicitly detailed in your resume.",
+        "review_plan": "Review logging frameworks (e.g., structured logging in Python with loguru or built-in logging module). Understand monitoring concepts: metrics (Prometheus), visualization (Grafana), alerting (PagerDuty patterns). Study distributed tracing basics (OpenTelemetry). You don't need hands-on experience, but understand the concepts. In interviews, discuss how you'd instrument your RAG service for observability: API latency, model inference time, error rates, semantic search quality."
       },
       {
-        "skill": "CI/CD pipeline design and security scanning",
-        "why_it_matters": "You have done this well. The interview will likely ask how you ensure code quality. You should be able to discuss security scanning tools, testing stages, and deployment gates with confidence.",
-        "review_plan": "Spend 1–2 hours: (1) Document your 3-stage security scanning pipeline from CGI. For each stage (Spectral, SonarQube, GitHub Advanced Security), know: What does it check? What did it find? How did you act on findings? (2) Prepare to discuss: Why these tools? What would you add? How do you balance security and developer velocity? (3) If possible, set up a sample GitHub Actions workflow with one security scanning tool before the interview so you can speak from fresh memory."
+        "skill": "SQL and database design depth",
+        "why_it_matters": "SQL and databases are required. You have experience with PostgreSQL, MongoDB, and Oracle SQL, but database design, query optimization, and schema design are not showcased.",
+        "review_plan": "Review SQL fundamentals: ACID, transactions, indexes, query plans, normalization. Design a schema for a banking use case (e.g., account transactions, customer data). Understand when to use relational vs. NoSQL (your pgvector work shows this). Practice writing non-trivial queries with JOINs, aggregations, and subqueries. Be ready to discuss schema decisions for the RAG application (how would you store embeddings, metadata, retrieval logs?)."
       },
       {
-        "skill": "Distributed systems debugging and observability",
-        "why_it_matters": "Kubernetes operators run in production across distributed environments. Debugging is hard. The interview will test whether you can think about observability, logging, monitoring, and tracing.",
-        "review_plan": "Spend 2–3 hours: (1) Study Kubernetes logging and monitoring: pod logs, events, metrics. (2) Read about structured logging (JSON logs with key-value fields) and why it matters for operators. (3) Understand the concept of observability triad: logs, metrics, traces. Pick one tool you know (e.g., Prometheus, ELK, Jaeger) and be ready to discuss how you would instrument an operator to be observable. (4) Document a time you debugged a distributed issue (your CI/CD or microservices work) and be ready to walk through your observability strategy."
+        "skill": "Testing and test automation depth",
+        "why_it_matters": "Testing is a nice-to-have and increasingly important. Pytest is listed, but explicit testing strategies are not detailed. Financial services require rigorous testing.",
+        "review_plan": "Review Pytest: fixtures, parametrization, mocking (unittest.mock). Understand testing layers: unit tests (isolated functions), integration tests (API contracts), end-to-end tests (full workflows). Learn about test coverage and test-driven development mindset. For your RAG service, design tests: mock the LLM, test retrieval, test end-to-end responses. Understand why testing matters in finance: correctness, compliance, rollback safety."
       },
       {
-        "skill": "Python production patterns and best practices",
-        "why_it_matters": "You have production Python experience. In the interview, interviewers may discuss Go vs. Python trade-offs, or ask you to compare approaches. Be able to discuss Python best practices with confidence.",
-        "review_plan": "Spend 1–2 hours: (1) Review Python code quality standards: type hints, docstrings, testing (pytest). (2) Be ready to discuss: Why did you choose Python over Go for your microservices? What are Python's strengths and weaknesses in cloud-native? (3) If you have time, review one Python project (FastAPI chatbot, CI/CD code) and be ready to discuss its structure and why you made the architectural choices you did."
+        "skill": "System design and microservices architecture",
+        "why_it_matters": "Your legacy modernization project involved system design thinking, but formal system design patterns are not detailed. Financial systems are complex distributed systems.",
+        "review_plan": "Review microservices patterns: service-to-service communication, API gateways, distributed logging, circuit breakers, service discovery. Study your own RAG application through a system design lens: how would you scale it? How would you handle failures? What about multi-tenancy or regional deployment? Be ready to discuss trade-offs (monolith vs. microservices, sync vs. async). Reference your Kubernetes deployment as evidence you understand distributed system operations."
       },
       {
-        "skill": "Linux container fundamentals (Docker, namespaces, cgroups)",
-        "why_it_matters": "Kubernetes runs on Linux. Operators run in containers. Understanding Linux container primitives shows you are thinking about the full stack.",
-        "review_plan": "Spend 2–3 hours: (1) Watch a 30-minute intro to Linux namespaces and cgroups. (2) Review your Dockerfile from the Architech project and be ready to discuss: Why these layers? How do you minimize image size? What security best practices did you follow? (3) Understand what happens when a container runs in Kubernetes: entrypoint, PID 1, signal handling. (4) If you have time, write a simple Dockerfile and push it to Docker Hub to refresh the workflow."
-      },
-      {
-        "skill": "Open-source contribution workflow",
-        "why_it_matters": "The role emphasizes open-source. Even if you have not contributed before, understanding the workflow (fork, branch, PR, review, merge) shows readiness to participate.",
-        "review_plan": "Spend 1–2 hours: (1) Pick a small open-source project related to Kubernetes (e.g., FluxCD, cert-manager, external-dns). (2) Read their CONTRIBUTING.md and understand their PR process. (3) Find a 'good first issue' or documentation gap you could fix, and draft a PR (do not submit unless you are sure, but go through the thought process). (4) In the interview, mention: 'I have studied Canonical's operator repositories and I am familiar with how to contribute—I am ready to start with small PRs and grow from there.'"
+        "skill": "Secure coding and OWASP principles",
+        "why_it_matters": "Security is a nice-to-have and critical in banking. You've implemented CI/CD security scans and secure authentication, but foundational OWASP knowledge may not be deep.",
+        "review_plan": "Review OWASP Top 10: injection attacks, broken authentication, sensitive data exposure, XML external entities, broken access control, security misconfiguration, cross-site scripting, insecure deserialization, using components with known vulnerabilities, insufficient logging & monitoring. For your RAG service: how would you prevent prompt injection? How would you protect API keys? How would you handle data privacy in a banking context? Understand secure coding practices in Python and FastAPI."
       }
     ],
     "company_research_points": [
       {
-        "topic": "Canonical's Kubernetes operator portfolio and recent releases",
-        "why_it_matters": "This is the core of the role. You should know what operators Canonical owns, what they solve, and where the roadmap is headed. It shows genuine interest and helps you tailor your questions.",
-        "suggested_angle": "In your cover letter, mention a specific Canonical operator if you know one (e.g., 'I have studied Canonical's Charmed Kubernetes operators and am drawn to the declarative, lifecycle-management philosophy'). In the interview, ask: 'Which operators is the team currently maintaining? What are the most pressing customer challenges or feature requests? I want to understand the prioritization so I can contribute immediately.'"
+        "topic": "RBC AI Group, strategic ambitions, and 'AI by 2027'",
+        "why_it_matters": "In February 2026, RBC announced a new AI Group reporting to the CEO with a $1 billion AI value generation goal by 2027. This is a major strategic initiative. Understanding this shows you've researched the company deeply and positions you as aligned with RBC's future direction.",
+        "suggested_angle": "In your cover letter: mention RBC's $1B AI ambition by 2027 and your excitement to contribute. In interviews: ask how the role supports this goal (scaling AI services, platform reliability, model serving). Reference specific AI technologies RBC is investing in (RAG, agentic AI, computer vision, federated learning per their Vector Institute partnership) and your hands-on experience with RAG."
       },
       {
-        "topic": "Ubuntu's role in cloud, edge, and AI infrastructure",
-        "why_it_matters": "Canonical is publisher of Ubuntu. The posting mentions 'Canonical is expanding AI infrastructure and hardware partnerships (RISC-V).' Understanding Ubuntu's place in this ecosystem shows you have done your homework and understand why Kubernetes operators matter.",
-        "suggested_angle": "In your cover letter: 'Ubuntu powers the vast majority of cloud deployments and edge devices. Kubernetes operators that run on Ubuntu are essential infrastructure for billions of systems.' In the interview, discuss: 'I have read about Canonical's Ubuntu on RISC-V initiative and Google Cloud TPU optimization. How does the Kubernetes operator work fit into that broader strategy? Are there unique requirements for edge or AI deployments that the operators need to handle?'"
+        "topic": "RBC's Vector Institute partnership, responsible AI, and research focus",
+        "why_it_matters": "RBC extended its platinum sponsorship of Vector through 2032 (July 2026 announcement). Vector focuses on AI research, responsible AI, and talent development. This signals RBC's commitment to AI leadership and ethical innovation.",
+        "suggested_angle": "In interviews: mention RBC's Vector partnership and ask about the company's approach to responsible AI (fairness, explainability, bias mitigation). Show awareness that you're joining a company committed to AI excellence, not just AI adoption. If you have thoughts on responsible AI, share them. This positions you as thoughtful about AI's societal impact."
       },
       {
-        "topic": "Canonical's remote-first and distributed-team culture",
-        "why_it_matters": "Canonical is remote-first since 2004, across 70+ countries. This is central to the company identity. Showing you understand and embrace this is critical.",
-        "suggested_angle": "In your cover letter: 'Canonical's remote-first model across 70+ countries aligns with my working style—I thrive in distributed teams where clear communication and proactive collaboration are essential.' In the interview, ask about timezone coordination, sprint participation, and in-person gatherings (the posting mentions 'sprints held twice yearly'). Show genuine interest: 'How does the team coordinate across time zones? What tools and practices have you found effective for distributed collaboration?'"
+        "topic": "RBC's recent awards and market recognition (Euromoney 2026)",
+        "why_it_matters": "RBC received four top honours in Euromoney's 2026 Awards (North America's Best Bank, Canada's Best Bank, Canada's Best Investment Bank). This signals RBC's operational excellence and market leadership.",
+        "suggested_angle": "In interviews: reference RBC's recognition as one of the best banks globally. Mention your interest in contributing to the engineering practices that support this excellence. This shows you understand RBC's competitive position and want to be part of that success."
       },
       {
-        "topic": "Canonical's approach to open-source (community, licensing, contribution workflows)",
-        "why_it_matters": "The posting lists 'open source software development' as nice-to-have. The role requires you to build for community. Showing you understand Canonical's philosophy on open-source (not just contributing code, but building for users and maintainability) is crucial.",
-        "suggested_angle": "Research: Does Canonical use GPL, MIT, Apache 2.0 licenses? How does the company engage with CNCF and Kubernetes communities? In the interview, show alignment: 'I believe open-source operators should be built for the community—clear documentation, examples, issue response, feature feedback loops. I am committed to that ethos at Canonical.' Ask: 'What is your process for handling community issues and feature requests? How do you balance user needs with roadmap priorities?'"
+        "topic": "RBC's hiring scale and new grad programs (3,600 new graduates fiscal 2026, 1,600 summer students 2026)",
+        "why_it_matters": "RBC is actively hiring at massive scale, including 3,600 new graduates. This signals strong organizational growth, structured entry-level programs, and mentorship infrastructure. You're not a rare hire—you're part of a cohort, which typically means better support.",
+        "suggested_angle": "In interviews: acknowledge RBC's scale hiring and express appreciation for the structured entry-level experience. Ask about new grad onboarding, rotation programs, or mentorship structure. Show you understand entry-level at scale is different (more structure, more peers, stronger safety net). Express interest in learning alongside other high-potential new graduates."
       },
       {
-        "topic": "Recent Canonical announcements and roadmap (AI infrastructure, RISC-V, cloud partnerships)",
-        "why_it_matters": "The job posting context mentions 'May 28, 2026: Canonical announced general availability of optimized Ubuntu images for Google Cloud TPU virtual machines' and 'June 2026: Canonical declared 2026 as the year of Ubuntu Linux on RISC-V.' These are strategic initiatives that may inform the operator work.",
-        "suggested_angle": "In the interview, show awareness: 'I noticed Canonical's focus on AI infrastructure optimization and RISC-V adoption. Are there operator improvements or new operators needed to support these initiatives? How does my work fit into that roadmap?' This signals you are thinking strategically, not just coding."
+        "topic": "RBC's corporate culture: mentorship, supportive environment, Top Employer in Canada, Glassdoor 3.9/5",
+        "why_it_matters": "RBC is consistently praised on Glassdoor for mentorship and supportive culture. This is a key differentiator vs. high-pressure tech startups. Understanding this culture helps you position yourself as aligned.",
+        "suggested_angle": "In your cover letter: mention RBC's reputation for mentorship and supporting employees in reaching their full potential. In interviews: reference specific Glassdoor feedback (e.g., 'employees highlight mentorship and collaborative spirit') and ask how that plays out in practice for your team. Show you value learning environments and collaborative teams."
       },
       {
-        "topic": "Canonical's customer base and their pain points (public cloud providers, silicon partners, enterprises)",
-        "why_it_matters": "The posting mentions 'major customers including leading public cloud and silicon providers.' Understanding who uses Canonical's tools and why helps you prioritize work and communicate better.",
-        "suggested_angle": "Research who Canonical's major customers are (AWS, Google Cloud, Azure, major chip makers). In the interview, ask: 'Who are the primary users of the operators we maintain? What are their typical deployment scales and requirements? Understanding that helps me design for production from day one.'"
+        "topic": "RBC's AI Group structure: Business Enablement function, partnership with business lines, scaling AI projects",
+        "why_it_matters": "The job posting mentions the AI Group's Business Enablement function 'partnerships with business lines to drive AI transformation.' This tells you the role is not isolated; it bridges AI and business outcomes.",
+        "suggested_angle": "In interviews: ask about how the role connects to business lines (e.g., retail banking, commercial, capital markets). Show interest in understanding how AI services drive business value, not just technical excellence. Mention your experience modernizing legacy systems for real clients (Foresters Financial) as evidence you understand business context."
+      },
+      {
+        "topic": "Financial services regulatory environment and RBC's risk management culture",
+        "why_it_matters": "RBC is a regulated bank. Development practices, testing rigor, and security are non-negotiable. Understanding this cultural context helps you position yourself as aligned with enterprise discipline.",
+        "suggested_angle": "In interviews: show awareness that financial services development is different (compliance, auditability, change management). Reference your CI/CD security scans and secure development practices as aligned with banking standards. Ask about regulatory requirements for AI (model governance, explainability, fairness) to show you think about compliance holistically."
+      },
+      {
+        "topic": "RBC Capital Markets U.S. expansion and hiring growth",
+        "why_it_matters": "RBC Capital Markets is expanding in the U.S. with new hiring (per posting context). This signals organizational growth and potential opportunities for advancement or internal movement.",
+        "suggested_angle": "In interviews: ask about growth trajectory—is the Toronto AI Group expanding? Are there opportunities to contribute to U.S. initiatives? Show you're thinking about career growth beyond the immediate role. This positions you as ambitious and strategic in your thinking."
       }
     ],
     "experience_talking_points": [
       {
-        "theme": "Kubernetes deployment and infrastructure-as-code expertise",
-        "supporting_evidence": "Current role at CGI: 'Deployed cloud-native microservices on Azure Kubernetes Service using Helm charts and implemented GitOps automation with FluxCD, enabling consistent, version-controlled, and fully automated deployments.' This is hands-on, production experience with Kubernetes lifecycle management.",
-        "why_it_resonates": "The posting's core responsibility is 'Build Kubernetes operators and addons offering complete lifecycle management of mission-critical components.' Your Helm + FluxCD work demonstrates understanding of declarative, automated infrastructure—the exact philosophy that powers operators. In the interview, you can say: 'I have built infrastructure that automatically reconciles state to declarative intent. Operators take that pattern and embed it in Kubernetes itself—I am ready to take this next step.'"
+        "theme": "Cloud-Native Microservices Architecture & Kubernetes Expertise",
+        "supporting_evidence": "At CGI, you 'modernized a 30+ year monolithic COBOL tax-reporting system into cloud-native microservices' and 'deployed cloud-native microservices on Azure Kubernetes Service using Helm charts and implemented GitOps automation with FluxCD.' This is enterprise-scale system design and deployment expertise.",
+        "why_it_resonates": "The posting emphasizes 'building reliable APIs, backend services, and integration components' and 'collaborating with infrastructure, platform, and ML teams.' Your microservices and AKS experience demonstrates you understand distributed system design, operational reliability, and infrastructure-as-code. RBC needs engineers who can scale AI services reliably. Your track record proves you can."
       },
       {
-        "theme": "End-to-end system thinking: legacy to modern architecture",
-        "supporting_evidence": "CGI role: 'Modernized a 30+ year monolithic COBOL tax-reporting system into cloud-native microservices.' This shows you understand both old and new paradigms, can identify boundaries, and execute a large migration.",
-        "why_it_resonates": "Kubernetes operators often need to manage systems that are older, stateful, or complex. Your experience modernizing legacy systems shows you can think about backward compatibility, migration paths, and operational safety. In the interview: 'I have experience with systems where downtime is costly. That discipline transfers to operator development—every reconciliation loop must be safe, idempotent, and observable.'"
+        "theme": "Security-First CI/CD Pipeline Implementation",
+        "supporting_evidence": "At CGI, you 'implemented a CI/CD pipeline with 3-stage security scans using Spectral, SonarQube, and GitHub Advanced Security, strengthening end-to-end delivery security.' This is a concrete achievement in a core requirement.",
+        "why_it_resonates": "Financial services place enormous emphasis on security and compliance. The posting lists 'secure coding practices' as a nice-to-have. Your proactive integration of automated security scanning into the deployment pipeline signals that you think about security from day one, not as an afterthought. This cultural alignment is rare at entry-level and highly valuable for RBC."
       },
       {
-        "theme": "CI/CD security and production quality",
-        "supporting_evidence": "CGI role: 'Implemented a CI/CD pipeline with 3-stage security scans using Spectral, SonarQube, and GitHub Advanced Security, strengthening end-to-end delivery security.' This is not just feature delivery—it is production-grade quality and security thinking.",
-        "why_it_resonates": "Operators run in production and affect multiple users. Code quality and security are non-negotiable. Your security-scanning pipeline shows you have already internalized this discipline. In the interview, connect it: 'I designed security gates early in the pipeline so issues are caught before they reach users. That same mentality applies to operators—prevent bugs, not just fix them.'"
+        "theme": "RAG-Powered AI Service Development with LangGraph and Semantic Search",
+        "supporting_evidence": "At Architech, you 'built a RAG-powered AI customer support chatbot using LangGraph, FastAPI, and Azure OpenAI, integrating pgvector semantic search with OpenAI embeddings.' This is production AI development experience.",
+        "why_it_resonates": "RBC's AI Group is explicitly investing in RAG technologies (per Vector Institute partnership focus). Your hands-on RAG experience—from semantic search architecture to FastAPI service integration to Azure deployment—is exactly what RBC needs for scaling AI services. This differentiates you sharply from typical entry-level candidates."
       },
       {
-        "theme": "Rapid skill acquisition and learning trajectory",
-        "supporting_evidence": "Resume shows progression from Software Engineer Intern (Architech, Jan–May 2025) → AI Developer / DevOps Intern (CGI, Sept 2025–Present). Within one year, you moved from building a RAG chatbot to modernizing legacy systems into cloud-native architecture. This demonstrates the ability to learn fast and apply knowledge.",
-        "why_it_resonates": "You don't have Go or deep operator experience, but your trajectory shows you can learn. In the interview: 'I went from knowing Python and cloud concepts to shipping production Kubernetes infrastructure in one role. I am confident I can do the same with Go and operator development—especially with mentorship from Canonical's experienced team.'"
+        "theme": "Full-Stack DevOps Automation and Reproducible Deployments",
+        "supporting_evidence": "At Architech, you 'implemented fully automated deployment using CI/CD with Docker and GitHub Actions, significantly reducing deployment time and ensuring fast, reliable, and reproducible platform releases.' This demonstrates end-to-end infrastructure thinking.",
+        "why_it_resonates": "The posting emphasizes 'learning and applying software engineering best practices' and 'growing practical experience with modern engineering tools, cloud platforms, containerization.' Your automation work shows you don't just write code—you ensure it reaches production safely and repeatedly. This is exactly the engineering discipline RBC values."
       },
       {
-        "theme": "Distributed team and async-first collaboration",
-        "supporting_evidence": "Both CGI and Architech are distributed-team environments. You have coordinated across time zones, managed asynchronous communication, and collaborated on complex system architectures.",
-        "why_it_resonates": "Canonical is remote-first across 70+ countries. Your distributed-team experience is not just a checkbox—it shows you can work independently, communicate clearly in writing, and collaborate without constant synchronous meetings. In the interview: 'I have written clear commit messages, detailed pull request descriptions, and async updates for distributed teams. That discipline is essential for open-source and Canonical's model.'"
+        "theme": "AI/ML Model Development and Production Serving",
+        "supporting_evidence": "You fine-tuned a BERT model (92% accuracy email classifier), implemented semantic search with OpenAI embeddings, and built a FastAPI backend to serve models in production. Your AI adoption platform demonstrates end-to-end ML: authentication, multi-stage RAG, MongoDB vector storage, and user-facing service.",
+        "why_it_resonates": "The posting lists 'AI/Machine Learning experience' and 'model serving knowledge' as nice-to-haves. Your project experience demonstrates both: you understand ML model training, evaluation, and production deployment. For RBC's AI Group, this is high-value because you can contribute across the entire AI service stack, not just infrastructure."
       },
       {
-        "theme": "RAG and AI integration experience (relevant to Canonical's AI infrastructure expansion)",
-        "supporting_evidence": "Architech role: 'Built a RAG-powered AI customer support chatbot using LangGraph, FastAPI, and Azure OpenAI, integrating pgvector semantic search with OpenAI embeddings.' This shows proficiency with modern AI workflows and cloud AI services.",
-        "why_it_resonates": "The posting context mentions Canonical is expanding AI infrastructure (Google Cloud TPU optimization, RISC-V for edge AI). While this operator role is not specifically AI-focused, your AI experience signals you understand emerging infrastructure priorities. In the interview, you could mention: 'I have integrated AI into production systems, and I understand the infrastructure requirements—GPU support, memory, networking. If Canonical's future operators need to support AI workloads, I have that context.'"
+        "theme": "Rapid Learning and Mastery of Complex Tools in Real-World Contexts",
+        "supporting_evidence": "In six months (two internships), you learned Kubernetes, Helm, FluxCD, GitOps, LangGraph, RAG pipelines, security scanning tools, and Azure DevOps. Your achievements show you don't just use tools—you understand their purpose and trade-offs. President's Honor List recognitions indicate sustained academic rigor.",
+        "why_it_resonates": "The posting emphasizes 'learning' and 'growing practical experience.' Your trajectory from one internship to the next shows you're a self-directed learner who thrives in real-world complexity. RBC will mentor you, but they want someone who can read documentation, explore, and integrate new tools independently—you've proven you can do this."
       },
       {
-        "theme": "Full-stack systems thinking: from code to deployment",
-        "supporting_evidence": "Your projects and roles span: backend (FastAPI), AI systems (LangGraph, embeddings), infrastructure (Kubernetes, Helm, FluxCD), security (CI/CD scanning), and DevOps (GitHub Actions, containerization). This is genuinely full-stack.",
-        "why_it_resonates": "Kubernetes operators are systems that span from high-level user intent to low-level system orchestration. Your full-stack experience (code → container → cluster → lifecycle management) means you can think holistically about the operator's design. In the interview: 'I think about systems end-to-end: What does the user want? How does my code make that happen? How do I automate, scale, and monitor it? That discipline will make me a better operator developer.'"
+        "theme": "Legacy System Modernization and Enterprise Context Awareness",
+        "supporting_evidence": "You modernized a 30+ year COBOL tax reporting system for Foresters Financial. This is enterprise-scale business context: complex legacy systems, regulatory compliance, client expectations, and the need for reliability.",
+        "why_it_resonates": "RBC is a tier-1 financial institution with legacy systems and regulatory constraints. Your experience modernizing legacy systems shows you understand enterprise context. You're not expecting to move fast and break things—you know that at scale, reliability and compliance are paramount. This cultural alignment is valuable."
+      },
+      {
+        "theme": "Cross-Functional Collaboration with Infrastructure, Platform, and AI Teams",
+        "supporting_evidence": "Your achievements describe 'collaborating with infrastructure, platform, and ML teams' to support reliable AI systems. This shows you understand that modern services aren't built in isolation.",
+        "why_it_resonates": "The posting explicitly values 'collaborating with infrastructure, platform, and ML teams' and 'participating in code reviews, design discussions, and team ceremonies.' Your experience working across these boundaries demonstrates you're ready for a collaborative, team-based environment like RBC's AI Group."
       }
     ]
   }

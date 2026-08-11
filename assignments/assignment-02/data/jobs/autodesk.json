@@ -1,40 +1,38 @@
 {
   "job_title": "Software Developer (New Grad)",
   "company_info": {
-    "company_name": "Autodesk",
-    "size": "14,300 employees (as of 2026)",
-    "industry_info": "Software and cloud computing. Autodesk is a leader in design and engineering software, building cloud platforms used globally. The company serves the Architecture, Engineering, Construction & Operations (AECO) sectors, as well as media and entertainment industries.",
-    "recent_news": "In January 2026, Autodesk underwent restructuring with approximately 7% of its global workforce (about 1,000 jobs) reduced. This followed a 2025 layoff of 1,350 employees (9% of workforce). The company is focused on AI and cloud computing expansion. Recent fiscal 2026 results showed strong international growth with EMEA revenues up 25% YoY and APAC up 16%. In June 2026, Autodesk committed $350 million over three years for AI skills training and workforce development.",
-    "company_culture": "Autodesk is recognized for its inclusive and supportive workplace culture. According to Glassdoor (4,647 reviews), the company has a 4.0/5 employee rating with 80% of employees recommending it to a friend. Employees rate work-life balance at 4.2/5. The culture is described as warm, collaborative, and inclusive. The company emphasizes meaningful work that helps build a better world and has a focus on diversity and belonging.",
-    "any_related_information": "Autodesk is headquartered in San Francisco, California (moved from San Rafael in 2022). The company has a strong focus on next-generation cloud platforms and is actively investing in AI-powered technologies. The role is part of their Consumption platform initiative. As a publicly traded company (ADSK), Autodesk reported $6.78 billion in revenue and $1.12 billion in net income for fiscal 2026. The company invests heavily in R&D ($1.64 billion in 2026) and is positioning itself as a leader in agentic AI for design and manufacturing."
+    "company_name": "Autodesk, Inc.",
+    "size": "Approximately 15,300 employees",
+    "industry_info": "Software Development - Design, Editing & Rendering Software Publishing, specifically 3D design software, digital prototyping, and cloud platforms. Autodesk creates software for designers, engineers, builders, and creators across architecture, construction, manufacturing, and media & entertainment industries.",
+    "recent_news": "Autodesk announced in January 2026 a 7% workforce reduction (approximately 1,000 employees) as part of ongoing restructuring efforts. This follows a 9% reduction announced in 2025. The company is undergoing strategic shifts including simplifying customer engagement, expanding AI and platform leadership, and realigning investments. Despite layoffs, Autodesk expects revenue and cash flow to exceed guidance. The company recently raised $1.5B in Post IPO debt funding in June 2025.",
+    "company_culture": "Autodesk has a 4.0 out of 5 star rating on Glassdoor based on 4,648 reviews, with 80% of employees recommending the company to a friend. The company is recognized for an inclusive and supportive atmosphere with a collaborative work environment. Remote work options are available. Work-life balance is rated 4.2 out of 5. The culture emphasizes diversity and belonging, with a focus on meaningful work that helps build a better world.",
+    "any_related_information": "This is an early-career/new graduate focused role (Job Requisition ID: 25WD91160) designed to provide mentorship and hands-on learning. The role emphasizes learning cloud platform development, distributed systems, and microservices architecture. Autodesk is a public company (NASD: ADSK) with 2025 revenue of $7.2B and is headquartered in San Francisco. The company was founded in 1982 and has 10,000+ employees worldwide. CEO Andrew Anagnost has assured employees that recent layoffs are not indicative of a yearly pattern or a shift toward replacing workers with AI."
   },
-  "location": "Not specified in posting; salary range indicates Canada-based roles available ($72,000-$105,600 CAD), but location not explicitly stated for this position",
-  "posting_age": "Unknown - no date provided in posting",
+  "location": "Not specified in posting - appears to be a Canada-based role based on salary information mentioning 'For Canada based roles'",
+  "posting_age": "Unknown - no posting date provided in the document",
   "required_skills_technologies": [
-    "Bachelor's degree in Computer Science, Engineering, or related field",
-    "Data structures and algorithms",
-    "Networking fundamentals",
-    "Basic distributed systems concepts",
-    "At least one programming language (Java, Python, or Go)",
-    "Git version control",
+    "Proficiency in at least one programming language (Java, Python, or Go)",
+    "Version control (Git)",
     "Testing basics",
-    "RESTful or event-driven service patterns"
+    "RESTful or event-driven service patterns",
+    "Data structures and algorithms",
+    "Networking basics",
+    "Distributed systems concepts"
   ],
   "nice_to_have_skills": [
-    "Internship or research experience in backend development",
-    "Project experience in cloud services",
-    "AWS or similar cloud platform exposure (Lambda, Fargate, SQS, DynamoDB, Aurora)",
-    "Microservices coursework or experience",
-    "Streaming/real-time processing experience",
-    "Docker containerization",
-    "CI/CD pipeline experience",
-    "Basic observability (metrics/logging)",
+    "AWS or similar cloud platforms (Lambda, Fargate, SQS, DynamoDB, Aurora)",
+    "Microservices architecture",
+    "Streaming/real-time processing",
+    "Containerization (Docker)",
+    "CI/CD",
+    "Observability (metrics/logging)",
     "Security best practices for services",
-    "Cost-aware design and performance optimization",
-    "Reliability engineering experience"
+    "Cost-aware design",
+    "Performance and reliability engineering",
+    "Backend development or cloud services project experience"
   ],
-  "experience_level": "Entry-level / New Graduate - explicitly targeted at early-career developers with mentorship and guidance provided",
+  "experience_level": "Entry/New Graduate - Early-career developers with strong CS fundamentals; no specific years of experience required",
   "education": "Bachelor's degree in Computer Science, Engineering, or related field (or equivalent training/experience)",
-  "key_responsibilities": "Implement features and fixes in backend services under mentorship with secure, reliable, and maintainable code; learn to build and optimize microservices and event-driven components; participate in code reviews (giving and receiving feedback); follow Agile practices including estimation, stand-ups, sprint planning, and retrospectives; troubleshoot and resolve routine code issues; assist with production deployments and basic operational tasks; use AI-assisted programming tools responsibly; contribute to team knowledge via documentation and tests",
-  "salary_range": "For Canada-based roles: starting base salary between $72,000 and $105,600 CAD. Offers based on candidate experience and geographic location and may exceed this range. Additional compensation may include annual bonuses, stock grants, and comprehensive benefits package."
+  "key_responsibilities": "Implement features and fixes in backend services under mentorship with secure, reliable, maintainable code; Build and optimize microservices and event-driven components; Participate in code reviews (giving and receiving feedback); Follow Agile practices (estimate tasks, stand-ups, sprint planning, retrospectives); Troubleshoot and resolve routine code issues; Assist with production deployments, operational tasks, and monitoring; Use AI-assisted programming tools responsibly; Contribute to team knowledge via documentation and tests",
+  "salary_range": "For Canada-based roles: starting base salary between $72,000 and $105,600 CAD. Offers based on candidate experience and geographic location and may exceed this range. Compensation package may include annual cash bonuses, stock grants, and comprehensive benefits."
 }

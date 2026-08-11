@@ -1,34 +1,30 @@
 {
-  "job_title": "Software Engineer (New Grad) - Machine Learning Platform",
+  "job_title": "Software Engineer (New Grad)",
   "company_info": {
     "company_name": "Quora",
-    "size": "Approximately 785 employees as of March 2026 (declined from 969 in 2023)",
-    "industry_info": "Media and Entertainment / Technology. Quora is a Q&A platform and information sharing network founded in 2009, headquartered in Mountain View, California. The company operates two main platforms serving hundreds of millions of users monthly.",
-    "recent_news": "As of September 2024, Quora identified more than 1 million AI-generated posts using AI detection technology (Pangram), improving content quality. The company has experienced headcount reduction of approximately 19% from 2023 to 2026 but is actively hiring with 63 active job postings in 2026 (54.5% increase from 2025). Recent partnership with DuckDuckGo (March 2026) for integration.",
-    "company_culture": "According to Glassdoor reviews (137 reviews, 4.1/5 stars), Quora fosters a transparent and collaborative culture. The company emphasizes idea-sharing and experimentation. 53% of employees have a positive business outlook. The posting highlights transparency, idea-sharing, experimentation, and celebrating success as core cultural values.",
-    "any_related_information": "Quora has raised $301M in funding as of July 2026, with the most recent round occurring January 9, 2024 for $75M. The company is led by Co-founder and CEO V.V. D'Angelo. Engineering represents 36.9% of the workforce (282 employees), demonstrating significant technical investment. The ML Platform team owns 100+ production ML models and operates at massive scale serving hundreds of millions monthly. This role offers significant learning opportunity within a senior-led team with dedicated mentorship for new graduates."
+    "size": "Approximately 785-1,176 employees worldwide (as of June 2026)",
+    "industry_info": "Technology, Digital Publishing and Social Media Platform. Quora is a social Q&A community platform dedicated to growing the world's collective intelligence through question-and-answer interactions.",
+    "recent_news": "Quora raised $75M in Series D funding on January 10, 2024. The company is actively hiring with 63 active job postings in 2026 (54.5% increase from 2025). Quora's headcount declined 19% from 969 employees in 2023 to 785 in 2026, but has since grown to approximately 1,176 as of June 2026.",
+    "company_culture": "Quora has a transparent and collaborative culture with intelligent and kind coworkers. According to Glassdoor, Quora Inc. has an employee rating of 4.1 out of 5 stars with a culture rating of 4.3 out of 5. 87% of employees would recommend working at Quora to a friend. The company culture is rooted in transparency, idea-sharing, and experimentation.",
+    "any_related_information": "Quora was founded in 2009 and became a unicorn in 2017. The company is headquartered in Mountain View, California. Founded by Charlie Cheever and Adam D Angelo. The ML Platform (MLP) team has completed notable projects including 3x faster ML with 25% lower costs using NVIDIA Triton on Amazon EKS, building a service mesh in hybrid environments, and feature engineering advancements. The role offers strong mentorship with senior and staff engineers and opportunities to ship to production in the first few weeks despite being a new grad position."
   },
-  "location": "Remote",
-  "posting_age": "Unknown - no explicit posting date provided in the document",
+  "location": "Not specified in posting; appears to be remote-eligible given Quora's distributed team model",
+  "posting_age": "Unknown - no posting date provided in the job description",
   "required_skills_technologies": [
     "Python",
-    "Go",
-    "C++",
-    "PyTorch",
-    "Kubernetes/EKS",
-    "NVIDIA Triton",
-    "Ray",
-    "AWS"
+    "Go or C++",
+    "Knowledge of distributed systems",
+    "Knowledge of ML infrastructure and large-scale systems"
   ],
   "nice_to_have_skills": [
     "Previous software engineering experience via internship, work experience, open-source contribution or coding competition",
     "Coursework or hands-on experience with ML frameworks such as PyTorch or TensorFlow",
     "Exposure to Kubernetes, Docker, or cloud technologies like AWS",
     "Experience with low-level performance work: profiling, benchmarking, optimization",
-    "Passion for Quora's mission and goals"
+    "Passion for Quora's mission"
   ],
-  "experience_level": "New Grad / Entry Level",
-  "education": "2025 or 2026 graduate with or pursuing a B.S., M.S., or Ph.D. in Computer Science, Engineering or a related technical field",
-  "key_responsibilities": "Help build and maintain core infrastructure powering Quora's ML platform ensuring high availability, scalability, and performance; Build and improve distributed systems serving ML models in production (Large Recommendation Models and Large Language Models); Work on GPU model serving, optimizing latency, throughput, and cost; Contribute to platform initiatives such as PyTorch-first standardization and ML ecosystem modernization; Improve ML developer velocity by building tooling for model development, testing, and deployment; Modernize feature store for faster production deployment; Participate in on-call rotation for production issue resolution",
+  "experience_level": "Entry / New Grad - 2025 or 2026 graduate",
+  "education": "B.S., M.S., or Ph.D. in Computer Science, Engineering, or a related technical field (2025 or 2026 graduate)",
+  "key_responsibilities": "Help build and maintain core infrastructure powering Quora's ML platform ensuring high availability, scalability, and performance; Build and improve distributed systems serving ML models in production from Large Recommendation Models (LRM) to Large Language Models (LLM); Work on GPU model serving optimizing latency, throughput, and cost; Contribute to platform initiatives such as PyTorch-first standardization and ML ecosystem modernization; Improve ML developer velocity by building tooling for model development, testing, and deployment; Modernize feature store for faster feature deployment; Participate in on-call rotation for production issue resolution",
   "salary_range": "US: $97,600 - $139,000 USD + equity + benefits; Canada (Toronto/Vancouver): $125,320 - $142,783 CAD + equity + benefits; Canada (other locations): $116,965 - $133,264 CAD + equity + benefits"
 }

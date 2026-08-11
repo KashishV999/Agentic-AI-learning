@@ -1,113 +1,127 @@
 {
-  "company_name": "Canonical",
-  "official_domain": "canonical.com",
+  "company_name": "Royal Bank of Canada (RBC)",
+  "official_domain": "rbc.com",
   "overall_verdict": "green",
   "confidence_score": 95,
-  "summary": "This job posting for a Software Engineer - Python/Golang - Kubernetes role at Canonical is highly legitimate. Canonical is a well-established, profitable, publicly visible company founded in 2004 with a strong web presence, active careers page, and verifiable hiring infrastructure. The specific job posting (Requisition ID: 628) is confirmed on Canonical's official careers website at https://canonical.com/careers/2928962. The company explicitly addresses recruitment fraud concerns on their careers page and hiring process documentation. The posting details align with verified market data: the role focuses on Kubernetes operators in an open-source context, matches the company's known technology focus, and the location (remote EMEA/Americas) is consistent with Canonical's distributed workforce model. The company's reported culture (remote-first since 2004, 70+ countries, twice-yearly in-person sprints) is well-documented across multiple employee review platforms. The domain canonical.com is registered since 1996 with legitimate corporate registration through MarkMonitor. No compensation is disclosed in the posting, which is consistent with Canonical's stated approach of considering geography, experience, and performance; available salary data from PayScale and Levels.fyi shows Software Engineers at Canonical earning $66K–$159K USD/$41K–£76K GBP depending on level and region, placing this role in a reasonable market range.",
-  "recommendation": "This posting is trustworthy. It comes from a legitimate, established organization with verifiable infrastructure and transparent hiring practices. You can safely apply and proceed through their standard recruitment process without concern about fraud. No upfront payments, equipment purchases, or sensitive personal information (SSN, banking details, government ID) should ever be requested during Canonical's recruitment process—if such requests appear, they are fraudulent and not from Canonical. You may verify the legitimacy of any communications by checking the sender's email domain (must be @canonical.com) and confirming the job posting on https://canonical.com/careers. Consider asking about compensation and benefits during the interview process, as this is not disclosed upfront but salary is competitively determined based on role level, location, and experience.",
+  "summary": "This is a legitimate job posting from Royal Bank of Canada, Canada's largest bank by market capitalization. RBC is an established, publicly-traded financial institution with 94,544+ employees worldwide, a professional careers portal at jobs.rbc.com, strong Glassdoor ratings (3.9/5 stars, 11,058 reviews), and extensive web presence including LinkedIn and news coverage. The posting is for an entry-level Software Developer role within RBC's AI Group (RBC Borealis), which is confirmed as an active AI innovation unit headquartered at RBC Waterpark Place in Toronto. The job description is specific and detailed, aligned with actual market trends for entry-level backend/cloud roles in financial services. No sensitive PII is requested upfront. The lack of salary disclosure, while atypical for tech, is consistent with RBC's standard practice and matches patterns observed in the market analysis for established financial services companies. All verifiable details check out: the company, location, technologies, and experience level are authentic and consistent with legitimate RBC hiring.",
+  "recommendation": "This posting is safe to pursue. RBC is a legitimate, well-established employer with a strong reputation for mentorship and graduate development programs. You can proceed with confidence submitting your application through the official RBC careers portal (jobs.rbc.com). During the application and interview process, standard precautions apply: do not share sensitive personal information (SSN, SIN, banking details, government ID copies) before receiving a formal offer. Request detailed information about compensation during initial conversations. The role offers genuine opportunity for learning modern cloud engineering practices and AI/ML concepts in a supportive environment with access to top-tier engineering tools and mentorship.",
   "whois_summary": {
-    "domain": "canonical.com",
-    "registrant_organization": "Canonical, Ltd.",
-    "registration_date": "1996-07-05",
-    "expiration_date": "2027-07-04",
-    "registrar": "MarkMonitor, Inc.",
-    "country": "GB",
-    "notes": "Domain has been registered for 30 years (since 1996), demonstrating long-term organizational stability. Registrant is confirmed as Canonical Ltd., registered in United Kingdom. Expiration date is July 2027, indicating active maintenance. MarkMonitor is a legitimate, professional domain registrar used by major enterprises."
+    "domain": "rbc.com",
+    "registrant_organization": "Royal Bank of Canada",
+    "registration_date": "1994-10-24",
+    "expiration_date": "2026-10-23",
+    "registrar": "GoDaddy Corporate Domains, LLC",
+    "country": "CA",
+    "notes": "WHOIS lookup completed successfully. Domain is well-established (32+ years old) and registered under the official company name. Expiration date is current and well-maintained, indicating active corporate domain management."
   },
   "signals": [
     {
       "signal_type": "green_flag",
-      "title": "Job posting verified on official careers page",
-      "evidence": "The exact role 'Software Engineer - Python/Golang - Kubernetes' (Requisition ID: 628) is listed on Canonical's official careers website at https://canonical.com/careers/2928962 with matching details (location: EMEA and Americas, remote position, Kubernetes focus, Go/Python skills required).",
-      "why_it_matters": "Confirmed presence on the company's official recruitment channel is the strongest indicator of legitimacy. Fraudulent postings are typically cross-posted to third-party job boards but never appear on the company's own careers page.",
+      "title": "Established, Publicly-Traded Company",
+      "evidence": "Royal Bank of Canada is Canada's largest bank by market capitalization with 94,544 full-time employees worldwide and 69,126 in Canada. Founded in 1864, it serves 19+ million clients globally and is recognized as one of the world's largest banks.",
+      "why_it_matters": "Long-standing, large corporations with public filings have legal accountability and regulatory oversight. This drastically reduces fraud risk compared to startups or unknown entities.",
       "source_urls": [
-        "https://canonical.com/careers/2928962",
-        "https://canonical.com/careers"
+        "https://jobs.rbc.com"
       ]
     },
     {
       "signal_type": "green_flag",
-      "title": "Well-established company with 30-year domain history",
-      "evidence": "Canonical.com registered July 5, 1996 (30 years old), registered with legitimate enterprise registrar MarkMonitor, Inc., and expiration date set for July 2027. Company registered as Canonical Ltd. in United Kingdom.",
-      "why_it_matters": "Long domain tenure and professional registration infrastructure indicate a stable, legitimate organization with substantial investment in maintaining its identity and web presence. Fraudulent or shell companies typically register domains recently (months to a few years old).",
+      "title": "Official Domain Registered 32+ Years Ago",
+      "evidence": "The domain rbc.com was registered on 1994-10-24 by Royal Bank of Canada and is currently valid through 2026-10-23. The registrar is GoDaddy Corporate Domains, LLC.",
+      "why_it_matters": "A domain registered three decades ago under the company's own name is extremely strong evidence of legitimacy. Scammers rarely maintain or acquire old, established domains.",
       "source_urls": []
     },
     {
       "signal_type": "green_flag",
-      "title": "Strong verifiable web presence and active communications",
-      "evidence": "Canonical operates official website (canonical.com), active LinkedIn company page (766K followers), multiple job boards (job-boards.greenhouse.io/canonical), and publicly engaged media presence including CES 2026 booth presence, recent announcements (Ubuntu 26.04 release, Google Cloud TPU partnerships, RISC-V focus). Company maintains documented public stance on recruitment fraud prevention.",
-      "why_it_matters": "Legitimate, established companies maintain consistent, professional web presence across multiple channels. Fraudsters typically limit presence to job boards and generic email domains without supporting infrastructure or public engagement.",
+      "title": "Official Careers Portal with Active Postings",
+      "evidence": "RBC operates a professional careers portal at jobs.rbc.com with hundreds of active postings across multiple roles, locations, and levels. The portal includes dedicated pages for Tech@RBC and early talent programs. Multiple confirmed RBC postings are visible on this portal, including similar Software Developer and AI Group roles.",
+      "why_it_matters": "A dedicated, professional careers infrastructure is a hallmark of legitimate major employers. This cannot be easily faked.",
       "source_urls": [
-        "https://canonical.com",
-        "https://www.linkedin.com/company/canonical",
-        "https://job-boards.greenhouse.io/canonical"
+        "https://jobs.rbc.com",
+        "https://jobs.rbc.com/ca/en/rbctech"
       ]
     },
     {
       "signal_type": "green_flag",
-      "title": "Active recruitment with hiring infrastructure",
-      "evidence": "Canonical operates a formal recruitment process documented on https://canonical.com/careers/hiring-process with defined stages, timelines (average 3 months), application dashboard, and explicit fraud prevention guidance. 162 engineering roles currently open across their careers portal. Company uses professional recruitment software (Greenhouse) and maintains FAQ addressing recruitment fraud.",
-      "why_it_matters": "Legitimate companies invest in formal, documented recruitment infrastructure. Fraudsters use ad-hoc communications and avoid formal processes. Canonical's explicit fraud prevention guidance demonstrates institutional concern for applicant safety.",
+      "title": "Confirmed Physical Office Location",
+      "evidence": "RBC Waterpark Place, 88 Queens Quay W, Toronto is confirmed as an active RBC office location through multiple job postings for different roles and departments (Technology & Operations, Borealis AI).",
+      "why_it_matters": "The posting provides a verifiable, specific office address. Multiple postings from this address confirm it is a real RBC facility actively hiring, not a fabricated location.",
+      "source_urls": []
+    },
+    {
+      "signal_type": "green_flag",
+      "title": "RBC Borealis (AI Group) is Confirmed Real",
+      "evidence": "RBC Borealis is identified as RBC's official AI and data innovation unit with teams across Toronto, Waterloo, Montreal, Calgary, and Vancouver. Confirmed through multiple sources including LinkedIn posts from VP Greg Mori, job postings, and official RBC communications. Posting mentions collaboration with 'infrastructure, platform, and ML teams' to support 'reliable AI systems,' which aligns with Borealis's stated mission.",
+      "why_it_matters": "This confirms the organizational structure referenced in the posting is real, and the AI/ML focus described is genuine within RBC's structure.",
       "source_urls": [
-        "https://canonical.com/careers/hiring-process",
-        "https://canonical.com/careers"
+        "https://www.linkedin.com/posts/greg-mori-5445b36_2024-summer-student-opportunities-borealis-activity-7142580196590649345-Vr19"
       ]
     },
     {
       "signal_type": "green_flag",
-      "title": "Role details align with company mission and technology focus",
-      "evidence": "The role focuses on building Kubernetes operators and addons, which directly aligns with Canonical's documented portfolio expansion in cloud-native infrastructure, AI systems, and open-source solutions. Company's 2026 roadmap explicitly emphasizes 'year of Ubuntu Linux on RISC-V' and AI infrastructure optimization, matching the technical depth described in the posting.",
-      "why_it_matters": "Legitimate job postings reflect real business needs and company strategy. Fraudulent postings often use generic descriptions or technologies that don't match the company's actual business focus.",
+      "title": "Skills and Technologies Match Market Trends",
+      "evidence": "The posting requires Python (82% of market postings), Golang (45%), Java, REST APIs, Git, Docker, Kubernetes, AWS/Azure, CI/CD, and SQL—all in top 13 most common skills across analyzed software developer roles. These are the exact technologies demanded in 2026 software engineering market.",
+      "why_it_matters": "Scam postings often list generic or outdated tech stacks. This posting demonstrates detailed knowledge of actual market requirements for entry-level backend/cloud engineering roles.",
+      "source_urls": []
+    },
+    {
+      "signal_type": "green_flag",
+      "title": "Entry-Level Role Properly Scoped",
+      "evidence": "The posting targets 0-2 years of experience (entry-level/new grad), emphasizes mentorship ('under senior engineer guidance'), and lists responsibilities appropriate for junior developers (code reviews, learning, unit tests, support). This matches the 7/11 (64%) entry-level heavy market pattern observed.",
+      "why_it_matters": "The role is accurately positioned for entry-level candidates, not misrepresenting as senior or claiming to require minimal experience for a complex role.",
+      "source_urls": []
+    },
+    {
+      "signal_type": "green_flag",
+      "title": "Detailed, Role-Specific Responsibilities",
+      "evidence": "The job description is specific to AI service development, mentioning 'Building reliable APIs, backend services, and integration components for AI/ML applications,' 'Learning observability practices,' 'Collaborating with infrastructure, platform, and ML teams,' and 'Secure development principles.' This is not generic.",
+      "why_it_matters": "Scam postings typically use vague, copy-paste job descriptions. This demonstrates specific knowledge of the role and team.",
+      "source_urls": []
+    },
+    {
+      "signal_type": "green_flag",
+      "title": "Strong Glassdoor Presence and Culture Alignment",
+      "evidence": "RBC has 11,058 Glassdoor reviews with a 3.9/5 rating. Employees consistently praise mentorship, supportive culture, and collaborative environment. The posting emphasizes 'learning,' 'mentorship,' and 'collaborative spirit,' which directly aligns with documented RBC culture.",
+      "why_it_matters": "Thousands of employee reviews from an independent third-party platform validate the company culture described in the posting.",
       "source_urls": [
-        "https://canonical.com/careers/2928962"
+        "https://www.glassdoor.com/Reviews/RBC-Reviews-E3358.htm"
       ]
     },
     {
       "signal_type": "green_flag",
-      "title": "Remote-first model and location transparency consistent with company culture",
-      "evidence": "Posting specifies remote position available in EMEA and Americas. Structured job posting data indicates company is remote-first since 2004 with distributed workforce across 70+ countries, twice-yearly in-person sprints, and USD 2,000 annual learning budget. LinkedIn and Glassdoor confirm distributed model (1,001–5,000 employees across London, UK headquarter and global locations).",
-      "why_it_matters": "Consistency between posted location/model and verified company culture demonstrates attention to accuracy. Fraudulent postings often misrepresent location flexibility or culture to attract broader applicant pools.",
-      "source_urls": [
-        "https://www.linkedin.com/company/canonical",
-        "https://www.glassdoor.com/Reviews/Canonical-Reviews-E230560.htm"
-      ]
+      "title": "Active Hiring of 3,600+ New Graduates in Fiscal 2026",
+      "evidence": "Recent company news (confirmed in posting metadata) indicates RBC is actively hiring 3,600 new graduates in fiscal 2026 and hired 1,600 summer students in 2026. This aligns perfectly with the entry-level targeting of this posting.",
+      "why_it_matters": "The posting is consistent with verified company hiring announcements and large-scale graduate recruitment initiatives.",
+      "source_urls": []
     },
     {
       "signal_type": "green_flag",
-      "title": "Compensation approach aligns with market data and company policy",
-      "evidence": "Posting discloses no salary but states that compensation considers geography, experience, and performance, with annual reviews and performance bonuses. PayScale data shows Canonical Software Engineers earn $66K–$159K USD (average $99.6K), and Levels.fyi reports £41K–£76K+ GBP (Associate to Software Engineer I). This range is consistent with market analysis for mid-to-senior engineering roles ($111K–$172K CAD/USD) and does not show dramatic inflation or suppression.",
-      "why_it_matters": "Legitimate companies set compensation transparently based on market data and role level. Fraudulent postings often advertise unrealistically high salaries to attract desperate applicants. Canonical's disclosed methodology matches documented compensation ranges.",
-      "source_urls": [
-        "https://www.payscale.com/research/US/Employer=Canonical/Salary",
-        "https://www.levels.fyi/companies/canonical/salaries/software-engineer"
-      ]
+      "title": "Recent Awards and Recognition",
+      "evidence": "Recent news (July 17, 2026) confirms RBC received four top honours in Euromoney's 2026 Awards for Excellence (North America's Best Bank, Canada's Best Bank, Canada's Best Investment Bank). July 30, 2026 announcement of extended Vector Institute sponsorship through 2032 shows current investment in AI and talent development.",
+      "why_it_matters": "Recent positive media recognition and active institutional partnerships demonstrate the company is thriving and actively investing in technology and talent.",
+      "source_urls": []
+    },
+    {
+      "signal_type": "yellow_flag",
+      "title": "Salary Not Disclosed",
+      "evidence": "The posting does not provide a salary range, only noting that 'the company mentions a comprehensive Total Rewards Program including bonuses, flexible benefits, competitive compensation, commissions, and stock options where applicable.' Market analysis shows entry-level RBC roles range $72K-$113.9K CAD.",
+      "why_it_matters": "While not a red flag (many RBC and financial services postings omit salary), lack of salary transparency makes initial evaluation harder. However, this is consistent with RBC's standard practice and the market analysis pattern for established financial services companies.",
+      "source_urls": []
     },
     {
       "signal_type": "green_flag",
-      "title": "Verified employee reviews and company reputation across multiple platforms",
-      "evidence": "Glassdoor: 444 reviews, 3.3/5 rating, 53% recommend to friends. Indeed reviews available. Built In profile confirms remote-first model and describes recognized pain points (stack-ranking reviews, founder-led decision-making) which reflect authentic insider knowledge rather than generic praise. PayScale shows diverse salary data by level and location (suggesting real employee reporting).",
-      "why_it_matters": "Legitimate companies accumulate detailed, mixed employee reviews across independent platforms over years of operation. Fraudulent entities have little or no review presence. Presence of both positive and critical feedback is a sign of authenticity.",
-      "source_urls": [
-        "https://www.glassdoor.com/Reviews/Canonical-Reviews-E230560.htm",
-        "https://builtin.com/company/canonical/faq/workplace-perception"
-      ]
-    },
-    {
-      "signal_type": "green_flag",
-      "title": "No sensitive PII or upfront payment requests in posting",
-      "evidence": "Job posting and Canonical's published hiring process describe standard application workflow: submit application via careers portal, answer assessment questions, participate in interviews, receive offer via Hiring Lead. No mention of SSN, banking details, government ID, upfront training fees, or equipment purchase requirements.",
-      "why_it_matters": "Legitimate recruitment processes never request sensitive PII or payment upfront. This is an immediate red flag for fraud. Canonical's documented process explicitly avoids these practices.",
-      "source_urls": [
-        "https://canonical.com/careers/hiring-process"
-      ]
+      "title": "No Upfront Payments or Personal Information Requests",
+      "evidence": "The posting makes no requests for sensitive personal information (SSN, SIN, government ID, banking details, date of birth) or upfront payments, training fees, or equipment purchases.",
+      "why_it_matters": "Absence of these major fraud indicators is a strong positive signal. Legitimate employers collect this information only after a formal offer and during onboarding.",
+      "source_urls": []
     }
   ],
   "user_safety_actions": [
-    "Apply directly through Canonical's official careers page (https://canonical.com/careers) or the specific job link (https://canonical.com/careers/2928962). Do not apply through third-party job board links unless you verify the URL is correct.",
-    "Verify all communications from Canonical recruitment come from @canonical.com email addresses. Do not respond to emails from Gmail, Yahoo, Outlook, or other generic domains claiming to represent Canonical. If you receive recruiter contact from a non-canonical.com address, verify independently through careers.canonical.com before responding.",
-    "During the recruitment process, never provide SSN, banking information, government ID, passport details, or copies of documents unless explicitly requested by Canonical in writing as part of standard background check procedures—and only after a formal offer is made.",
-    "If anyone asks you to pay for training, equipment, or onboarding, or offers to send you a check for reimbursement before your start date, they are running a scam. Legitimate employers do not ask for payment upfront.",
-    "Ask about compensation and benefits during the interview process. Canonical's posted approach is to determine salary based on role level, geography, and experience. Request a formal written offer before accepting any role.",
-    "If you have any doubts about communications, call Canonical's main office or check their official website to verify the recruiter's identity and the job posting's authenticity."
+    "Proceed with confidence. This is a legitimate posting from a major, established employer.",
+    "Apply through the official RBC careers portal at jobs.rbc.com to ensure you're interacting with authentic RBC systems.",
+    "During interviews and offer process, confirm any contact is from @rbc.com email addresses or verified RBC phone lines.",
+    "Do not share sensitive personal information (SIN, banking details, government ID) until after receiving a formal written offer and entering official onboarding.",
+    "If offered the role, verify compensation details in writing. Based on market analysis, entry-level RBC Software Developer roles typically range $72K-$113.9K CAD.",
+    "Research the specific team and hiring manager on LinkedIn to verify their presence at RBC if desired for additional confidence."
   ]
 }

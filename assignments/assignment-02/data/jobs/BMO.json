@@ -1,15 +1,15 @@
 {
-  "job_title": "Senior Software Developer",
+  "job_title": "Software Developer",
   "company_info": {
     "company_name": "BMO Financial Group",
     "size": "Approximately 53,000 employees",
-    "industry_info": "Banking and Financial Services. BMO Financial Group is one of the largest diversified financial services providers in North America with C$1.5 trillion in total assets and the 8th largest bank in North America by assets.",
-    "recent_news": "BMO has reduced its workforce by more than 670 jobs since Q3 2025, with a $202-million pre-tax severance charge in Q1 2026. The bank is closing its Air Miles division and implementing AI-related restructuring initiatives. CEO Darryl White emphasized the focus on managing expenses and operational efficiency while investing in technology and talent.",
-    "company_culture": "Based on Glassdoor reviews (3.8 out of 5 stars with 9,061 reviews), BMO fosters a supportive and collaborative culture with strong emphasis on diversity and inclusion. However, some reviews indicate disconnect between management and employees. The company was recognized as one of Canada's Best Employers for Company Culture 2026 by Forbes for supporting work-life balance, collaboration, and growth.",
-    "any_related_information": "BMO is headquartered in Montreal, Quebec, and was founded in 1817. The company is publicly traded (NYSE, TSX: BMO). Recent restructuring efforts focus on operational efficiency and strategic investments in technology talent, suggesting this role may be part of their technology modernization initiative. Candidates should be aware of recent layoffs and restructuring activities, though the company is actively hiring in technology roles."
+    "industry_info": "Banking and Financial Services. BMO Financial Group is one of the largest diversified financial services providers in North America with C$1.5 trillion in total assets. The company is the 8th largest bank in North America measured by assets.",
+    "recent_news": "BMO Financial Group reported strong Q2 2026 results with net income of $2,630 million compared to $1,962 million in the prior year, and Q1 2026 results with net income of $2,489 million. The company continues to focus on deepening client relationships, innovating to drive business value, and optimizing performance under CEO Darryl White.",
+    "company_culture": "BMO fosters a supportive and collaborative culture with a strong emphasis on diversity and inclusion. Glassdoor rating is 3.8 out of 5 stars based on 9,061 reviews, with 67% of employees recommending the company. Employees appreciate the collaborative atmosphere and strong emphasis on collaboration, though some reviews highlight a disconnect between management and employees.",
+    "any_related_information": "BMO is committed to an inclusive, equitable and accessible workplace and offers comprehensive benefits including health insurance, tuition reimbursement, accident and life insurance, retirement savings plans, and opportunities for professional development through training, coaching, manager support and network-building. The company has a global footprint with operations in 30+ locations. BMO does not accept unsolicited resumes from recruiting agencies without a valid written contract."
   },
-  "location": "Not specified in posting; however, based on company description, likely Canada or North America (roles may be in various locations including Montreal HQ)",
-  "posting_age": "Unknown - no date information provided in the posting",
+  "location": "Toronto, ON (33 Dundas Street West)",
+  "posting_age": "Unknown",
   "required_skills_technologies": [
     "Programming",
     "Applications Integration",
@@ -27,14 +27,10 @@
     "Quality Assurance and Testing",
     "Technology Business Requirements Definition, Analysis and Mapping",
     "Adaptability",
-    "Learning Agility",
-    "Verbal & written communication skills",
-    "Collaboration & team skills",
-    "Analytical and problem solving skills",
-    "Data driven decision making"
+    "Learning Agility"
   ],
-  "experience_level": "Mid-level; typically 4-6 years of relevant experience required",
-  "education": "Post-secondary degree in related field of study or equivalent combination of education and experience",
-  "key_responsibilities": "Drives overall software development lifecycle including working across functional teams to transform requirements into features; manages development teams and processes; conducts software testing and maintenance; translates user requirements into technical specifications; writes code and manages design specifications; supports system design; provides advice on security requirements; debugs business systems and service applications; develops high quality technology applications and services; ensures code/configurations adhere to security, logging, error handling, and performance standards; evaluates new technologies for fit with program/system/ecosystem; follows release management processes and version controls; assists in interpreting and documentation of client requirements; performs preventative and corrective maintenance and troubleshooting; exercises judgment to identify, diagnose, and solve problems; applies Risk Management Framework in decision-making",
-  "salary_range": "$61,600.00 - $113,900.00 CAD (Salaried). Salaries vary based on location, skills, experience, education, and qualifications. May include performance-based incentives, discretionary bonuses, and other perks. Benefits include health insurance, tuition reimbursement, accident and life insurance, and retirement savings plans."
+  "experience_level": "Mid-level (4-6 years of relevant experience required)",
+  "education": "Post-secondary degree in a related field of study or equivalent combination of education and experience",
+  "key_responsibilities": "Drives overall software development lifecycle; works across functional teams to transform requirements into features; manages development teams and processes; conducts software testing and maintenance; translates user requirements into technical specifications; writes code and manages preparation of design specifications; supports system design; provides advice on security requirements; debugs business systems and service applications; develops high quality technology applications and services; analyzes, develops, tests and implements new software programs; performs preventative and corrective maintenance and troubleshooting; ensures code/configurations adhere to security, logging, error handling and performance standards; evaluates new technologies for fit with program/system/ecosystem; follows release management processes and applies version controls; assists in interpreting and documentation of client requirements; works independently on complex tasks and may have enterprise-wide focus",
+  "salary_range": "$61,600.00 - $113,900.00 CAD"
 }

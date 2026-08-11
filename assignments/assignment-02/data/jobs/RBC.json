@@ -2,39 +2,37 @@
   "job_title": "Software Developer",
   "company_info": {
     "company_name": "Royal Bank of Canada (RBC)",
-    "size": "Approximately 94,000+ employees globally",
-    "industry_info": "Banking and Financial Services. RBC is one of the largest banks in Canada and the world by market capitalization. The company operates in diverse areas including personal banking, commercial banking, capital markets, wealth management, and insurance.",
-    "recent_news": "July 30, 2026: RBC extends Vector Institute sponsorship through 2032 to advance responsible AI innovation and talent development. July 17, 2026: RBC Named North America's Best Bank, Canada's Best Bank and Canada's Best Investment Bank in Euromoney's 2026 Awards for Excellence. May 28, 2026: RBC reported Q2 2026 results with net income of $5.5 billion, up 25% from prior year. RBC has recently created a dedicated AI Group reporting to the CEO to drive AI ambitions and develop market-ready AI tools and solutions, including partnerships with Cohere and participation in MIT's FinTechAI initiative.",
-    "company_culture": "RBC fosters a supportive and collaborative culture with strong emphasis on mentorship and employee development. According to Glassdoor reviews (11,061 reviews), employees highlight a friendly atmosphere, supportive colleagues, and friendly work environment. The company emphasizes diversity and inclusion, stating commitment to being an equal opportunity employer. RBC promotes continuous learning and professional development through coaching and growth opportunities.",
-    "any_related_information": "RBC's AI Group was created to scale early-stage AI projects into client-facing solutions and advance research in generative and agentic AI. The company has developed ATOM (Asynchronous Temporal Model), a proprietary AI foundation model trained on billions of client financial transactions. RBC Assist and Aiden are proprietary AI assistant tools already in use by thousands of employees. The company is actively hiring for AI research and development roles at all levels, including software engineers. RBC targets delivering $700M in AI benefits by 2027. The company has strong partnerships with academic institutions including Vector Institute, Mila (Quebec AI Institute), Amii (Alberta Machine Intelligence Institute), and MIT CSAIL."
+    "size": "94,544 full-time employees worldwide; 69,126 full-time employees in Canada",
+    "industry_info": "Banking and Financial Services. RBC is a Canadian multinational financial services company and the largest bank in Canada by market capitalization. It serves over 19 million clients globally and is one of the largest banks in the world.",
+    "recent_news": "July 30, 2026: RBC extended its sponsorship with Vector Institute for responsible AI innovation and talent development through 2032. July 17, 2026: RBC received four top honours in Euromoney's 2026 Awards for Excellence (North America's Best Bank, Canada's Best Bank, Canada's Best Investment Bank). Company is actively hiring 3,600 new graduates in fiscal 2026 and hired 1,600 summer students in 2026. RBC Capital Markets plans U.S. expansion with new hiring. Historical context: RBC has conducted multiple rounds of layoffs in recent years as part of restructuring.",
+    "company_culture": "RBC is praised on Glassdoor for its friendly and supportive culture. Employee rating: 3.9 out of 5 stars based on 11,058 reviews. Employees highlight mentorship, collaborative spirit, and a supportive and respectful atmosphere. The company emphasizes coaching, development opportunities, and reaching full potential. RBC is recognized as a Top Employer in Canada.",
+    "any_related_information": "RBC's AI Group is the AI accelerator for the company, focusing on scaling AI projects and client outcomes. The Business Enablement function within the AI Group partners with business lines to drive AI transformation. The role offers opportunities to work with modern engineering tools, cloud platforms, and AI service development. RBC values diversity, inclusion, and equal opportunity employment. The bank offers comprehensive Total Rewards Program including bonuses, flexible benefits, competitive compensation, commissions, and stock options where applicable."
   },
-  "location": "Toronto, Canada (RBC Waterpark Place, 88 Queens Quay W, Toronto)",
+  "location": "Toronto, Canada (RBC Waterpark Place, 88 Queens Quay W)",
   "posting_age": "12 days",
   "required_skills_technologies": [
     "Python",
     "Golang",
     "Java",
     "REST APIs",
-    "Backend services",
     "Git",
-    "AWS",
-    "Azure",
     "Docker",
     "Kubernetes",
-    "SQL Databases",
-    "CI/CD pipelines"
+    "AWS or Azure",
+    "CI/CD",
+    "SQL Databases"
   ],
   "nice_to_have_skills": [
-    "Experience with containerization and Kubernetes",
-    "Knowledge of cloud platforms (AWS or Azure)",
-    "Familiarity with machine learning and model serving",
-    "Experience with data platforms",
-    "Understanding of secure coding practices",
-    "Testing strategies and TDD",
-    "Production support and observability practices (logging, monitoring, alerting)"
+    "AI/Machine Learning experience",
+    "Model serving knowledge",
+    "Data platforms experience",
+    "Secure coding practices",
+    "Testing strategies",
+    "Production support processes",
+    "Observability practices (logging, monitoring, alerting)"
   ],
   "experience_level": "Entry-level (0-2 years of software engineering experience, including internships, co-op placements, or academic projects)",
-  "education": "Not explicitly specified. Foundational understanding of software development principles, data structures, algorithms, and object-oriented or functional programming concepts required.",
-  "key_responsibilities": "Contributing to the development, testing, and maintenance of AI services under senior engineer guidance; Building reliable APIs, backend services, and integration components for AI and ML applications; Learning and applying software engineering best practices and secure development principles; Participating in code reviews, design discussions, and team ceremonies; Collaborating with infrastructure, platform, and ML teams; Writing unit tests, integration tests, and documentation; Troubleshooting defects and supporting production issues; Learning observability practices (logging, monitoring, alerting); Gaining practical experience with modern engineering tools, cloud platforms, containerization, and AI service development",
-  "salary_range": "Unknown. The posting does not disclose a specific salary range. It mentions 'competitive compensation' as part of a comprehensive Total Rewards Program including bonuses, flexible benefits, commissions, and stock options where applicable."
+  "education": "Unknown - No specific education degree requirements are mentioned in the posting. The posting emphasizes practical experience and foundational understanding of software development principles over formal education requirements.",
+  "key_responsibilities": "Contributing to development, testing, and maintenance of AI services under senior engineer guidance; Building reliable APIs, backend services, and integration components for AI/ML applications; Learning and applying software engineering best practices and secure development principles; Participating in code reviews, design discussions, and team ceremonies; Collaborating with infrastructure, platform, and ML teams to support reliable AI systems; Writing unit tests, integration tests, and documentation; Troubleshooting defects and supporting production issues; Learning observability practices; Growing practical experience with modern engineering tools, cloud platforms, containerization, and AI service development",
+  "salary_range": "Unknown - No salary or compensation range is disclosed in the posting. The company mentions a comprehensive Total Rewards Program including bonuses, flexible benefits, competitive compensation, commissions, and stock options where applicable."
 }

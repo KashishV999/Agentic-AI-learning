@@ -26,22 +26,21 @@
     "AKS",
     "Azure Blob Storage",
     "Azure Key Vault",
+    "FastAPI",
+    "GitHub Actions",
     "Spectral",
     "SonarQube",
     "GitHub Advanced Security",
-    "FastAPI",
-    "GitHub Actions",
     "BERT",
     "HuggingFace",
     "Kaggle",
+    "pgvector",
+    "OpenAI embeddings",
     "JWT",
     "OAuth",
     "RBAC",
-    "pgvector",
     "text-embedding-3-small",
-    "MongoDB Atlas",
-    "Azure OpenAI",
-    "COBOL"
+    "MongoDB Atlas"
   ],
   "soft_skills": [],
   "work_experience": [
@@ -51,10 +50,8 @@
       "duration": "Sept 2025 - Present",
       "key_responsibilities": [
         "Modernize monolithic COBOL tax-reporting system into cloud-native microservices",
-        "Analyze legacy code using AI-assisted tools",
-        "Implement CI/CD pipelines with security scanning",
-        "Deploy cloud-native microservices on Azure Kubernetes Service",
-        "Implement GitOps automation"
+        "Implement CI/CD pipelines with security scans",
+        "Deploy cloud-native microservices on Azure Kubernetes Service"
       ],
       "achievements": [
         "Modernized a 30+ year monolithic COBOL tax-reporting system into cloud-native microservices, improving scalability and maintainability for Foresters Financial client using AI-assisted legacy code analysis",
@@ -68,7 +65,6 @@
       "duration": "Jan 2025 - May 2025",
       "key_responsibilities": [
         "Build RAG-powered AI customer support chatbot",
-        "Integrate semantic search with embeddings",
         "Implement automated deployment using CI/CD"
       ],
       "achievements": [
@@ -91,25 +87,20 @@
     "DevOps automation",
     "Microservices",
     "Legacy code modernization",
-    "Machine Learning",
-    "Natural Language Processing",
-    "Transformer models",
-    "Retrieval-Augmented Generation",
     "Cloud security",
-    "Infrastructure automation",
+    "Natural Language Processing",
     "Semantic search",
-    "Email classification",
-    "NLP",
-    "Binary classification"
+    "Full-stack development",
+    "Machine learning"
   ],
   "projects": [
     {
-      "name": "Bert-Based Email Classifier",
+      "name": "BERT-Based Email Classifier",
       "technology_used": [
-        "BERT",
         "Python",
         "HuggingFace",
-        "Kaggle"
+        "Kaggle",
+        "BERT"
       ],
       "achievement": "Fine-tuned a pre-trained BERT model to classify spam/phishing emails with 92% accuracy, completing end-to-end steps including data cleaning and tokenization",
       "awards": "Unknown"
@@ -120,7 +111,7 @@
         "JWT",
         "OAuth",
         "RBAC",
-        "RAG pipeline",
+        "LangGraph",
         "text-embedding-3-small",
         "MongoDB Atlas"
       ],

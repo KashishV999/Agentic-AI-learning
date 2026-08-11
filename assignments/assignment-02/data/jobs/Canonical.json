@@ -2,27 +2,26 @@
   "job_title": "Software Engineer - Python/Golang - Kubernetes",
   "company_info": {
     "company_name": "Canonical",
-    "size": "1,946 employees as of March 2026",
-    "industry_info": "Open source software and operating systems. Canonical is the publisher of Ubuntu, a leading open source platform used in cloud computing, data science, AI, IoT, and enterprise initiatives. The company provides enterprise solutions built on Ubuntu.",
-    "recent_news": "May 28, 2026: Canonical announced general availability of optimized Ubuntu images for Google Cloud TPU virtual machines. June 2026: Canonical declared 2026 as the year of Ubuntu Linux on RISC-V, pushing for mainstream adoption across desktop, server, and edge computing. The company continues to expand its AI and infrastructure optimization initiatives.",
-    "company_culture": "Remote-first company since 2004 with a distributed workforce across 70+ countries. Teams meet 2-4 times yearly in person at strategic locations. Founder-led and profitable. Culture rating of 4.3/5 on Comparably and 3.3/5 on Glassdoor (444 reviews) with 53% of employees recommending it to friends. Emphasis on work-life balance, learning, and collaboration with talented engineers globally. Company values diversity, equal opportunity, and work-from-home flexibility.",
-    "any_related_information": "Canonical is expanding its technical capabilities in AI infrastructure and hardware partnerships (RISC-V). The company focuses on enterprise and technology markets with major customers including leading public cloud and silicon providers. Team sprints held twice yearly provide in-person alignment opportunities. Personal learning and development budget of USD 2,000 per year is offered. This role aligns with Canonical's strategic focus on Kubernetes operators and cloud-native technologies."
+    "size": "1,001-5,000 employees (1000+ colleagues in 70+ countries)",
+    "industry_info": "Software Development / Enterprise Open Source. Canonical is the publisher of Ubuntu, one of the most widely used Linux distributions, and provides open source security, support and services covering critical systems from IoT devices to cloud infrastructure, including databases, containers, AI, and Kubernetes solutions.",
+    "recent_news": "In June 2025, Canonical published a financial report showing revenue for 2024 amounted to $291 million (up from $251 million in 2023). The company's gross profit for 2024 was $258.3 million with operating profit of $15.5 million, demonstrating strong profitability and growth. No recent layoffs found.",
+    "company_culture": "Canonical is a remote-first company since inception in 2004 with no traditional offices. Employee reviews highlight: true 100% remote work environment, good work-life balance, flexible working hours, capable and smart teammates, free travel to twice-yearly in-person team sprints globally. Positive signals include focus on open source, international culture, and distributed collaboration. Some concerns noted in reviews: compensation is lower compared to top tech companies, and career growth can sometimes stall due to timezone challenges.",
+    "any_related_information": "Canonical is founder-led by Mark Shuttleworth (CEO) and is profitable and growing. The company pioneered global distributed collaboration and expects high standards of excellence. Known for hiring on a global basis with rigorous selection standards. Long interview process noted in employee reviews. Mark Shuttleworth previously attempted an IPO in 2023. Ubuntu is used extensively in enterprise initiatives including public cloud, data science, AI, and IoT, with customers including world's leading public cloud and silicon providers."
   },
-  "location": "Remote - available in EMEA and the Americas",
-  "posting_age": "Unknown - no posting date provided in the document",
+  "location": "Remote (EMEA and Americas)",
+  "posting_age": "Unknown (no date information provided in the posting)",
   "required_skills_technologies": [
     "Go (Golang)",
     "Python",
-    "Strong written and verbal communication skills"
+    "Kubernetes"
   ],
   "nice_to_have_skills": [
-    "Kubernetes experience",
+    "Experience in both Go and Python",
     "Linux experience",
-    "Open source software development",
-    "Experience in both Go and Python"
+    "Open source software experience"
   ],
-  "experience_level": "Not explicitly specified - appears to be Mid to Senior level based on role expectations and Kubernetes focus",
-  "education": "Bachelor's degree or equivalent in Computer Science, STEM or similar field",
-  "key_responsibilities": "Build Kubernetes operators and addons offering complete lifecycle management of mission-critical components; write high-quality code to create new features; debug issues and interact with community; collaborate proactively with distributed team; incorporate latest Kubernetes features and open-source solutions; work with industry peers and partners to deliver solutions to customers",
-  "salary_range": "Unknown - not disclosed in posting. Canonical states they consider geographical location, experience, and performance in shaping compensation, with annual compensation reviews and performance-driven bonuses offered."
+  "experience_level": "Mid (not explicitly stated but implied by focus on 'software engineer' role and requirement for strong communication skills and collaborative experience)",
+  "education": "Bachelor's or equivalent in Computer Science, STEM or similar degree",
+  "key_responsibilities": "Write high-quality code to create new features; Debug issues and interact with a vibrant community; Collaborate proactively with a distributed team; Work with helpful and talented engineers including experts in many fields; Build operators and addons offering complete lifecycle management of mission-critical Kubernetes components and zero-ops experience for integrating projects into Kubernetes; Gain familiarity with latest Kubernetes features and incorporate best of open-source functionality for end-users; Collaborate with industry peers and partners on solutions for customers",
+  "salary_range": "Unknown (not disclosed in posting; however, company salary data from 2026 shows average compensation of $144k across all levels, with Software Engineers typically in range of $108k-$199k depending on seniority)"
 }

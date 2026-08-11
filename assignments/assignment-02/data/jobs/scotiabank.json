@@ -1,23 +1,29 @@
 {
-  "job_title": "Full Stack Developer - Entry Level",
+  "job_title": "Junior Software Engineer",
   "company_info": {
-    "company_name": "Scotiabank (Bank of Nova Scotia)",
-    "size": "Approximately 86,000-88,000 employees (2025)",
-    "industry_info": "Banking and Financial Services. Scotiabank is a Canadian multinational bank and one of Canada's Big Five banks. It operates in personal and commercial banking, wealth management, private banking, corporate and investment banking, and capital markets across the Americas and globally.",
-    "recent_news": "In January 2026, Scotiabank confirmed layoffs of approximately 3,000 employees (3% of global workforce) through a multi-quarter restructuring program in late 2025. The restructuring included workforce rationalization in lower-growth areas, with a $373 million restructuring charge recorded in Q4 2025.",
-    "company_culture": "According to Glassdoor, 74% of Scotiabank employees would recommend working there to a friend. The company is rated 3.7 out of 5 for work-life balance. Employees highlight a supportive and friendly atmosphere, strong team dynamics, and commitment to diversity. The company emphasizes an inclusive and high-performing culture.",
-    "any_related_information": "The Global Wealth Engineering (GWE) team is focused on modernizing and enhancing client and account onboarding platforms for Scotia Wealth Management. The role involves working with agile teams, architects, business stakeholders, and compliance groups. Scotiabank serves over 25 million customers globally with approximately $1.5 trillion in total assets. The company is headquartered in Toronto, Ontario."
+    "company_name": "Scotiabank",
+    "size": "10,001+ employees",
+    "industry_info": "Banking and Financial Services. Scotiabank is a leading bank in the Americas providing personal and commercial banking, wealth management, private banking, corporate and investment banking, and capital markets services. The company is strategically focused on payments technology and innovation.",
+    "recent_news": "Scotiabank announced significant layoffs as part of a cost-cutting and modernization strategy, reducing 3% of its global workforce. Recent developments include the October 2025 launch of a modernized U.S. Cash Management platform supported by the cloud-based treasury platform ScotiaConnect. The bank is actively investing in technology modernization to address legacy platforms, reduce system vulnerabilities, and accelerate cloud adoption. Recent focus includes ISO 20022 payment standards implementation for global payments modernization.",
+    "company_culture": "Glassdoor ratings show 74% of employees would recommend the company to a friend, with a 3.7 out of 5 rating for work-life balance. The company emphasizes diversity, equity, inclusion & allyship through various Employee Resource Groups (ERGs). However, some employee reviews mention challenges with micromanagement, hierarchy, and bureaucracy. The company culture values supportive team dynamics, friendly atmosphere, and commitment to diversity.",
+    "any_related_information": "Scotiabank positions itself as an industry leader in payments technology and innovation, with a commitment to modernization programs that aim to offer enriched information and transparency to the payments community. The company raised US$1.1B in post-IPO debt funding in May 2024. This junior role is part of the Global Payments Technology team and offers exposure to cloud platforms (GCP, Azure), CI/CD pipelines, and a range of technologies and problem domains. Requisition ID: 264671"
   },
   "location": "Toronto, Ontario, Canada",
-  "posting_age": "Unknown - No date information provided in the job posting",
+  "posting_age": "Unknown",
   "required_skills_technologies": [
-    "Full stack development",
-    "Enterprise application development",
-    "Design and development implementation"
+    "At least one programming language (Java, JavaScript, or Python)",
+    "Relational databases (MySQL, PostgreSQL)",
+    "NoSQL databases (MongoDB)",
+    "RESTful APIs",
+    "CI/CD and version control (Git)"
   ],
-  "nice_to_have_skills": [],
-  "experience_level": "Entry Level",
-  "education": "Unknown - No specific education requirement mentioned in the posting",
-  "key_responsibilities": "Contribute to the development of components of enterprise applications; Provide hands-on development and testing on all project assignments; Ensure that the business and technical architecture of delivered solutions match business requirements; Implement various aspects of design and development; Work with architects, developers, business stakeholders, technical support teams, regulatory and compliance groups, and senior leadership; Work as part of an agile team to deliver, support, and maintain client and account onboarding systems",
-  "salary_range": "Unknown - No salary or compensation range disclosed in the posting"
+  "nice_to_have_skills": [
+    "Cloud platforms (GCP and Azure)",
+    "Strong problem-solving skills",
+    "Strong communication skills"
+  ],
+  "experience_level": "Entry-level / Junior",
+  "education": "Unknown - No explicit education requirement stated in the posting",
+  "key_responsibilities": "Write clean, maintainable, and well-documented code under guidance; Help document software features and perform reviews with team members; Participate in code reviews, unit testing, and debugging; Learn and adapt to CI/CD pipelines and cloud deployment practices; Follow guidance from senior team members and leads; Understand risk appetite and risk culture in day-to-day activities; Champion customer-focused culture and leverage broader Bank relationships; Actively pursue effective and efficient operations in accordance with Scotiabank's Values and Code of Conduct; Ensure adherence to business controls for operational, compliance, AML/ATF/sanctions and conduct risk; Champion high performance environment and contribute to inclusive work environment",
+  "salary_range": "Unknown"
 }
