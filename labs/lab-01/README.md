@@ -1,51 +1,78 @@
-# Lab 1
+# Lab 01: AI Commit Message Generator
 
-## Code Flow
+## Why This Lab Exists
 
-### 1. Check API Key
-- Verify if `OPENROUTER_API_KEY` is set in the environment variables.
-- If not found, print an error message and exit the program.
+This lab is for learning the basic shape of an LLM-powered developer tool. The script reads the staged git diff, sends that diff to a model, and asks for a commit message in Conventional Commits format. It is the first lab where the model is doing useful work inside a normal CLI workflow instead of only in chat.
 
-### 2. Get Staged Git Diff
-- Use `subprocess` (`git diff --staged`) to retrieve the staged Git diff.
-- Store the diff in a variable for later processing.
+## What I Learned On The First Pass
 
-### 3. Generate Commit Message
-- Define a `chatCompletion()` function to generate a semantic commit message.
-- Send the staged diff to the OpenRouter API using the OpenAI SDK.
+- How to turn real developer context (`git diff --staged`) into model input.
+- Why prompt wording matters when I need one short output instead of a long explanation.
+- How a system prompt can force a response format like Conventional Commits.
+- How CLI flags like `--creative`, `--verbose`, and `-y` change model behavior or the final workflow.
+- How to "dogfood" the tool by using the AI-generated message to commit the tool itself.
 
-### 4. Handle `--creative` Flag
-- Check if the `--creative` flag is provided.
-- If enabled:
-  - Use a higher temperature.
-  - Apply a more imaginative system prompt.
-- Otherwise:
-  - Use a lower temperature.
-  - Apply a more straightforward system prompt.
+## Core AI And Tech Topics
 
-### 5. Print Commit Message
-- In the `main()` function, call `chatCompletion()`.
-- Print the generated commit message to the console.
+- Prompting from code diffs
+- Conventional Commit formatting
+- LLM parameter tuning with temperature
+- CLI automation
+- Git subprocess usage
+- OpenRouter via the `openai` SDK
 
+## Folder Structure
+
+```text
+lab-01/
+├── README.md
+├── git_cm.py
+├── git_diff_subprocess.py
+└── requirements.txt
+```
+
+## Files
+
+- `git_cm.py` is the main CLI script.
+- `git_diff_subprocess.py` reads the staged diff using `git diff --staged`.
+- `requirements.txt` lists the Python dependencies.
+
+## Setup
+
+```bash
+cd labs/lab-01
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Create a `.env` file with:
+
+```env
+OPENROUTER_API_KEY=your_key_here
+```
 
 ## Usage
 
-1. Stage your changes using `git add <file>`.
-2. Run the script:
-   ```bash
-   python git_cm.py
-   ```
-3. For a more creative commit message, use:
-   ```bash
-   python git_cm.py --creative
-   ```  
+Stage your changes first, then run:
 
-4. To automatically accept the generated commit message without confirmation, use:
-   ```bash
-   python git_cm.py -y
-   ```
+```bash
+python3 git_cm.py
+```
 
-5. For verbose output, use:
-   ```bash
-   python git_cm.py --verbose
-   ```
+Useful flags:
+
+- `--creative` uses a higher-temperature prompt.
+- `--verbose` asks for a subject plus a short body paragraph.
+- `-y` skips the confirmation prompt and runs `git commit -m`.
+
+Example:
+
+```bash
+python3 git_cm.py --creative --verbose
+```
+
+## Notes
+
+- The script only analyzes staged changes.
+- `-y` creates the commit immediately after generation.

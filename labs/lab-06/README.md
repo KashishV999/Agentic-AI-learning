@@ -1,37 +1,88 @@
-# Lab 6: Semantic Search & Vector Spaces
+# Lab 06: Semantic Product Search
 
-A  Python lab for building a semantic product search engine using embeddings and reranking.
+## Why This Lab Exists
 
-## What this is for
-- Serialize product data into compact text.
-- Build a vector index with OpenAI embeddings.
-- Visualize embeddings in TensorFlow Embedding Projector.
-- Search with cosine similarity and rerank results for better relevance.
+This lab is for learning embeddings and semantic retrieval. Instead of keyword matching, the project turns product records into vectors so a search query can find meaning-based matches, then improve the ranking with a second relevance pass.
 
-## Usage
-1. Install dependencies:
-   ```bash
-   python3 -m pip install -r requirements.txt
-   ```
-2. Add `OPENROUTER_API_KEY` to a `.env` file.
-3. Generate the index:
-   ```bash
-   python indexer.py
-   ```
-4. Run the interactive search CLI:
-   ```bash
-   python search.py
-   ```
-5. Optional: inspect threshold behavior:
-   ```bash
-   python temp_script.py
-   ```
+## What I Learned On The First Pass
+
+- How to serialize structured product data into text before embedding it.
+- Why embeddings let me search by meaning instead of exact words.
+- How vector similarity works in a small local search system.
+- Why reranking helps after the first retrieval step.
+- How to store vectors and metadata on disk for a simple search pipeline.
+
+## Core AI And Tech Topics
+
+- Embeddings
+- Semantic search
+- Vector indexing
+- Cosine similarity
+- Reranking
+- Retrieval pipelines
+
+## Folder Structure
+
+```text
+lab-06/
+├── README.md
+├── indexer.py
+├── metadata.tsv
+├── products.json
+├── requirements.txt
+├── screenshots/
+│   └── cluster.png
+├── search.py
+├── temp_script.py
+├── utils.py
+└── vectors.tsv
+```
 
 ## Files
-- `indexer.py` - Fetches product data, serializes each product, creates embeddings, and writes `products.json`, `vectors.tsv`, and `metadata.tsv`.
-- `utils.py` - Contains serialization, dot-product similarity, database loading, search logic, and reranking via OpenRouter.
-- `search.py` - Interactive command-line search interface that prints rerank and vector scores for results.
-- `temp_script.py` - Quick threshold experiment script for comparing good vs bad query similarity scores.
-- `products.json` - Saved raw product catalog from DummyJSON.
-- `vectors.tsv` - Precomputed embedding vectors for search.
-- `metadata.tsv` - TSV metadata for embedding visualization.
+
+- `indexer.py` fetches product data, serializes items, generates embeddings, and writes output files.
+- `utils.py` contains serialization, similarity, reranking, and data-loading helpers.
+- `search.py` is the interactive CLI for product search.
+- `temp_script.py` is a small threshold experiment.
+- `products.json`, `vectors.tsv`, and `metadata.tsv` are generated data files.
+- `screenshots/cluster.png` is a saved visualization asset.
+
+## Setup
+
+```bash
+cd labs/lab-06
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Create a `.env` file with:
+
+```env
+OPENROUTER_API_KEY=your_key_here
+```
+
+## Run
+
+Build the local index:
+
+```bash
+python3 indexer.py
+```
+
+Search interactively:
+
+```bash
+python3 search.py
+```
+
+Optional:
+
+```bash
+python3 temp_script.py
+```
+
+## Notes
+
+- `indexer.py` appends to `vectors.tsv`, so a clean rebuild may require deleting old generated files first.
+- Product data is fetched from DummyJSON.
