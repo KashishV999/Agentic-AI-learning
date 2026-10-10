@@ -38,13 +38,3 @@ aip444/
 | --- | --- | --- | --- | --- |
 | 1 | [Assignment 01](assignments/assignment-01/README.md) | A multi-agent code review pipeline with two specialized reviewers and a final judge that produces an HTML report. | It brings together parallel review, structured findings, tool use, and synthesis into a realistic AI-assisted software engineering workflow. | Multi-agent orchestration, parallel LLM calls, structured outputs, function calling, schema-based findings, evaluator/judge pattern |
 | 2 | [Assignment 02](assignments/assignment-02/README.md) | A 3-phase job search assistant that analyzes job postings, compares them to a resume, and generates targeted application advice. | It is the largest end-to-end project in the repo and combines extraction, analysis, external research, and agent-based report generation into one practical system. | Agentic workflows, structured information extraction, Pydantic schemas, web search tools, retrieval of external evidence, legitimacy assessment, report generation |
-
-## What This Repo Demonstrates
-
-- Prompt engineering for reliable and constrained generation
-- Structured outputs backed by schemas and validation
-- Tool calling for file access, search, and external context gathering
-- Embeddings, semantic search, reranking, and RAG pipelines
-- Multimodal workflows using image input
-- Agentic systems that investigate, evaluate, and produce reports
-- Practical AI software engineering with Python CLIs, APIs, and HTML/Markdown outputs
