@@ -1,7 +1,6 @@
 # AIP444
 
 **Student:** Kashish Verma  
-**Student ID:** 151579232  
 **Course:** AIP444 - AI Programming for Developers
 
 ## Overview
